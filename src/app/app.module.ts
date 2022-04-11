@@ -11,7 +11,6 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginPopupComponent } from './login-popup/login-popup.component';
 
 @NgModule({
   imports: [
@@ -33,8 +32,7 @@ import { LoginPopupComponent } from './login-popup/login-popup.component';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    FooterComponent,
-    LoginPopupComponent
+    FooterComponent
   ],
   bootstrap: [
     AppComponent
