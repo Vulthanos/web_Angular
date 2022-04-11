@@ -1,0 +1,308 @@
+/*Diseño Escritorio*/
+@media screen and (min-width: 1367px) {
+    * {
+        margin:0;
+        padding:0;
+        font-family: Montserrat, sans-serif;
+        text-decoration: none;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        height: 14em;
+        background-color: #3d1f37;
+        bottom: -20em;
+    }
+
+    ul {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .bold-footer {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .regular-footer {
+        color: #ffffff;
+    }
+
+    .content {
+        padding-top: 1em;
+    }
+
+    .info {
+        text-align:center;
+        position: absolute;
+        width: 16.65875em;
+        height: 10em;
+        left: 5em;
+        top: 2.434375em;
+    }
+
+    .ayuda {
+        text-align:center;
+        position: absolute;
+        width: 17em;
+        height: 10em;
+        left: 35.5em;
+        top: 2.434375em;
+    }
+
+    .comunidad {
+        text-align:center;
+        position: absolute;
+        width: 16.65875em;
+        height: 10em;
+        right: 35.5em;
+        top: 2.434375em;
+    }
+
+    .redes {
+        text-align:center;
+        position: absolute;
+        width: 21.375em;
+        height: 10em;
+        right: 5em;
+        top: 2.434375em;
+    }
+
+    .tw {
+        position: absolute;
+        font-size: 3.3em;
+        right: 3.45em;
+        top: 0.6em;
+        color: #ffffff;
+    }
+
+    .ig {
+        position: absolute;
+        font-size: 3.4em;
+        right: 3.35em;
+        top: 1.7em;
+        color: #ffffff;
+    }
+
+    .disc {
+        position: absolute;
+        font-size: 3em;
+        right: 2.35em;
+        top: 0.72em;
+        color: #ffffff;
+    }
+
+    .fb {
+        position: absolute;
+        font-size: 3.4em;
+        right: 2.2em;
+        top: 1.7em;
+        color: #ffffff;
+    }
+}
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px) {
+    * {
+        margin:0;
+        padding:0;
+        font-family: Montserrat, sans-serif;
+        text-decoration: none;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        height: 14em;
+        background-color: #3d1f37;
+        bottom: -20em;
+    }
+
+    ul {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .bold-footer {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .regular-footer {
+        color: #ffffff;
+    }
+
+    .content {
+        padding-top: 1em;
+    }
+
+    .info {
+        text-align:center;
+        position: absolute;
+        width: 16.65875em;
+        height: 10em;
+        left: 0;
+        top: 2.434375em;
+    }
+
+    .ayuda {
+        text-align:center;
+        position: absolute;
+        width: 17em;
+        height: 10em;
+        left: 20em;
+        top: 2.434375em;
+    }
+
+    .comunidad {
+        text-align:center;
+        position: absolute;
+        width: 16.65875em;
+        height: 10em;
+        right: 20em;
+        top: 2.434375em;
+    }
+
+    .redes {
+        text-align:center;
+        position: absolute;
+        width: 21.375em;
+        height: 10em;
+        right: 0;
+        top: 2.434375em;
+    }
+
+    .tw {
+        position: absolute;
+        font-size: 3.3em;
+        right: 3.45em;
+        top: 0.6em;
+        color: #ffffff;
+    }
+
+    .ig {
+        position: absolute;
+        font-size: 3.4em;
+        right: 3.35em;
+        top: 1.7em;
+        color: #ffffff;
+    }
+
+    .disc {
+        position: absolute;
+        font-size: 3em;
+        right: 2.35em;
+        top: 0.72em;
+        color: #ffffff;
+    }
+
+    .fb {
+        position: absolute;
+        font-size: 3.4em;
+        right: 2.2em;
+        top: 1.7em;
+        color: #ffffff;
+    }
+}
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
+
+    * {
+        text-decoration: none;
+    }
+
+    footer {
+        position: absolute;
+        width: 155.8%;
+        height: 14em;
+        background-color: #3d1f37;
+        bottom: -33em;
+    }
+
+    ul {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .bold-footer {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .regular-footer {
+        color: #ffffff;
+    }
+
+    .content {
+        padding-top: 1em;
+    }
+
+    .info {
+        text-align:center;
+        position: absolute;
+        width: fit-content;
+        left: 0.1em;
+        top: 2.434375em;
+    }
+
+    .ayuda {
+        text-align:center;
+        position: absolute;
+        width: fit-content;
+        left: 11em;
+        top: 2.434375em;
+    }
+
+    .comunidad {
+        text-align:center;
+        position: absolute;
+        width: fit-content;
+        right: 10em;
+        top: 2.434375em;
+    }
+
+    .redes {
+        text-align:center;
+        position: absolute;
+        width: fit-content;
+        right: 0.1em;
+        top: 2.434375em;
+    }
+
+    .tw {
+        position: absolute;
+        font-size: 3.3em;
+        right: 1.6em;
+        top: 0.6em;
+        color: #ffffff;
+    }
+
+    .ig {
+        position: absolute;
+        font-size: 3.4em;
+        right: 1.5em;
+        top: 1.7em;
+        color: #ffffff;
+    }
+
+    .disc {
+        position: absolute;
+        font-size: 3em;
+        right: 0.3em;
+        top: 0.72em;
+        color: #ffffff;
+    }
+
+    .fb {
+        position: absolute;
+        font-size: 3.4em;
+        right: 0.4em;
+        top: 1.7em;
+        color: #ffffff;
+    }
+}

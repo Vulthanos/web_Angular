@@ -1,0 +1,21 @@
+<header class="header">
+  <a [routerLink]="['/']"><img class="logo" src="/assets/IMGS/header/logo.png" alt=""></a>
+  <nav>
+    <ul class="header_ul">
+      <li><a><span class="baja"><img class ="icon icon-consolas" src="/assets/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
+      <li><a><span class="baja"><img class ="icon icon-juegos" src="/assets/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
+      <li><a><span class="baja"><img class ="icon icon-accesorios" src="/assets/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
+      <li class="mvl_inactive"><a><span class="baja"><img class ="icon icon-controladores" src="/assets/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
+      <li class="mvl_inactive"><a><span class="baja"><img class ="icon icon-componentes" src="/assets/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
+      <li class="mvl_inactive"><a><span class="baja"><img class ="icon icon-pc" src="/assets/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
+    </ul>
+  </nav>
+  <div class="buscar"><label>
+    <input type="text" placeholder="Buscar" required>
+    <i class="fa-solid fa-magnifying-glass lupa"></i>
+  </label></div>
+  <a routerLink="/cart"><i class="fa-solid fa-cart-shopping carrito"></i></a>
+  <a><i class="fa-regular fa-circle-user user" id="user_profile"></i></a>
+</header>
+
+<script src="/assets/JS_Files/header.js" type="module"></script>
