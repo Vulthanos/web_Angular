@@ -1,0 +1,747 @@
+/*Diseño Escritorio*/
+@media screen and (min-width: 1367px) {
+    * {
+        margin:0;
+        padding:0;
+        font-family: Montserrat, sans-serif;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    header {
+        width: 100%;
+        overflow: hidden;
+        background: none;
+        margin-bottom: 2em;
+        z-index: 1;
+    }
+
+    header > nav {
+        top:-1.25em;
+        position: absolute;
+        left: 9em;
+        margin:1.25em auto;
+        max-width:25em;
+        width:90%;
+    }
+
+    header > nav ul {
+        list-style:none;
+    }
+
+    header > nav > ul {
+        display:table;
+        width:100%;
+        background: #bd879d;
+        position:absolute;
+        height: 4.6em;
+    }
+
+    header > nav > ul li {
+        display:table-cell;
+    }
+
+    /*sub-menu*/
+    header > nav > ul > li:hover > ul {
+        display:block;
+        height: 4.6em;
+    }
+
+    header > nav > ul > li > ul {
+        display:block;
+        position:absolute;
+        background:#E39FB4;
+        left:0;
+        right:0;
+        overflow:hidden;
+        height:0;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+
+    header > nav > ul li a {
+        color:#000000;
+        font-weight:bold;
+        display:block;
+        line-height:1.25em;
+        padding:1.75em;
+        position: relative;
+        text-align:center;
+        text-decoration:none;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+
+    .header-text {
+        font-size: 1.125em;
+    }
+
+    header > nav > ul > li > a span {
+        display:block;
+        height:100%;
+        width:100%;
+        left:0;
+        position:absolute;
+        top:-3.4375em;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    header > nav > ul > li > a:hover > span {
+        top:0;
+        cursor: pointer;
+    }
+
+    .icon {
+        position: absolute;
+    }
+
+    /*colores*/
+    header > nav ul li a .baja {
+        position: absolute;
+        background: #b45873;
+        height: 4.6em;
+        top: -4.2em;
+    }
+
+    .header {
+        position: fixed;
+        margin-top: 0;
+        z-index: 2000;
+        height: 4.6em;
+        background-color: #ffffff;
+    }
+
+    .icon-consolas {
+        height: 4.13em;
+        left: 3.8em;
+        top: 0.09em;
+    }
+
+    .icon-juegos {
+        height: 7em;
+        left: 2em;
+        top: -1.2em;
+    }
+
+    .icon-accesorios {
+        height: 5.5em;
+        left: 3.8em;
+        top: -0.46em;
+    }
+
+    .icon-controladores {
+        height: 8.2em;
+        left: 4.8em;
+        top: -1.8em;
+    }
+
+    .icon-componentes {
+        height: 5.5em;
+        left: 3.5em;
+        top: -0.5em;
+
+    }
+
+    .icon-pc {
+        width: 5.5em;
+        height: 5.5em;
+        left: -0.2em;
+        top: -0.4em;
+    }
+
+    .logo {
+        position: absolute;
+        width: 4.6em;
+        left: 0;
+        top: 0;
+    }
+
+    .lupa {
+        position: absolute;
+        font-size: 3.8em;
+        margin-top: 0.15em;
+        text-align: center;
+        cursor: pointer;
+        right: -1em;
+        color: #000000;
+        transition: .3s ease all;
+    }
+
+    .buscar {
+        position: absolute;
+        padding: 0.3125em;
+        top: 0;
+        right: 9.5em;
+    }
+
+    .lupa:hover {
+        color: #535353;
+    }
+
+    .buscar input {
+        width: 0;
+        height: 3.7em;
+        padding: 0 1.25em;
+        font-size: 1.125em;
+        color: #000000;
+        outline: none;
+        border: 0 solid #000000;
+        border-radius: 1.875em;
+        transition: all 0.6s ease;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .buscar:hover input {
+        width: 21.5em;
+        border: 0.0625em solid #000000;
+        border-radius: 1.875em;
+        background-color: #ffffff;
+    }
+
+    .buscar input:focus {
+        width: 21.5em;
+        border: 0.0625em solid #000000;
+        border-radius: 1.875em;
+        background-color: #ffffff;
+    }
+
+    .carrito {
+        position: absolute;
+        font-size: 4em;
+        margin-top: 0.05em;
+        right: -3.5em;
+        color: #000000;
+        transition: .3s ease all;
+    }
+
+    .carrito:hover {
+        color: #535353;
+    }
+
+    .user {
+        position: absolute;
+        font-size: 4em;
+        margin-top: 0.1em;
+        right: -4em;
+        color: #000000;
+    }
+
+    .user:hover {
+        cursor: pointer;
+        color: #535353;
+    }
+}
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px) {
+    * {
+        margin:0;
+        padding:0;
+        font-family: Montserrat, sans-serif;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    header {
+        width: 100%;
+        overflow: hidden;
+        background: none;
+        margin-bottom: 2em;
+        z-index: 1;
+        border: none;
+    }
+
+    header > nav {
+        top:-1.25em;
+        position: absolute;
+        left: 9em;
+        margin:1.25em auto;
+    }
+
+    header > nav ul {
+        list-style:none;
+    }
+
+    header > nav > ul {
+        display:table;
+        background: #bd879d;
+        position:absolute;
+        height: 4.6em;
+    }
+
+    header > nav > ul li {
+        display:table-cell;
+    }
+
+    /*sub-menu*/
+    header > nav > ul > li:hover > ul {
+        display:block;
+        height: 4.6em;
+    }
+
+    header > nav > ul > li > ul {
+        display:block;
+        position:absolute;
+        background:#E39FB4;
+        left:0;
+        right:0;
+        overflow:hidden;
+        height:0;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+
+    header > nav > ul li a {
+        color:#000000;
+        font-weight:bold;
+        display:block;
+        line-height:1.25em;
+        padding:1.75em;
+        position: relative;
+        text-align:center;
+        text-decoration:none;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+
+    .header-text {
+        font-size: 1.125em;
+    }
+
+    header > nav > ul > li > a span {
+        display:block;
+        height:100%;
+        width:100%;
+        left:0;
+        position:absolute;
+        top:-3.4375em;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    header > nav > ul > li > a:hover > span {
+        top:0;
+    }
+
+    .icon {
+        position: absolute;
+    }
+
+    /*colores*/
+    header > nav ul li a .baja {
+        position: absolute;
+        background: #b45873;
+        height: 4.6em;
+        top: -4.2em;
+    }
+
+    .header {
+        position: fixed;
+        margin-top: 0;
+        z-index: 2000;
+        height: 4.6em;
+        background-color: #ffffff;
+    }
+
+    .icon-consolas {
+        height: 4.13em;
+        left: 3.8em;
+        top: 0.1em;
+    }
+
+    .icon-juegos {
+        height: 7em;
+        left: 2em;
+        top: -1.2em;
+    }
+
+    .icon-accesorios {
+        height: 5.5em;
+        left: 3.8em;
+        top: -0.46em;
+    }
+
+    .icon-controladores {
+        height: 8.2em;
+        left: 4.8em;
+        top: -1.8em;
+    }
+
+    .icon-componentes {
+        height: 5.5em;
+        left: 3.5em;
+        top: -0.5em;
+
+    }
+
+    .icon-pc {
+        width: 5.5em;
+        height: 5.5em;
+        left: -0.2em;
+        top: -0.4em;
+    }
+
+    .logo {
+        position: absolute;
+        width: 4.6em;
+        left: 0;
+        top: 0;
+    }
+
+    .lupa {
+        position: absolute;
+        font-size: 3.8em;
+        margin-top: 0.15em;
+        text-align: center;
+        cursor: pointer;
+        right: -1em;
+        color: #000000;
+        transition: .3s ease all;
+    }
+
+    .buscar {
+        position: absolute;
+        padding: 0.3125em;
+        top: 0;
+        right: 9.5em;
+    }
+
+    .buscar input {
+        width: 0;
+        height: 3.7em;
+        padding: 0 1.25em;
+        font-size: 1.125em;
+        color: #000000;
+        outline: none;
+        border: 0 solid #000000;
+        border-radius: 1.875em;
+        transition: all 0.6s ease;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .buscar:hover input {
+        width: 19.5em;
+        border: 0.0625em solid #000000;
+        border-radius: 1.875em;
+        background-color: #ffffff;
+    }
+
+    .buscar input:focus {
+        width: 19.5em;
+        border: 0.0625em solid #000000;
+        border-radius: 1.875em;
+        background-color: #ffffff;
+    }
+
+    .carrito {
+        position: absolute;
+        font-size: 4em;
+        margin-top: 0.05em;
+        right: -3.5em;
+        color: #000000;
+        transition: .3s ease all;
+    }
+
+    .carrito:hover {
+        color: #535353;
+    }
+
+    .user {
+        position: absolute;
+        font-size: 4em;
+        margin-top: 0.1em;
+        right: -4em;
+        color: #000000;
+    }
+
+    .user:hover {
+        cursor: pointer;
+        color: #535353;
+    }
+
+    .mvl_inactive {
+        max-width: 0;
+        visibility: hidden;
+    }
+}
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
+    * {
+        margin:0;
+        padding:0;
+        font-family: Montserrat, sans-serif;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    header {
+        width: 100%;
+        overflow: hidden;
+        background: none;
+        margin-bottom: 2em;
+        z-index: 1;
+        border: none;
+    }
+
+    header > nav {
+        top:-1.25em;
+        position: absolute;
+        left: 9em;
+        margin:1.25em auto;
+    }
+
+    header > nav ul {
+        list-style:none;
+    }
+
+    header > nav > ul {
+        display: table;
+        background: #bd879d;
+        position: absolute;
+        height: 4.6em;
+        transform: scaleX(0.75);
+        left: -7.8em;
+    }
+
+    header > nav > ul li {
+        display:table-cell;
+    }
+
+    /*sub-menu*/
+    header > nav > ul > li:hover > ul {
+        display:block;
+        height: 4.6em;
+    }
+
+    header > nav > ul > li > ul {
+        display:block;
+        position:absolute;
+        background:#E39FB4;
+        left:0;
+        right:0;
+        overflow:hidden;
+        height:0;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+
+    header > nav > ul li a {
+        color:#000000;
+        font-weight:bold;
+        display:block;
+        line-height:1.25em;
+        padding:1.75em;
+        position: relative;
+        text-align:center;
+        text-decoration:none;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+
+    .header-text {
+        font-size: 1.125em;
+    }
+
+    header > nav > ul > li > a span {
+        display:block;
+        height:100%;
+        width:100%;
+        left:0;
+        position:absolute;
+        top:-3.4375em;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    header > nav > ul > li > a:hover > span {
+        top:0;
+    }
+
+    .icon {
+        position: absolute;
+    }
+
+    /*colores*/
+    header > nav ul li a .baja {
+        position: absolute;
+        background: #b45873;
+        height: 4.6em;
+        top: -4.2em;
+    }
+
+    .header {
+        position: fixed;
+        margin-top: 0;
+        z-index: 2000;
+        height: 4.6em;
+        background-color: #ffffff;
+    }
+
+    .icon-consolas {
+        height: 4.13em;
+        left: 3.8em;
+        top: 0.1em;
+    }
+
+    .icon-juegos {
+        height: 7em;
+        left: 2em;
+        top: -1.2em;
+    }
+
+    .icon-accesorios {
+        height: 5.5em;
+        left: 3.8em;
+        top: -0.46em;
+    }
+
+    .icon-controladores {
+        height: 8.2em;
+        left: 4.8em;
+        top: -1.8em;
+    }
+
+    .icon-componentes {
+        height: 5.5em;
+        left: 3.5em;
+        top: -0.5em;
+
+    }
+
+    .icon-pc {
+        width: 5.5em;
+        height: 5.5em;
+        left: -0.2em;
+        top: -0.4em;
+    }
+
+    .logo {
+        position: absolute;
+        width: 4.6em;
+        left: 0;
+        top: 0;
+    }
+
+    .lupa {
+        position: absolute;
+        font-size: 2.8em;
+        margin-top: 0.27em;
+        text-align: center;
+        cursor: pointer;
+        color: #000000;
+        transition: .3s ease all;
+        right: -1em;
+    }
+
+    .buscar {
+        position: absolute;
+        padding: 0.3125em;
+        top: 0;
+        right: 6.4em;
+    }
+
+    .buscar input {
+        width: 0;
+        height: 3em;
+        padding: 0 1.25em;
+        font-size: 1.125em;
+        color: #000000;
+        outline: none;
+        border: 0 solid #000000;
+        border-radius: 1.875em;
+        transition: all 0.6s ease;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .buscar:hover input {
+        width: 11em;
+        border: 0.0625em solid #000000;
+        border-radius: 1.875em;
+        background-color: #ffffff;
+    }
+
+    .buscar input:focus {
+        width: 11em;
+        border: 0.0625em solid #000000;
+        border-radius: 1.875em;
+        background-color: #ffffff;
+    }
+
+    .carrito {
+        position: absolute;
+        font-size: 2.8em;
+        margin-top: 0.25em;
+        right: -3.5em;
+        color: #000000;
+        transition: .3s ease all;
+    }
+
+    .carrito:hover {
+        color: #535353;
+    }
+
+    .user {
+        position: absolute;
+        font-size: 3em;
+        margin-top: 0.2em;
+        right: -4em;
+        color: #000000;
+    }
+
+    .user:hover {
+        cursor: pointer;
+        color: #535353;
+    }
+
+    .mvl_inactive {
+        max-width: 0;
+        visibility: hidden;
+    }
+}
