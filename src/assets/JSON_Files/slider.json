@@ -1,0 +1,20 @@
+{
+  "slider_images": [
+    {
+      "img": "/IMGS/slider/pc_prueba.jpg",
+      "link": "slider_result.html"
+    },
+    {
+      "img": "/IMGS/slider/pc_prueba1.png",
+      "link": "slider_result.html"
+    },
+    {
+      "img": "/IMGS/slider/pc_prueba2.jpeg",
+      "link": "slider_result.html"
+    },
+    {
+      "img": "/IMGS/slider/pc_prueba3.jpg",
+      "link": "slider_result.html"
+    }
+  ]
+}
