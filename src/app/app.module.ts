@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { SinginComponent } from './singin/singin.component';
 import { SliderComponent } from './slider/slider.component';
 import { SearchResultComponent } from './search-result/search-result.component';
+import { SliderResultComponent } from './slider-result/slider-result.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,8 @@ import { SearchResultComponent } from './search-result/search-result.component';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'search', component: SearchResultComponent },
+      { path: 'result', component: SliderResultComponent},
     ])
   ],
   declarations: [
@@ -40,7 +43,8 @@ import { SearchResultComponent } from './search-result/search-result.component';
     LoginComponent,
     SinginComponent,
     SliderComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    SliderResultComponent
   ],
   bootstrap: [
     AppComponent
