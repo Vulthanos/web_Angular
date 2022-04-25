@@ -35,7 +35,12 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/JS_Files/jquery-3.6.0.js",
-              "src/assets/JS_Files/glider-1.7.7.js"
+              "src/assets/JS_Files/glider-1.7.7.js",
+              "src/assets/JS_Files/singup_script.js",
+              "src/assets/JS_Files/login_script.js",
+              "src/assets/JS_Files/search_result.js",
+              "src/assets/JS_Files/slider.js",
+              "src/assets/JS_Files/slider_result.js"
             ]
           },
           "configurations": {
