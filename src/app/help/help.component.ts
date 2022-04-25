@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./help.component.css']
 })
 export class HelpComponent implements OnInit {
+  title = 'Help';
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+  }
+
+  id:any = '';
+  accordion(ids:any){
+    if(this.id == ids){
+      this.id='';
+    }else{
+      this.id=ids;
+    }
   }
 
 }

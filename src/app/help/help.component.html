@@ -1,1 +1,96 @@
-<p>help works!</p>
+
+<section class="titulo-central">Ayuda</section>
+
+<h1 class="titulo">Preguntas frecuentes</h1>
+
+<div class="container">
+  <!--APARTADO INFORMACION UTIL-->
+  <article class="titulo-informacion-util"><strong>Informacion util</strong></article>
+  <div class="informacion-util">
+    <div class="accordion-heading" id="titulo1" (click)="accordion('titulo1')">¿Como me registro?</div>
+    <div class="accordion-content" *ngIf="id === 'titulo1'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo2" (click)="accordion('titulo2')">¿Como comprar?</div>
+    <div class="accordion-content" *ngIf="id === 'titulo2'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo3" (click)="accordion('titulo3')">¿Como activar mi clave? </div>
+    <div class="accordion-content" *ngIf="id === 'titulo3'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+  </div>
+
+  <!--APARTADO PAGOS-->
+  <article class="titulo-pagos"><strong>Pagos</strong></article>
+  <div class="pagos">
+    <div class="accordion-heading" id="titulo4" (click)="accordion('titulo4')">¿Cuales son los metodos de pago?</div>
+    <div class="accordion-content" *ngIf="id === 'titulo4'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo5" (click)="accordion('titulo5')">¿Que hacer si me da error mi transaccion?</div>
+    <div class="accordion-content" *ngIf="id === 'titulo5'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+  </div>
+
+
+  <!--APARTADO COMPRAS-->
+  <article class="titulo-compras"><strong>Compras</strong></article>
+  <div class="compras">
+    <div class="accordion-heading" id="titulo6" (click)="accordion('titulo6')">No he recibido la confirmacion de compra por email</div>
+    <div class="accordion-content" *ngIf="id === 'titulo6'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo7" (click)="accordion('titulo7')">¿Se puede reservar un producto?</div>
+    <div class="accordion-content" *ngIf="id === 'titulo7'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+  </div>
+
+
+  <!--APARTADO ACTIVACION-JUEGOS-->
+
+  <article class="titulo-activacion-juegos"><strong>Activacion de juegos</strong></article>
+  <div class="activacion-juegos">
+    <div class="accordion-heading" id="titulo8" (click)="accordion('titulo8')">Activacion de claves para PC</div>
+    <div class="accordion-content" *ngIf="id === 'titulo8'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo9" (click)="accordion('titulo9')">Activacion de claves para XBOX</div>
+    <div class="accordion-content" *ngIf="id === 'titulo9'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo10" (click)="accordion('titulo10')">Activacion de claves para PSN</div>
+    <div class="accordion-content" *ngIf="id === 'titulo10'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo11" (click)="accordion('titulo11')">Activacion de claves para plataformas</div>
+    <div class="accordion-content" *ngIf="id === 'titulo11'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+  </div>
+
+  <!--APARTADO DE CUENTA-->
+
+  <article class="titulo-pregunta-cuenta"><strong>Cuenta</strong></article>
+  <div class="pregunta-cuenta">
+    <div class="accordion-heading" id="titulo12" (click)="accordion('titulo12')">¿Debo registrarme para poder comprar?</div>
+    <div class="accordion-content" *ngIf="id === 'titulo12'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo13" (click)="accordion('titulo13')"> ¿Como puedo registrar mi cuenta?</div>
+    <div class="accordion-content" *ngIf="id === 'titulo13'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo14" (click)="accordion('titulo14')">Como se si puedo comprar en mi pais?</div>
+    <div class="accordion-content" *ngIf="id === 'titulo14'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+  </div>
+
+
+  <!--APARTADO DE PRODUCTOS-->
+
+  <article class="titulo-pregunta-productos"><strong>Productos</strong></article>
+  <div class="pregunta-productos">
+    <div class="accordion-heading" id="titulo15" (click)="accordion('titulo15')">¿Donde puedo encontrar el producto que he comprado? </div>
+    <div class="accordion-content" *ngIf="id === 'titulo15'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo16" (click)="accordion('titulo16')">¿Donde puedo ver si un producto ha sido activado en mi pais?</div>
+    <div class="accordion-content" *ngIf="id === 'titulo16'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <div class="accordion-heading" id="titulo17" (click)="accordion('titulo17')">Cuando intento activar mi clave de producto me salta error, ¿que debo hacer?</div>
+    <div class="accordion-content" *ngIf="id === 'titulo17'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+  </div>
+
+
+
+
+</div>
+

@@ -13,6 +13,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { HelpComponent } from './help/help.component';
+import { InformationComponent } from './information/information.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,8 @@ import { HelpComponent } from './help/help.component';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'help', component: HelpComponent },
+      { path: 'information', component: InformationComponent }
     ])
   ],
   declarations: [
@@ -36,7 +39,8 @@ import { HelpComponent } from './help/help.component';
     ShippingComponent,
     FooterComponent,
     LoginComponent,
-    HelpComponent
+    HelpComponent,
+    InformationComponent
   ],
   bootstrap: [
     AppComponent
