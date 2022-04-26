@@ -10,7 +10,7 @@ window.addEventListener('load', function(){
   });
 });
 
-$.getJSON("src/assets/JSON_Files/slider.json", function(data) {
+$.getJSON("./assets/JSON_Files/slider.json", function(data) {
   $.each(data.slider_images, function(key, value) {
 
     let slider_item;

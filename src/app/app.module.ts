@@ -16,6 +16,7 @@ import { SinginComponent } from './singin/singin.component';
 import { SliderComponent } from './slider/slider.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { SliderResultComponent } from './slider-result/slider-result.component';
+import { LoadScriptsService } from './load-scripts.service';
 
 @NgModule({
   imports: [
@@ -48,7 +49,10 @@ import { SliderResultComponent } from './slider-result/slider-result.component';
   ],
   bootstrap: [
     AppComponent
-  ]
+  ],
+    providers: [
+        LoadScriptsService
+    ]
 })
 
 export class AppModule { }

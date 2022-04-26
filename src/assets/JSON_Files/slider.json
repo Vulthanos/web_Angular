@@ -1,19 +1,19 @@
 {
   "slider_images": [
     {
-      "img": "arc/assets/IMGS/slider/pc_prueba.jpg",
+      "img": "/assets/IMGS/slider/pc_prueba.jpg",
       "link": "/result"
     },
     {
-      "img": "arc/assets/IMGS/slider/pc_prueba1.png",
+      "img": "/assets/IMGS/slider/pc_prueba1.png",
       "link": "/result"
     },
     {
-      "img": "arc/assets/IMGS/slider/pc_prueba2.jpeg",
+      "img": "/assets/IMGS/slider/pc_prueba2.jpeg",
       "link": "/result"
     },
     {
-      "img": "arc/assets/IMGS/slider/pc_prueba3.jpg",
+      "img": "/assets/IMGS/slider/pc_prueba3.jpg",
       "link": "/result"
     }
   ]
