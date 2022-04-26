@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadScriptsService } from '../load-scripts.service';
 
 @Component({
   selector: 'app-singin',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SinginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _LoadScripts:LoadScriptsService) {
+      _LoadScripts.Load(["singup_script"]);
+  }
 
   ngOnInit(): void {
   }

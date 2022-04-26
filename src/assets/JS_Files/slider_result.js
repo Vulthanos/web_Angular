@@ -1,4 +1,4 @@
-$.getJSON("src/assets/JSON_Files/result.json", function(data) {
+$.getJSON("./assets/JSON_Files/result.json", function(data) {
   $.each(data.slider_result_top_images, function(key, value) {
 
     let top_item;
