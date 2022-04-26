@@ -17,6 +17,12 @@ import { InformationComponent } from './information/information.component';
 import { GiveawayComponent } from './giveaway/giveaway.component';
 import { GiveawayEndComponent } from './giveaway-end/giveaway-end.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
+import { LoginComponent } from './login/login.component';
+import { SinginComponent } from './singin/singin.component';
+import { SliderComponent } from './slider/slider.component';
+import { SearchResultComponent } from './search-result/search-result.component';
+import { SliderResultComponent } from './slider-result/slider-result.component';
+import { LoadScriptsService } from './load-scripts.service';
 
 @NgModule({
   imports: [
@@ -24,10 +30,12 @@ import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: SliderComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'search', component: SearchResultComponent },
+      { path: 'result', component: SliderResultComponent},
       { path: 'help', component: HelpComponent },
       { path: 'information', component: InformationComponent },
       { path: 'show-giveaway', component: ShowGiveawayComponent },
@@ -49,10 +57,19 @@ import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
     GiveawayComponent,
     GiveawayEndComponent,
     ShowGiveawayComponent
+    FooterComponent,
+    LoginComponent,
+    SinginComponent,
+    SliderComponent,
+    SearchResultComponent,
+    SliderResultComponent
   ],
   bootstrap: [
     AppComponent
-  ]
+  ],
+    providers: [
+        LoadScriptsService
+    ]
 })
 
 export class AppModule { }
@@ -62,3 +79,4 @@ Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
 */
+

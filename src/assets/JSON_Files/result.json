@@ -1,0 +1,108 @@
+{
+  "slider_result_top_images": [
+    {
+      "img": "/assets/IMGS/result/pc_prueba.jpg",
+      "name": "Ordenador de Sobremesa"
+    },
+    {
+      "img": "/assets/IMGS/result/auriculares.png",
+      "name": "Cascos Gaming"
+    },
+    {
+      "img": "/assets/IMGS/result/Gran_Turismo.png",
+      "name": "Gran Turismo para PS5"
+    },
+    {
+      "img": "/assets/IMGS/result/mando.png",
+      "name": "Mando XBOX series X"
+    }
+  ],
+  "slider_result_bot_images": [
+    {
+      "img": "/assets/IMGS/result/monitor.png",
+      "name": "Monitor MSI"
+    },
+    {
+      "img": "/assets/IMGS/result/nintendo_switch.png",
+      "name": "Nintendo Switch"
+    },
+    {
+      "img": "/assets/IMGS/result/portatil.png",
+      "name": "Portatil MSI"
+    },
+    {
+      "img": "/assets/IMGS/result/teclado.png",
+      "name": "Teclado por Cable"
+    }
+  ],
+  "search_result_top_images": [
+    {
+      "id": 1,
+      "img": "/assets/IMGS/result/pc_prueba.jpg",
+      "name": "Ordenador de Sobremesa"
+    },
+    {
+      "id": 2,
+      "img": "/assets/IMGS/result/auriculares.png",
+      "name": "Cascos Gaming"
+    },
+    {
+      "id": 3,
+      "img": "/assets/IMGS/result/Gran_Turismo.png",
+      "name": "Gran Turismo para PS5"
+    }
+  ],
+  "search_result_bot_images": [
+    {
+      "id": 1,
+      "img": "/assets/IMGS/result/monitor.png",
+      "name": "Monitor MSI"
+    },
+    {
+      "id": 2,
+      "img": "/assets/IMGS/result/nintendo_switch.png",
+      "name": "Nintendo Switch"
+    },
+    {
+      "id": 3,
+      "img": "/assets/IMGS/result/portatil.png",
+      "name": "Portatil MSI"
+    }
+  ],
+  "top_mvl_products": [
+    {
+      "id": 1,
+      "img": "/assets/IMGS/result/Gran_Turismo.png",
+      "name": "Gran Turismo para PS5"
+    },
+    {
+      "id": 2,
+      "img": "/assets/IMGS/result/portatil.png",
+      "name": "Portatil MSI"
+    }
+  ],
+  "bot_mvl_products1": [
+    {
+      "id": 1,
+      "img": "src/assets/IMGS/result/raton_msi.jpg",
+      "name": "Ratón MSI"
+    },
+    {
+      "id": 2,
+      "img": "src/assets/IMGS/result/portatil_asus.jpg",
+      "name": "Portatil ASUS"
+    }
+  ],
+  "bot_mvl_products2": [
+    {
+      "id": 1,
+      "img": "src/assets/IMGS/result/grafica_RTX3070.jpg",
+      "name": "Gráfica RTX 3070"
+    },
+    {
+      "id": 2,
+      "img": "src/assets/IMGS/result/raton_logitech.jpg",
+      "name": "Ratón Logitech"
+    }
+  ]
+}
