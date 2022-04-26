@@ -23,6 +23,7 @@ import { SearchResultComponent } from './search-result/search-result.component';
 import { SliderResultComponent } from './slider-result/slider-result.component';
 import { LoadScriptsService } from './load-scripts.service';
 import { NewsletterEndComponent } from './newsletter-end/newsletter-end.component';
+import { TicketEndComponent } from './ticket-end/ticket-end.component';
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { NewsletterEndComponent } from './newsletter-end/newsletter-end.componen
       { path: 'help', component: HelpComponent },
       { path: 'information', component: InformationComponent },
       { path: 'show-giveaway', component: ShowGiveawayComponent },
-        { path: 'newsletter-end', component: NewsletterEndComponent }
+        { path: 'newsletter-end', component: NewsletterEndComponent },
+        { path: 'ticket-end', component: TicketEndComponent },
 
     ])
   ],
@@ -64,7 +66,8 @@ import { NewsletterEndComponent } from './newsletter-end/newsletter-end.componen
     SliderComponent,
     SearchResultComponent,
     SliderResultComponent,
-    NewsletterEndComponent
+    NewsletterEndComponent,
+    TicketEndComponent
   ],
   bootstrap: [
     AppComponent
