@@ -17,12 +17,12 @@ import { InformationComponent } from './information/information.component';
 import { GiveawayComponent } from './giveaway/giveaway.component';
 import { GiveawayEndComponent } from './giveaway-end/giveaway-end.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
-import { LoginComponent } from './login/login.component';
 import { SinginComponent } from './singin/singin.component';
 import { SliderComponent } from './slider/slider.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { SliderResultComponent } from './slider-result/slider-result.component';
 import { LoadScriptsService } from './load-scripts.service';
+import { NewsletterEndComponent } from './newsletter-end/newsletter-end.component';
 
 @NgModule({
   imports: [
@@ -39,6 +39,7 @@ import { LoadScriptsService } from './load-scripts.service';
       { path: 'help', component: HelpComponent },
       { path: 'information', component: InformationComponent },
       { path: 'show-giveaway', component: ShowGiveawayComponent },
+        { path: 'newsletter-end', component: NewsletterEndComponent }
 
     ])
   ],
@@ -56,13 +57,14 @@ import { LoadScriptsService } from './load-scripts.service';
     InformationComponent,
     GiveawayComponent,
     GiveawayEndComponent,
-    ShowGiveawayComponent
+    ShowGiveawayComponent,
     FooterComponent,
     LoginComponent,
     SinginComponent,
     SliderComponent,
     SearchResultComponent,
-    SliderResultComponent
+    SliderResultComponent,
+    NewsletterEndComponent
   ],
   bootstrap: [
     AppComponent
