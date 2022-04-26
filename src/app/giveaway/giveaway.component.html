@@ -1,0 +1,21 @@
+<h1 class="titulo">Comunidad</h1>
+<h3 class="sorteos">Sorteos</h3>
+<div class="container">
+
+  <form [formGroup]="signupForm" (ngSubmit)="submit(signupForm.value)">
+    <label>Nombre</label>
+    <input formControlName="nombre" type="text" class="form-control"/><br>
+
+    <label>Apellido</label>
+    <input formControlName="apellido" type="text" class="form-control"/><br>
+
+
+    <label>Email de contacto</label>
+    <input formControlName="email" type="email" class="form-control" required/><br>
+
+
+    <button [disabled]="signupForm.invalid" type="submit" class="boton" routerLink="/giveaway-end">Participar</button>
+
+  </form>
+</div>
+

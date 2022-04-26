@@ -14,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { HelpComponent } from './help/help.component';
 import { InformationComponent } from './information/information.component';
+import { GiveawayComponent } from './giveaway/giveaway.component';
+import { GiveawayEndComponent } from './giveaway-end/giveaway-end.component';
 
 @NgModule({
   imports: [
@@ -26,7 +28,9 @@ import { InformationComponent } from './information/information.component';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'help', component: HelpComponent },
-      { path: 'information', component: InformationComponent }
+      { path: 'information', component: InformationComponent },
+      { path: 'giveaway', component: GiveawayComponent },
+      { path: 'giveaway-end', component: GiveawayEndComponent }
     ])
   ],
   declarations: [
@@ -40,7 +44,9 @@ import { InformationComponent } from './information/information.component';
     FooterComponent,
     LoginComponent,
     HelpComponent,
-    InformationComponent
+    InformationComponent,
+    GiveawayComponent,
+    GiveawayEndComponent
   ],
   bootstrap: [
     AppComponent
