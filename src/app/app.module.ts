@@ -16,6 +16,7 @@ import { HelpComponent } from './help/help.component';
 import { InformationComponent } from './information/information.component';
 import { GiveawayComponent } from './giveaway/giveaway.component';
 import { GiveawayEndComponent } from './giveaway-end/giveaway-end.component';
+import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
 
 @NgModule({
   imports: [
@@ -29,8 +30,8 @@ import { GiveawayEndComponent } from './giveaway-end/giveaway-end.component';
       { path: 'shipping', component: ShippingComponent },
       { path: 'help', component: HelpComponent },
       { path: 'information', component: InformationComponent },
-      { path: 'giveaway', component: GiveawayComponent },
-      { path: 'giveaway-end', component: GiveawayEndComponent }
+      { path: 'show-giveaway', component: ShowGiveawayComponent },
+
     ])
   ],
   declarations: [
@@ -46,7 +47,8 @@ import { GiveawayEndComponent } from './giveaway-end/giveaway-end.component';
     HelpComponent,
     InformationComponent,
     GiveawayComponent,
-    GiveawayEndComponent
+    GiveawayEndComponent,
+    ShowGiveawayComponent
   ],
   bootstrap: [
     AppComponent
