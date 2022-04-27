@@ -25,6 +25,7 @@ import { LoadScriptsService } from './load-scripts.service';
 import { NewsletterEndComponent } from './newsletter-end/newsletter-end.component';
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 @NgModule({
   imports: [
@@ -44,6 +45,8 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
         { path: 'newsletter-end', component: NewsletterEndComponent },
         { path: 'ticket-end', component: TicketEndComponent },
         { path: 'profile-page', component: ProfilePageComponent },
+        { path: 'newsletter', component: NewsletterComponent },
+        { path: 'giveaway', component: GiveawayComponent }
 
     ])
   ],
@@ -70,7 +73,8 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     SliderResultComponent,
     NewsletterEndComponent,
     TicketEndComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    NewsletterComponent
   ],
   bootstrap: [
     AppComponent
