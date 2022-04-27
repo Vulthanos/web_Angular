@@ -26,6 +26,7 @@ import { NewsletterEndComponent } from './newsletter-end/newsletter-end.componen
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
+import { GenerateTicketComponent } from './generate-ticket/generate-ticket.component';
 
 @NgModule({
   imports: [
@@ -46,7 +47,8 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
         { path: 'ticket-end', component: TicketEndComponent },
         { path: 'profile-page', component: ProfilePageComponent },
         { path: 'newsletter', component: NewsletterComponent },
-        { path: 'giveaway', component: GiveawayComponent }
+        { path: 'giveaway', component: GiveawayComponent },
+        { path: 'generate-ticket', component: GenerateTicketComponent }
 
     ])
   ],
@@ -74,7 +76,8 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
     NewsletterEndComponent,
     TicketEndComponent,
     ProfilePageComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    GenerateTicketComponent
   ],
   bootstrap: [
     AppComponent
