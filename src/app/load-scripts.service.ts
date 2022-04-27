@@ -17,6 +17,16 @@ export class LoadScriptsService {
         }
     }
 
+    LoadHead(archivos:string[]) {
+        for ( let archivo of archivos ) {
+            let script = document.createElement('script');
+            script.src = "./assets/JS_Files/" + archivo + ".js";
+            script.type = 'text/javascript';
+            let head = document.getElementsByTagName('head')[0];
+            head.appendChild(script);
+        }
+    }
+
     LoadUrl(archivos:string[]) {
         for ( let archivo of archivos ) {
             let script = document.createElement('script');
