@@ -1,0 +1,195 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+.pagina-personal{
+    position: relative;
+    top: 5em;
+    text-align: center;
+    font-size: 1.875em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*Estilos del menu de la izquierda*/
+.menu-izquierda ul {
+    list-style-type: none;
+    display: block;
+    font-size: 1.25em;
+    position: absolute;
+    top: 20em;
+    left: 5em;
+}
+
+.menu-nav{
+    color: black;
+}
+
+/*Titulo: Mi cuenta*/
+.titulo-central {
+    position: absolute;
+    left: 25em;
+    top: 39em;
+}
+
+/*Titulo de informacion personal*/
+h1{
+    position: absolute;
+    font-size: 1.25em;
+    left: 25em;
+    top: 14em;
+
+}
+
+/*Informacion de contacto*/
+.informacion-contacto{
+    position: absolute;
+    left: 25em;
+    top: 20.5em;
+}
+
+/*Newsletter*/
+.newsletter{
+    position: absolute;
+    left: 51em;
+    top: 20.5em;
+}
+
+/*Titulo de direcciones*/
+.apartado-direcciones{
+    position: absolute;
+    font-size: 1.25em;
+    left: 24.5em;
+    top: 27em;
+}
+
+/*Direccion de facturacion*/
+.block-direccion-facturacion{
+    position: absolute;
+    left: 25em;
+    top: 37.8125em;
+}
+
+/*Direccion de envio*/
+.block-direccion-envio{
+    position: absolute;
+    left: 25em;
+    top: 42em;
+}
+
+
+/* color de las opciones de edicion y cambio de contraseña, direccion y perfil*/
+.cambio-opciones{
+    font-size: 0.85em;
+    color: #FFA16D;
+    text-decoration: none;
+}
+
+/*Boton unirse a la newsletter*/
+button{
+    background: #FFA16D;
+    width: 31.3125em;
+    height: 3.75em;
+    border-radius: 0.375em;
+    border: 0;
+    font-size: 0.9375em;
+    font-weight: bold;
+}
+
+
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+
+    .informacion-contacto{
+        left: 20em;
+    }
+
+    .menu-izquierda ul {
+        left: 2.5em;
+    }
+
+    /*Newsletter*/
+    .newsletter{
+        left: 40em;
+    }
+
+    .direcciones{
+        left: 20em;
+    }
+
+    .apartado-direcciones{
+        left: 16em;
+    }
+
+    .block-direccion-facturacion{
+        left: 20em;
+    }
+
+    /*Direccion de envio*/
+    .block-direccion-envio{
+        left: 20em;
+    }
+}
+
+
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
+
+    .pagina-personal{
+        left: 4em;
+    }
+
+    .menu-izq-movil{
+        display: none;
+    }
+
+
+    /*Informacion de contacto*/
+    .informacion-contacto{
+        position: absolute;
+        left: 6em;
+        top: 15em;
+
+    }
+
+    /*Newsletter*/
+    .newsletter{
+        position: absolute;
+        left: 5em;
+        top: 26.5em;
+    }
+
+    /*Titulo de direcciones*/
+    .apartado-direcciones{
+        position: absolute;
+        font-size: 1.25em;
+        left: 4.5em;
+        top: 31em;
+    }
+
+    /*Direccion de facturacion*/
+    .block-direccion-facturacion{
+        position: absolute;
+        left: 10em;
+        top: 48em;
+        margin: -4em;
+    }
+
+    /*Direccion de envio*/
+    .block-direccion-envio{
+        position: absolute;
+        left: 10em;
+        top: 53em;
+        margin: -4em;
+    }
+}
+
