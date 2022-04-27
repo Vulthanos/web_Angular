@@ -16,4 +16,23 @@ export class LoadScriptsService {
             body.appendChild(script);
         }
     }
+
+    LoadUrl(archivos:string[]) {
+        for ( let archivo of archivos ) {
+            let script = document.createElement('script');
+            script.src = archivo;
+            let head = document.getElementsByTagName('head')[0];
+            head.appendChild(script);
+        }
+    }
+
+    LoadLinks(archivos:string[]) {
+        for ( let archivo of archivos ) {
+            let link = document.createElement('link');
+            link.rel = "stylesheet";
+            link.href = archivo;
+            let head = document.getElementsByTagName('head')[0];
+            head.appendChild(link);
+        }
+    }
 }
