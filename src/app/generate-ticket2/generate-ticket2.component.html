@@ -1,0 +1,51 @@
+<section class="container">
+
+    <h1 class="titulo-ayuda">Ayuda</h1>
+
+    <h2 class="titulo-ticket">Genere un ticket</h2>
+
+    <section class="linea-temporal">
+        <img src="./assets/IMGS/barra_progreso_ticket2.png" alt="barra progreso 1">
+    </section>
+
+    <h3 class="titulo-seccion">Detalles del pedido</h3>
+
+
+
+    <form>
+        <section class="columna-opciones">
+            <label for="correo">Correo de contacto</label>
+            <input type="email" id="correo" placeholder="Escriba su correo" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" required>
+        </section>
+
+        <section class="columna-opciones">
+            <label for="comentario">
+                <span class="caja-comentario"><strong>¿Algo que añadir?</strong></span><br>
+                <span>No dudes en añadir cualquier dato o comentario que cree que podria ayudarnos a solventar el problema</span><br>
+            </label>
+            <textarea  id="comentario" class="inputForm" maxlength="2000" placeholder="Proporcione detalles importantes aquí ..."></textarea>
+        </section>
+
+        <section class="columna-opciones">
+            <span class="comentario-imagenes"><strong>Imagen adicional</strong></span>
+            <p>Puede adjuntar una imagen que nos ayude a comprender el problema</p>
+        </section>
+
+        <section class="cuadro-imagenes">
+            <figure class="image-container">
+                <img id="seleccion-imagen">
+                <figcaption id="nombre-archivo"></figcaption>
+            </figure>
+            <input type="file" id="subir-imagen" accept="image/*">
+            <label for="subir-imagen">
+                <i class="fas fa-upload"></i>
+            </label>
+        </section>
+
+        <button class="crear-ticket">
+            <a routerLink="/ticket-end" style="text-decoration: none" target="_blank"><span>Crear ticket</span></a>
+        </button>
+
+    </form>
+
+</section>
