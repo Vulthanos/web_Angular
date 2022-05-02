@@ -10,7 +10,7 @@ export class AppComponent {
 
     constructor(private _LoadScripts:LoadScriptsService) {
         _LoadScripts.LoadUrl(["https://code.jquery.com/jquery-3.6.0.js"]);
-        _LoadScripts.LoadLinks(["https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css", "https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css", "https://fonts.googleapis.com/icon?family=Material+Icons"])
+        _LoadScripts.LoadLinks(["https://fonts.googleapis.com/icon?family=Material+Icons"]);
     }
 
 }
