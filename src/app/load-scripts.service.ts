@@ -27,12 +27,12 @@ export class LoadScriptsService {
         }
     }
 
-    LoadCSS(archivos:string[]) {
-        for (let archivo in archivos) {
+    LoadCSS( archivos:string[] ) {
+        for ( let archivo in archivos ) {
             let link = document.createElement('link');
             link.rel = "stylesheet";
-            link.type = 'text/css';
-            link.href = archivo;
+            link.type = 'text/html text/css';
+            link.href = "./assets/CSS_Files/" + archivo + ".css";
             let head = document.getElementsByTagName('head')[0];
             head.appendChild(link);
         }
