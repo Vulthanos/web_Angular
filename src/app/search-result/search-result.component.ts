@@ -10,6 +10,7 @@ export class SearchResultComponent implements OnInit {
 
   constructor(private _LoadScripts:LoadScriptsService) {
       _LoadScripts.Load(["search_result"]);
+      _LoadScripts.LoadCSS(["./search-result.component.css"]);
   }
 
   ngOnInit(): void {
