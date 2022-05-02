@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+
+/*Titulo de la pagina*/
+.pagina-comunidad{
+    position: relative;
+    top: 5em;
+    text-align: center;
+    font-size: 1.875em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*Titulo del apartado*/
+.sorteo{
+    position: absolute;
+    font-size: 1.25em;
+    left: 10.1875em ;
+    top: 13em;
+}
+
+/*Diseño Escritorio*/
+@media screen and (min-width: 1367px){
+
+    /*Imagen sorteo 1*/
+    .sorteo1{
+        position: absolute;
+        top: 21.875em;
+        left: 14.5625em;
+    }
+
+    /*Imagen sorteo 2*/
+    .sorteo2{
+        position: absolute;
+        top: 21.875em;
+        left: 49.375em;
+    }
+
+    /*Imagen sorteo 3*/
+    .sorteo3{
+        position: absolute;
+        top: 21.875em;
+        left: 84.6875em;
+
+    }
+
+    /*Estilo de los botones para unirse*/
+    button {
+        background: #FFA16D;
+        width: 31.3125em;
+        height: 3.75em;
+        border-radius: 0.375em;
+        border: 0;
+
+    }
+
+    /*colocacion titulo sorteo 1*/
+    .txt-sorteo1{
+        position: absolute;
+        color: black;
+        left: 14.5625em;
+    }
+
+    /*colocacion titulo sorteo 2*/
+    .txt-sorteo2{
+        position: absolute;
+        color: black;
+        left: 20em;
+
+    }
+
+    /*colocacion titulo sorteo 3*/
+    .txt-sorteo3{
+        position: absolute;
+        color: black;
+        left: 26em;
+    }
+
+    .entrar-sorteo{
+        color: black;
+    }
+
+    .inactivo{
+        display: none;
+    }
+
+}
+
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+    /*Imagen sorteo 1*/
+    .sorteo1{
+        position: absolute;
+        top: 21.875em;
+        left: 14.5625em;
+    }
+
+    /*Imagen sorteo 2*/
+    .sorteo2{
+        position: absolute;
+        top: 21.875em;
+        left: 49.375em;
+    }
+
+    /*Imagen sorteo 3*/
+    .sorteo3{
+        position: absolute;
+        top: 70em;
+        left: 33em;
+
+    }
+
+    /*Estilo de los botones para unirse*/
+    button {
+        background: #FFA16D;
+        width: 31.3125em;
+        height: 3.75em;
+        border-radius: 0.375em;
+        border: 0;
+
+    }
+
+    /*colocacion titulo sorteo 1*/
+    .txt-sorteo1{
+        position: absolute;
+        color: black;
+        left: 14.5625em;
+    }
+
+    /*colocacion titulo sorteo 2*/
+    .txt-sorteo2{
+        position: absolute;
+        color: black;
+        left: 20em;
+
+    }
+
+    /*colocacion titulo sorteo 3*/
+    .txt-sorteo3{
+        position: absolute;
+        color: black;
+        left: 23em;
+    }
+
+    .entrar-sorteo{
+        color: black;
+    }
+
+    .footer-sorteo{
+        position: absolute;
+        bottom: -70em;
+    }
+
+
+}
+
+
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
+    /*Titulo de la pagina*/
+    .pagina-comunidad{
+        top: 6em;
+        left: 4em;
+    }
+
+    /*Titulo del apartado*/
+    .sorteo{
+        left: 3.5em ;
+        top: 12em;
+    }
+
+    /*Imagen sorteo 1*/
+    .sorteo1{
+        position: absolute;
+        top: 24em;
+        left: 20em;
+    }
+
+    /*Imagen sorteo 2*/
+    .sorteo2{
+        position: absolute;
+        top: 70em;
+        left: 20em;
+    }
+
+    /*Imagen sorteo 3*/
+    .sorteo3{
+        position: absolute;
+        top: 115em;
+        left: 20em;
+
+    }
+
+    /*Estilo de los botones para unirse*/
+    button {
+        background: #FFA16D;
+        width: 31.3125em;
+        height: 3.75em;
+        border-radius: 0.375em;
+        border: 0;
+
+    }
+
+    /*colocacion titulo sorteo 1*/
+    .txt-sorteo1{
+        position: absolute;
+        color: black;
+        left: 14.5625em;
+    }
+
+    /*colocacion titulo sorteo 2*/
+    .txt-sorteo2{
+        position: absolute;
+        color: black;
+        left: 20em;
+
+    }
+
+    /*colocacion titulo sorteo 3*/
+    .txt-sorteo3{
+        position: absolute;
+        color: black;
+        left: 27em;
+    }
+
+    .entrar-sorteo{
+        color: black;
+    }
+
+}
+
+

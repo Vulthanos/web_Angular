@@ -1,0 +1,72 @@
+.titulo {
+  position: relative;
+  top: 5em;
+  text-align: center;
+  font-size: 1.875em;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+}
+
+.sorteos {
+  position: absolute;
+  font-size: 1.25em;
+  left: 20em;
+  top: 15em;
+}
+
+.form-control {
+  margin-bottom: 2em;
+}
+
+button {
+  margin-top: 2em;
+  border: none;
+  padding: 10px 20px;
+  background-color: #FFA16D;
+  color: black;
+  border-radius: 3px;
+}
+
+.container {
+  width: 70%;
+  max-width: 60em;
+  padding: 35px 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 60em;
+  top: 50%;
+  border-radius: 10px;
+}
+
+/*Diseño tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px) {
+
+  .sorteos {
+    top: 14em;
+    left: 14em;
+  }
+
+  .container {
+    top: 30em;
+    left: 43em;
+  }
+
+}
+
+/*Diseño movil*/
+@media screen and (max-width: 980px){
+  .titulo {
+    left: 3em;
+  }
+
+  .sorteos {
+    left: 8em;
+  }
+
+
+  .container {
+    left: 19em;
+    top: 35em;
+  }
+}
