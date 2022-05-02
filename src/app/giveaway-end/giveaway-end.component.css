@@ -1,0 +1,71 @@
+.titulo{
+  position: relative;
+  top: 5em;
+  text-align: center;
+  font-size: 1.875em;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+}
+
+.sorteos{
+  position: absolute;
+  font-size: 1.25em;
+  left: 20em;
+  top: 13em;
+}
+
+.fin-sorteo{
+  position: relative;
+  text-align: center;
+  font-size: large;
+  top: 20em;
+}
+
+button{
+  position: relative;
+  left: 45.5%;
+  top: 28em;
+  background: #FFA16D;
+  border-radius: 0.375em;
+  width: 14em;
+  height: 3em;
+  border: none;
+  color: black;
+}
+
+/*Diseño tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px) {
+  .sorteos{
+    left: 14em;
+  }
+
+  .fin-sorteo{
+    align-items: center;
+  }
+
+  button{
+    left: 41.5%;
+  }
+}
+
+/*Diseño movil*/
+@media screen and (max-width: 980px){
+
+  .titulo{
+    left: 4em;
+  }
+
+  .sorteos{
+    left: 6em;
+  }
+
+  .fin-sorteo{
+    left: 6.5em;
+  }
+
+  button{
+    left: 50%;
+  }
+
+}

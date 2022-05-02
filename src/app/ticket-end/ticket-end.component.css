@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+
+
+/*Nombre de la pagina*/
+.titulo-central{
+    position: relative;
+    top: 7em;
+    text-align: center;
+    font-size: 1.875em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*Titulo apartado Genere un ticket*/
+.titulo{
+    position: relative;
+    font-size: 1em;
+    top: 15em;
+    left: 10em;
+    width: 26.75em;
+}
+
+.linea-temporal{
+    position: absolute;
+    top: 23em;
+    left: 42em;
+}
+
+
+/*Texto e icono central*/
+.fin-ticket{
+    position: relative;
+    text-align: center;
+    font-size: large;
+    top: 29em;
+}
+
+/*Volver a home*/
+button{
+    position: relative;
+    left: 52.75em;
+    top: 36em;
+    background: #FFA16D;
+    border-radius: 0.375em;
+    width: 14em;
+    height: 3em;
+    border: none;
+    color: black;
+}
+
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+    .linea-temporal{
+        left: 20em;
+    }
+
+    /*Texto e icono central*/
+    .fin-ticket{
+        top: 28em;
+    }
+
+    /*Volver a home*/
+    button{
+        left: 30em;
+        top: 35em;
+    }
+
+
+}
+
+
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
+    /*Nombre de la pagina*/
+    .titulo-central{
+        top: 5em;
+        left: 4em;
+    }
+
+    /*Titulo apartado Genere un ticket*/
+    .titulo{
+        top: 12.5em;
+        left: 6em;
+    }
+
+    .linea-temporal{
+        top: 20em;
+        left: 2em;
+    }
+
+    /*Texto e icono central*/
+    .fin-ticket{
+        top: 25em;
+        left: 6em;
+    }
+
+    /*Volver a home*/
+    .volver{
+        left: 12em;
+        top: 35em;
+    }
+
+}
