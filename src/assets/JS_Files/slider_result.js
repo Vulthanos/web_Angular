@@ -3,8 +3,8 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
 
     let top_item;
 
-    top_item = '<article>' +
-      '<img src="' + value.img + '" alt="">' +
+    top_item = '<article class="article_slider">' +
+      '<img class="img_slider" src="' + value.img + '" alt="">' +
       '<label>' + value.name + '</label>'
     '</article>';
 
@@ -16,8 +16,8 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
 
     let bot_item;
 
-    bot_item ='<article>' +
-      '<img src="' + value.img + '" alt="">' +
+    bot_item ='<article class="article_slider">' +
+      '<img class="img_slider" src="' + value.img + '" alt="">' +
       '<label>' + value.name + '</label>'
     '</article>';
 
