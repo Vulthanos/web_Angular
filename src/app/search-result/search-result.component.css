@@ -1,705 +1,705 @@
 /*Diseño Escritorio*/
 @media screen and (min-width: 1367px) {
-  * {
-    margin:0;
-    padding:0;
-    font-family: Montserrat, sans-serif;
-  }
+    * {
+        margin:0;
+        padding:0;
+        font-family: Montserrat, sans-serif;
+    }
 
-  .result-content {
-    font-size: 1.5em;
-    margin-bottom: 5em;
-  }
+    .result-content {
+        font-size: 1.5em;
+        margin-bottom: 5em;
+    }
 
-  .bold {
-    font-weight: bold;
-  }
+    .bold {
+        font-weight: bold;
+    }
 
-  .regular {
-    font-weight: normal;
-  }
+    .regular {
+        font-weight: normal;
+    }
 
-  h1 {
-    display: block;
-    text-align: center;
-  }
+    h1 {
+        display: block;
+        text-align: center;
+    }
 
-  .title {
-    display: block;
-  }
+    .title {
+        display: block;
+    }
 
-  .cruz {
-    max-width: 0.8em;
-    max-height: 0.8em;
-    margin-left: 0.5em;
-    cursor: pointer;
-  }
+    .cruz {
+        max-width: 0.8em;
+        max-height: 0.8em;
+        margin-left: 0.5em;
+        cursor: pointer;
+    }
 
-  .search_filter {
-    text-align: center;
-    align-items: center;
-    left: 0.5em;
-  }
+    .search_filter {
+        text-align: center;
+        align-items: center;
+        left: 0.5em;
+    }
 
-  .search_filter input {
-    width: 5.5em;
-    height: 3.7em;
-    padding: 0 1.25em;
-    font-size: 1em;
-    color: #000000;
-    outline: none;
-    border: 0.05em solid #000000;
-    border-radius: 1.875em;
-    background-color: rgba(0, 0, 0, 0);
-  }
+    .search_filter input {
+        width: 5.5em;
+        height: 3.7em;
+        padding: 0 1.25em;
+        font-size: 1em;
+        color: #000000;
+        outline: none;
+        border: 0.05em solid #000000;
+        border-radius: 1.875em;
+        background-color: rgba(0, 0, 0, 0);
+    }
 
-  .lupa-search_filter {
-    position: relative;
-    top: 0.2em;
-    max-width: 1.5em;
-    max-height: 1.5em;
-    margin-left: 0.5em;
-    cursor: pointer;
-  }
+    .lupa-search_filter {
+        position: relative;
+        top: 0.2em;
+        max-width: 1.5em;
+        max-height: 1.5em;
+        margin-left: 0.5em;
+        cursor: pointer;
+    }
 
-  .desplegable {
-    max-width: 1em;
-    max-height: 0.5em;
-    margin-left: 0.5em;
-    margin-right: 1em;
-    cursor: pointer;
-    margin-bottom: 1em;
-  }
+    .desplegable {
+        max-width: 1em;
+        max-height: 0.5em;
+        margin-left: 0.5em;
+        margin-right: 1em;
+        cursor: pointer;
+        margin-bottom: 1em;
+    }
 
-  .order_list {
-    border: none;
-    font-size: 0.8em;
-  }
+    .order_list {
+        border: none;
+        font-size: 0.8em;
+    }
 
-  .order {
-    position: absolute;
-    right: 3em;
-    top: 2.5em;
-    margin-top: 3em;
-  }
+    .order {
+        position: absolute;
+        right: 3em;
+        top: 2.5em;
+        margin-top: 3em;
+    }
 
-  .filters {
-    display: inline-flex;
-    margin-left: 2em;
-    color: #000000;
-  }
+    .filters {
+        display: inline-flex;
+        margin-left: 2em;
+        color: #000000;
+    }
 
-  .filters .filter {
-    margin: 0.5em;
-    top: 4em;
-    margin-top: 3em;
-  }
+    .filters .filter {
+        margin: 0.5em;
+        top: 4em;
+        margin-top: 3em;
+    }
 
-  .filter-selector {
-    margin-top: 1em;
-  }
+    .filter-selector {
+        margin-top: 1em;
+    }
 
-  .filters .orden {
-    position: absolute;
-    right: 1em;
-  }
+    .filters .orden {
+        position: absolute;
+        right: 1em;
+    }
 
-  .filters article {
-    margin-right: 1.5em;
-    margin-top: 2.2em;
-  }
+    .filters article {
+        margin-right: 1.5em;
+        margin-top: 2.2em;
+    }
 
-  .filters-menu {
-    display: block;
-    left: 0;
-    position:absolute;
-    margin-top: 2em;
-    margin-bottom: 0.2em;
-    margin-left: 4em;
-  }
+    .filters-menu {
+        display: block;
+        left: 0;
+        position:absolute;
+        margin-top: 2em;
+        margin-bottom: 0.2em;
+        margin-left: 4em;
+    }
 
-  .simple-filter {
-    position: absolute;
-    font-weight: bold;
-    cursor: pointer;
-    padding-left: 2em;
-    left: 0.2em;
-  }
+    .simple-filter {
+        position: absolute;
+        font-weight: bold;
+        cursor: pointer;
+        padding-left: 2em;
+        left: 0.2em;
+    }
 
-  .simple-filter:before {
-    content: "";
-    width: 1em;
-    height: 1em;
-    border: 0.0825em solid #000000;
-    border-radius: 0.275em;
-    position: relative;
-    cursor: pointer;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    margin-right: 0.3em;
-  }
+    .simple-filter:before {
+        content: "";
+        width: 1em;
+        height: 1em;
+        border: 0.0825em solid #000000;
+        border-radius: 0.275em;
+        position: relative;
+        cursor: pointer;
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        margin-right: 0.3em;
+    }
 
-  input[type=checkbox]:checked + .simple-filter:before {
-    background-color: #FF833D;
-    color: #000000;
-    content: "\2714";
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-  }
+    input[type=checkbox]:checked + .simple-filter:before {
+        background-color: #FF833D;
+        color: #000000;
+        content: "\2714";
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
 
-  .filt {
-    display: none;
-  }
+    .filt {
+        display: none;
+    }
 
-  section {
-    align-items: center;
-  }
+    section {
+        align-items: center;
+    }
 
-  .products {
-    margin-left: 1em;
-    position: absolute;
-    right: 2em;
-    bottom: -3em;
-  }
+    .products {
+        margin-left: 1em;
+        position: absolute;
+        right: 2em;
+        bottom: -3em;
+    }
 
-  .top {
-    right: 0;
-    display: flex;
-  }
+    .top {
+        right: 0;
+        display: flex;
+    }
 
-  .bot {
-    margin-top: 0.5em;
-    margin-bottom: auto;
-    right: 0;
-    display: flex;
-  }
+    .bot {
+        margin-top: 0.5em;
+        margin-bottom: auto;
+        right: 0;
+        display: flex;
+    }
 
-  article {
-    text-align: center;
-    align-items: center;
-    margin-top: 1em;
-  }
+    article {
+        text-align: center;
+        align-items: center;
+        margin-top: 1em;
+    }
 
-  .products article {
-    margin-top: -1em;
-  }
+    .products article {
+        margin-top: -1em;
+    }
 
-  .product {
-    max-width: 15em;
-    max-height: 15em;
-    margin: 1em;
-  }
+    .product {
+        max-width: 15em;
+        max-height: 15em;
+        margin: 1em;
+    }
 
-  article label {
-    font-weight: bold;
-    text-align: center;
-    display: block;
-    padding-top: 0.5em;
-  }
+    article label {
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        padding-top: 0.5em;
+    }
 
-  .price {
-    background-color: #FFA16D;
-    border: none;
-    border-radius: 1em;
-    text-align: center;
-    width: 7.4375em;
-    height: 3.8125em;
-  }
+    .price {
+        background-color: #FFA16D;
+        border: none;
+        border-radius: 1em;
+        text-align: center;
+        width: 7.4375em;
+        height: 3.8125em;
+    }
 
-  .price-input {
-    display: inline-flex;
-    margin-left: 0.6em;
-  }
+    .price-input {
+        display: inline-flex;
+        margin-left: 0.6em;
+    }
 
-  .separator {
-    margin: 0.5em;
-  }
+    .separator {
+        margin: 0.5em;
+    }
 
-  .mvl_products {
-    display: none;
-  }
+    .mvl_products {
+        display: none;
+    }
 
-  .order_list {
-    list-style: none;
-  }
+    .order_list {
+        list-style: none;
+    }
 }
 
 /*Diseño Tablet*/
 @media screen and (min-width: 981px) and (max-width: 1367px) {
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: Montserrat, sans-serif;
-  }
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Montserrat, sans-serif;
+    }
 
-  .result-content {
-    font-size: 1.5em;
-    margin-bottom: 5em;
-  }
+    .result-content {
+        font-size: 1.5em;
+        margin-bottom: 5em;
+    }
 
-  .bold {
-    font-weight: bold;
-  }
+    .bold {
+        font-weight: bold;
+    }
 
-  .regular {
-    font-weight: normal;
-  }
+    .regular {
+        font-weight: normal;
+    }
 
-  h1 {
-    display: block;
-    text-align: center;
-  }
+    h1 {
+        display: block;
+        text-align: center;
+    }
 
-  .title {
-    display: block;
-  }
+    .title {
+        display: block;
+    }
 
-  .cruz {
-    max-width: 0.8em;
-    max-height: 0.8em;
-    margin-left: 0.5em;
-    cursor: pointer;
-  }
+    .cruz {
+        max-width: 0.8em;
+        max-height: 0.8em;
+        margin-left: 0.5em;
+        cursor: pointer;
+    }
 
-  .search_filter {
-    text-align: center;
-    align-items: center;
-    left: 0.5em;
-  }
+    .search_filter {
+        text-align: center;
+        align-items: center;
+        left: 0.5em;
+    }
 
-  .search_filter input {
-    width: 5.5em;
-    height: 3.7em;
-    padding: 0 1.25em;
-    font-size: 1em;
-    color: #000000;
-    outline: none;
-    border: 0.05em solid #000000;
-    border-radius: 1.875em;
-    background-color: rgba(0, 0, 0, 0);
-  }
+    .search_filter input {
+        width: 5.5em;
+        height: 3.7em;
+        padding: 0 1.25em;
+        font-size: 1em;
+        color: #000000;
+        outline: none;
+        border: 0.05em solid #000000;
+        border-radius: 1.875em;
+        background-color: rgba(0, 0, 0, 0);
+    }
 
-  .lupa-search_filter {
-    position: relative;
-    top: 0.2em;
-    max-width: 1.5em;
-    max-height: 1.5em;
-    margin-left: 0.5em;
-    cursor: pointer;
-  }
+    .lupa-search_filter {
+        position: relative;
+        top: 0.2em;
+        max-width: 1.5em;
+        max-height: 1.5em;
+        margin-left: 0.5em;
+        cursor: pointer;
+    }
 
-  .flecha_abajo {
-    max-width: 1em;
-    max-height: 0.5em;
-    margin-left: 0.5em;
-    cursor: pointer;
-  }
+    .flecha_abajo {
+        max-width: 1em;
+        max-height: 0.5em;
+        margin-left: 0.5em;
+        cursor: pointer;
+    }
 
-  .desplegable {
-    position: absolute;
-    right: 1.5em;
-    top: 2em;
-  }
+    .desplegable {
+        position: absolute;
+        right: 1.5em;
+        top: 2em;
+    }
 
-  .filters {
-    display: inline-flex;
-    margin-left: 2em;
-    color: #000000;
-  }
+    .filters {
+        display: inline-flex;
+        margin-left: 2em;
+        color: #000000;
+    }
 
-  .order_list {
-    list-style: none;
-  }
+    .order_list {
+        list-style: none;
+    }
 
-  .filters .filter {
-    margin: 0.5em;
-    top: 2em;
-    margin-top: 2em;
-  }
+    .filters .filter {
+        margin: 0.5em;
+        top: 2em;
+        margin-top: 2em;
+    }
 
-  .filter-selector {
-    margin-top: 1em;
-  }
+    .filter-selector {
+        margin-top: 1em;
+    }
 
-  .filters .orden {
-    position: absolute;
-    right: 1em;
-  }
+    .filters .orden {
+        position: absolute;
+        right: 1em;
+    }
 
-  .filters article {
-    margin-right: 1.5em;
-  }
+    .filters article {
+        margin-right: 1.5em;
+    }
 
-  .filters-menu {
-    display: block;
-    left: 0;
-    position: absolute;
-    margin-top: 2em;
-    margin-bottom: 0.2em;
-    margin-left: 2em;
-  }
+    .filters-menu {
+        display: block;
+        left: 0;
+        position: absolute;
+        margin-top: 2em;
+        margin-bottom: 0.2em;
+        margin-left: 2em;
+    }
 
-  .simple-filter {
-    position: absolute;
-    font-weight: bold;
-    cursor: pointer;
-    padding-left: 2em;
-    left: 0.2em;
-  }
+    .simple-filter {
+        position: absolute;
+        font-weight: bold;
+        cursor: pointer;
+        padding-left: 2em;
+        left: 0.2em;
+    }
 
-  .simple-filter:before {
-    content: "";
-    width: 1em;
-    height: 1em;
-    border: 0.0825em solid #000000;
-    border-radius: 0.275em;
-    position: relative;
-    cursor: pointer;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    margin-right: 0.3em;
-  }
+    .simple-filter:before {
+        content: "";
+        width: 1em;
+        height: 1em;
+        border: 0.0825em solid #000000;
+        border-radius: 0.275em;
+        position: relative;
+        cursor: pointer;
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        margin-right: 0.3em;
+    }
 
-  input[type=checkbox]:checked + .simple-filter:before {
-    background-color: #FF833D;
-    color: #000000;
-    content: "\2714";
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-  }
+    input[type=checkbox]:checked + .simple-filter:before {
+        background-color: #FF833D;
+        color: #000000;
+        content: "\2714";
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
 
-  .filt {
-    display: none;
-  }
+    .filt {
+        display: none;
+    }
 
-  section {
-    align-items: center;
-  }
+    section {
+        align-items: center;
+    }
 
-  .products {
-    margin-left: 1em;
-    position: absolute;
-    right: 1em;
-    bottom: -3em;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
+    .products {
+        margin-left: 1em;
+        position: absolute;
+        right: 1em;
+        bottom: -3em;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 
-  .top {
-    margin-top: 0.5em;
-    right: 0;
-    display: flex;
-  }
+    .top {
+        margin-top: 0.5em;
+        right: 0;
+        display: flex;
+    }
 
-  .bot {
-    margin-top: 0.5em;
-    margin-bottom: auto;
-    right: 0;
-    display: flex;
-  }
+    .bot {
+        margin-top: 0.5em;
+        margin-bottom: auto;
+        right: 0;
+        display: flex;
+    }
 
-  article {
-    text-align: center;
-    align-items: center;
-    margin-top: 2em;
-  }
+    article {
+        text-align: center;
+        align-items: center;
+        margin-top: 2em;
+    }
 
-  .products article {
-    margin-top: -1em;
-  }
+    .products article {
+        margin-top: -1em;
+    }
 
-  .product {
-    max-width: 15em;
-    max-height: 15em;
-    margin: 0.5em;
-  }
+    .product {
+        max-width: 15em;
+        max-height: 15em;
+        margin: 0.5em;
+    }
 
-  article label {
-    font-weight: bold;
-    text-align: center;
-    display: block;
-    padding-top: 0.5em;
-  }
+    article label {
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        padding-top: 0.5em;
+    }
 
-  .price {
-    background-color: #FFA16D;
-    border: none;
-    border-radius: 1em;
-    text-align: center;
-    width: 7.4375em;
-    height: 3.8125em;
-  }
+    .price {
+        background-color: #FFA16D;
+        border: none;
+        border-radius: 1em;
+        text-align: center;
+        width: 7.4375em;
+        height: 3.8125em;
+    }
 
-  .price-input {
-    display: inline-flex;
-    margin-left: 0.6em;
-  }
+    .price-input {
+        display: inline-flex;
+        margin-left: 0.6em;
+    }
 
-  .separator {
-    margin: 0.5em;
-  }
+    .separator {
+        margin: 0.5em;
+    }
 
-  .order_list {
-    border: none;
-    font-size: 0.7em;
-  }
+    .order_list {
+        border: none;
+        font-size: 0.7em;
+    }
 
-  .order_list:focus {
-    border: none;
-    font-size: 0.7em;
-  }
+    .order_list:focus {
+        border: none;
+        font-size: 0.7em;
+    }
 
-  .movil_inactive {
-    display: none;
-  }
+    .movil_inactive {
+        display: none;
+    }
 
-  .mvl_products {
-    display: none;
-  }
+    .mvl_products {
+        display: none;
+    }
 }
 
 /*Diseño Móvil*/
 @media screen and (max-width: 980px){
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: Montserrat, sans-serif;
-  }
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Montserrat, sans-serif;
+    }
 
-  .result-content {
-    font-size: 1.5em;
-    margin-bottom: 5em;
-  }
+    .result-content {
+        font-size: 1.5em;
+        margin-bottom: 5em;
+    }
 
-  .bold {
-    font-weight: bold;
-  }
+    .bold {
+        font-weight: bold;
+    }
 
-  .regular {
-    font-weight: normal;
-  }
+    .regular {
+        font-weight: normal;
+    }
 
-  h1 {
-    display: block;
-    text-align: center;
-  }
+    h1 {
+        display: block;
+        text-align: center;
+    }
 
-  .title {
-    display: block;
-  }
+    .title {
+        display: block;
+    }
 
-  .cruz {
-    max-width: 0.8em;
-    max-height: 0.8em;
-    margin-left: 0.5em;
-    cursor: pointer;
-  }
+    .cruz {
+        max-width: 0.8em;
+        max-height: 0.8em;
+        margin-left: 0.5em;
+        cursor: pointer;
+    }
 
-  .search_filter {
-    text-align: center;
-    align-items: center;
-    left: 0.5em;
-    display: flex;
-  }
+    .search_filter {
+        text-align: center;
+        align-items: center;
+        left: 0.5em;
+        display: flex;
+    }
 
-  .search_filter input {
-    width: 5.5em;
-    height: 3.7em;
-    padding: 0 1.25em;
-    font-size: 1em;
-    color: #000000;
-    outline: none;
-    border: 0.05em solid #000000;
-    border-radius: 1.875em;
-    background-color: rgba(0, 0, 0, 0);
-  }
+    .search_filter input {
+        width: 5.5em;
+        height: 3.7em;
+        padding: 0 1.25em;
+        font-size: 1em;
+        color: #000000;
+        outline: none;
+        border: 0.05em solid #000000;
+        border-radius: 1.875em;
+        background-color: rgba(0, 0, 0, 0);
+    }
 
-  .lupa-search_filter {
-    position: relative;
-    top: 0.2em;
-    max-width: 1.5em;
-    max-height: 1.5em;
-    margin-left: 0.5em;
-    cursor: pointer;
-  }
+    .lupa-search_filter {
+        position: relative;
+        top: 0.2em;
+        max-width: 1.5em;
+        max-height: 1.5em;
+        margin-left: 0.5em;
+        cursor: pointer;
+    }
 
-  .flecha_abajo {
-    max-width: 1em;
-    max-height: 0.5em;
-    margin-left: 0.5em;
-    cursor: pointer;
-  }
+    .flecha_abajo {
+        max-width: 1em;
+        max-height: 0.5em;
+        margin-left: 0.5em;
+        cursor: pointer;
+    }
 
-  .desplegable {
-    position: absolute;
-    right: 1.5em;
-    top: 2em;
-  }
+    .desplegable {
+        position: absolute;
+        right: 1.5em;
+        top: 2em;
+    }
 
-  .filters {
-    display: inline-flex;
-    margin-left: 2em;
-    color: #000000;
-  }
+    .filters {
+        display: inline-flex;
+        margin-left: 2em;
+        color: #000000;
+    }
 
-  .order_list {
-    list-style: none;
-  }
+    .order_list {
+        list-style: none;
+    }
 
-  .filters .filter {
-    margin: 0.5em;
-    top: 2em;
-    margin-top: 2em;
-  }
+    .filters .filter {
+        margin: 0.5em;
+        top: 2em;
+        margin-top: 2em;
+    }
 
-  .filter-selector {
-    margin-top: 1em;
-  }
+    .filter-selector {
+        margin-top: 1em;
+    }
 
-  .filters .orden {
-    position: absolute;
-    right: 1em;
-  }
+    .filters .orden {
+        position: absolute;
+        right: 1em;
+    }
 
-  .filters article {
-    margin-right: 1.5em;
-  }
+    .filters article {
+        margin-right: 1.5em;
+    }
 
-  .filters-menu {
-    display: flex;
-    left: 0;
-    position: absolute;
-    margin-top: 2em;
-    margin-bottom: 0.2em;
-    margin-left: 2em;
-  }
+    .filters-menu {
+        display: flex;
+        left: 0;
+        position: absolute;
+        margin-top: 2em;
+        margin-bottom: 0.2em;
+        margin-left: 2em;
+    }
 
-  .simple-filter {
-    position: absolute;
-    font-weight: bold;
-    cursor: pointer;
-    padding-left: 2em;
-    left: 0.2em;
-  }
+    .simple-filter {
+        position: absolute;
+        font-weight: bold;
+        cursor: pointer;
+        padding-left: 2em;
+        left: 0.2em;
+    }
 
-  .simple-filter:before {
-    content: "";
-    width: 1em;
-    height: 1em;
-    border: 0.0825em solid #000000;
-    border-radius: 0.275em;
-    position: relative;
-    cursor: pointer;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    margin-right: 0.3em;
-  }
+    .simple-filter:before {
+        content: "";
+        width: 1em;
+        height: 1em;
+        border: 0.0825em solid #000000;
+        border-radius: 0.275em;
+        position: relative;
+        cursor: pointer;
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        margin-right: 0.3em;
+    }
 
-  input[type=checkbox]:checked + .simple-filter:before {
-    background-color: #FF833D;
-    color: #000000;
-    content: "\2714";
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-  }
+    input[type=checkbox]:checked + .simple-filter:before {
+        background-color: #FF833D;
+        color: #000000;
+        content: "\2714";
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
 
-  .filt {
-    display: none;
-  }
+    .filt {
+        display: none;
+    }
 
-  section {
-    align-items: center;
-  }
+    section {
+        align-items: center;
+    }
 
-  .products {
-    margin: 2em;
-    position: absolute;
-    right: 1em;
-    top: 20em;
-    left: 5em;
-  }
+    .products {
+        margin: 2em;
+        position: absolute;
+        right: 1em;
+        top: 20em;
+        left: 5em;
+    }
 
-  .top {
-    margin-top: -1.5em;
-    right: 0;
-    display: flex;
-  }
+    .top {
+        margin-top: -1.5em;
+        right: 0;
+        display: flex;
+    }
 
-  .bot {
-    margin-top: 0.5em;
-    margin-bottom: auto;
-    right: 0;
-    display: flex;
-  }
+    .bot {
+        margin-top: 0.5em;
+        margin-bottom: auto;
+        right: 0;
+        display: flex;
+    }
 
-  article {
-    text-align: center;
-    align-items: center;
-    margin-top: 2em;
-  }
+    article {
+        text-align: center;
+        align-items: center;
+        margin-top: 2em;
+    }
 
-  .product {
-    max-width: 15em;
-    max-height: 15em;
-    margin: 0.5em;
-  }
+    .product {
+        max-width: 15em;
+        max-height: 15em;
+        margin: 0.5em;
+    }
 
-  article label {
-    font-weight: bold;
-    text-align: center;
-    display: block;
-    padding-top: 0.5em;
-  }
+    article label {
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        padding-top: 0.5em;
+    }
 
-  .price {
-    background-color: #FFA16D;
-    border: none;
-    border-radius: 1em;
-    text-align: center;
-    width: 7.4375em;
-    height: 3.8125em;
-  }
+    .price {
+        background-color: #FFA16D;
+        border: none;
+        border-radius: 1em;
+        text-align: center;
+        width: 7.4375em;
+        height: 3.8125em;
+    }
 
-  .price-input {
-    display: inline-flex;
-    margin-left: 0.6em;
-  }
+    .price-input {
+        display: inline-flex;
+        margin-left: 0.6em;
+    }
 
-  .separator {
-    margin: 0.5em;
-  }
+    .separator {
+        margin: 0.5em;
+    }
 
-  .order_list {
-    border: none;
-    font-size: 0.7em;
-  }
+    .order_list {
+        border: none;
+        font-size: 0.7em;
+    }
 
-  .order_list:focus {
-    border: none;
-    font-size: 0.7em;
-  }
+    .order_list:focus {
+        border: none;
+        font-size: 0.7em;
+    }
 
-  .movil_inactive {
-    display: none;
-  }
+    .movil_inactive {
+        display: none;
+    }
 
-  .desplegable {
-    right: -10em;
-  }
+    .desplegable {
+        right: -10em;
+    }
 
-  .price-range {
-    margin-top: -1em;
-    margin-left: 22em;
-  }
+    .price-range {
+        margin-top: -1em;
+        margin-left: 22em;
+    }
 
-  .filters-selector {
-    position: absolute;
-    left: 16em;
-  }
+    .filters-selector {
+        position: absolute;
+        left: 16em;
+    }
 
-  .products article {
-    margin-right: 4em;
-    margin-top: 0.5em;
-    transform: scale(0.9);
-  }
+    .products article {
+        margin-right: 4em;
+        margin-top: 0.5em;
+        transform: scale(0.9);
+    }
 }

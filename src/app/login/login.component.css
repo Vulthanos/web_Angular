@@ -1,721 +1,752 @@
 /*Diseño Escritorio*/
 @media screen and (min-width: 1367px) {
-  .login_popup_title {
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-    text-align: center;
-    list-style: none;
-  }
-
-  .login_popup .bold {
-    font-weight: bold;
-    font-size: 2em;
-    color: #000000;
-  }
-
-  .login_popup .link {
-    color: #FF833D;
-  }
-
-  .login_popup .link:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
-  .login_popup .regular {
-    font-weight: bold;
-    padding-top: 1em;
-    color: #000000;
-  }
-
-  .login_popup .login_form_field {
-    padding-top: 5em;
-    display: block;
-    text-align: center;
-  }
-
-  .login_popup .text-field {
-    width: 18.9375em;
-    height: 3.75em;
-    background-color: #CEB7E5;
-    border: none;
-    border-radius: 1em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .login_eye {
-    position: absolute;
-    right: 4em;
-    top: 29em;
-    visibility: hidden;
-  }
-
-  #login_vision {
-    top: 29.2em;
-  }
-
-  .login_eye.login_activation {
-    visibility: visible;
-  }
-
-  .login_eye:hover {
-    cursor: pointer;
-  }
-
-  .login_popup .selector {
-    width: 1.375em;
-    height: 1.375em;
-    border: 0.0825em solid #000000;
-    box-sizing: border-box;
-    border-radius: 0.275em;
-    left: 10em;
-  }
-
-  .login_popup .selector:hover {
-    cursor: pointer;
-  }
-
-  .login_popup .selector:active {
-    background-color: #FFA16D;
-  }
-
-  .login_popup .login_popup_footer {
-    padding-top: 10em;
-    text-align: center;
-    left: 10em;
-    opacity: 0
-  }
-
-  .login_popup .login_popup_footer .login_item {
-    display: block;
-
-  }
-
-  .login_popup .login_btn {
-    width: 18.9375em;
-    height: 3.75em;
-    background-color: #FFA16D;
-    border: none;
-    border-radius: 1em;
-    top: 9.46875em;
-    transition: .3s ease all;
-  }
-
-  .login_popup .login_btn:hover {
-    cursor: pointer;
-    background: rgba(255, 161, 109, .8);
-  }
-
-  /*PopUp*/
-  .login_popup_overlay {
-    background: rgba(0, 0, 0, .3);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-  }
-
-  .login_popup_overlay.login_active {
-    visibility: visible;
-  }
-
-  .login_popup {
-    background: #F8F8F8;
-    box-shadow: 0 0 0.3125em 0 rgba(0, 0, 0, .3);
-    border-radius: 0.1875em;
-    padding: 1.25em;
-    text-align: center;
-    max-width: 38.5625em;
-    color: #000000;
-    transition: .3s ease all;
-    transform: scale(0.6);
-    opacity: 0;
-    margin-top: 4.5em;
-  }
-
-  .login_popup .btn-cerrar-login_popup {
-    font-size: 1em;
-    line-height: 1em;
-    display: block;
-    text-align: right;
-    color: #BBBBBB;
-    transition: .3s ease all;
-  }
-
-  .login_popup .btn-cerrar-login_popup:hover {
-    color: #000000;
-  }
-
-  .login_popup .login_popup_footer .forgot {
-    padding-top: 1em;
-  }
-
-  .login_form_field {
-    opacity: 0;
-  }
-
-  .login_popup .login_t1 {
-    opacity: 0;
-  }
-
-  .login_popup .login_t2 {
-    opacity: 0;
-  }
-
-  /*PopUp Animations*/
-  .login_popup.login_active {
-    opacity: 1;
-    transform: scale(0.88);
-  }
-
-  .login_popup.login_active .login_t1 {
-    animation: login_Title1_animation .8s ease .5s forwards;
-  }
-
-  .login_popup.login_active .login_t2 {
-    animation: login_Title2_animation .8s ease .5s forwards;
-  }
-
-  .login_popup.login_active .login_form_field {
-    animation: login_Input_animation 1s linear 1s forwards;
-  }
-
-  .login_popup.login_active .login_popup_footer {
-    animation: login_Footer_animation .8s ease .5s forwards;
-  }
-
-  @keyframes login_Title1_animation {
-    from {
-      opacity: 0;
-      transform: translateY(-1.5625em);
+    .login_popup_title {
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        text-align: center;
+        list-style: none;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-  @keyframes login_Title2_animation {
-    from {
-      opacity: 0;
-      transform: translateY(1.5625em);
+    .login_popup .bold {
+        font-weight: bold;
+        font-size: 2em;
+        color: #000000;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-  @keyframes login_Input_animation {
-    from {
-      opacity: 0;
+    .login_popup .link {
+        color: #FF833D;
     }
-    to {
-      opacity: 1;
-    }
-  }
 
-  @keyframes login_Footer_animation {
-    from {
-      opacity: 0;
-      transform: translateY(1.5625em);
+    .login_popup .link:hover {
+        text-decoration: underline;
+        cursor: pointer;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-  .border_error{
-    border: #ac1f38;
-  }
+    .login_popup .regular {
+        font-weight: bold;
+        padding-top: 1em;
+        color: #000000;
+    }
+
+    .login_popup .login_form_field {
+        padding-top: 5em;
+        display: block;
+        text-align: center;
+    }
+
+    .login_popup .text-field {
+        width: 18.9375em;
+        height: 3.75em;
+        background-color: #CEB7E5;
+        border: none;
+        border-radius: 1em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login_eye {
+        position: absolute;
+        right: 4em;
+        top: 29em;
+        visibility: hidden;
+    }
+
+    #login_vision {
+        top: 29.2em;
+    }
+
+    .login_eye.login_activation {
+        visibility: visible;
+    }
+
+    .login_eye:hover {
+        cursor: pointer;
+    }
+
+    .login_popup .selector {
+        width: 1.375em;
+        height: 1.375em;
+        border: 0.0825em solid #000000;
+        box-sizing: border-box;
+        border-radius: 0.275em;
+        left: 10em;
+    }
+
+    .login_popup .selector:hover {
+        cursor: pointer;
+    }
+
+    .login_popup .selector:active {
+        background-color: #FFA16D;
+    }
+
+    .login_popup .login_popup_footer {
+        padding-top: 10em;
+        text-align: center;
+        left: 10em;
+        opacity: 0
+    }
+
+    .login_popup .login_popup_footer .login_item {
+        display: block;
+
+    }
+
+    .login_popup .login_btn {
+        width: 18.9375em;
+        height: 3.75em;
+        background-color: #FFA16D;
+        border: none;
+        border-radius: 1em;
+        top: 9.46875em;
+        transition: .3s ease all;
+    }
+
+    .login_popup .login_btn:hover {
+        cursor: pointer;
+        background: rgba(255, 161, 109, .8);
+    }
+
+    /*PopUp*/
+    .login_popup_overlay {
+        background: rgba(0, 0, 0, .3);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+    }
+
+    .login_popup_overlay.login_active {
+        visibility: visible;
+    }
+
+    .login_popup {
+        background: #F8F8F8;
+        box-shadow: 0 0 0.3125em 0 rgba(0, 0, 0, .3);
+        border-radius: 0.1875em;
+        padding: 1.25em;
+        text-align: center;
+        max-width: 38.5625em;
+        color: #000000;
+        transition: .3s ease all;
+        transform: scale(0.6);
+        opacity: 0;
+        margin-top: 4.5em;
+    }
+
+    .login_popup .btn-cerrar-login_popup {
+        font-size: 1em;
+        line-height: 1em;
+        display: block;
+        text-align: right;
+        color: #BBBBBB;
+        transition: .3s ease all;
+    }
+
+    .login_popup .btn-cerrar-login_popup:hover {
+        color: #000000;
+    }
+
+    .login_popup .login_popup_footer .forgot {
+        padding-top: 1em;
+    }
+
+    .login_form_field {
+        opacity: 0;
+    }
+
+    .login_popup .login_t1 {
+        opacity: 0;
+    }
+
+    .login_popup .login_t2 {
+        opacity: 0;
+    }
+
+    /*PopUp Animations*/
+    .login_popup.login_active {
+        opacity: 1;
+        transform: scale(0.88);
+    }
+
+    .login_popup.login_active .login_t1 {
+        animation: login_Title1_animation .8s ease .5s forwards;
+    }
+
+    .login_popup.login_active .login_t2 {
+        animation: login_Title2_animation .8s ease .5s forwards;
+    }
+
+    .login_popup.login_active .login_form_field {
+        animation: login_Input_animation 1s linear 1s forwards;
+    }
+
+    .login_popup.login_active .login_popup_footer {
+        animation: login_Footer_animation .8s ease .5s forwards;
+    }
+
+    @keyframes login_Title1_animation {
+        from {
+            opacity: 0;
+            transform: translateY(-1.5625em);
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes login_Title2_animation {
+        from {
+            opacity: 0;
+            transform: translateY(1.5625em);
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes login_Input_animation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes login_Footer_animation {
+        from {
+            opacity: 0;
+            transform: translateY(1.5625em);
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .border_error{
+        border: #ac1f38;
+    }
+
+    .warnings {
+        width: 100%;
+        color: #ac1f38;
+        font-size: 1em;
+        text-align: center;
+        position: absolute;
+        bottom: 11em;
+        transition: 0.3s ease all;
+    }
 }
 
 /*Diseño Tablet*/
 @media screen and (min-width: 981px) and (max-width: 1366px) {
-  .login_popup_title {
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-    text-align: center;
-    list-style: none;
-  }
-
-  .login_popup .bold {
-    font-weight: bold;
-    font-size: 2em;
-    color: #000000;
-  }
-
-  .login_popup .link {
-    color: #FF833D;
-  }
-
-  .login_popup .link:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
-  .login_popup .regular {
-    font-weight: bold;
-    padding-top: 1em;
-    color: #000000;
-  }
-
-  .login_popup .login_form_field {
-    padding-top: 5em;
-    display: block;
-    text-align: center;
-  }
-
-  .login_popup .text-field {
-    width: 18.9375em;
-    height: 3.75em;
-    background-color: #CEB7E5;
-    border: none;
-    border-radius: 1em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .login_eye {
-    position: absolute;
-    right: 4em;
-    top: 29em;
-    visibility: hidden;
-  }
-
-  #login_vision {
-    top: 29.2em;
-  }
-
-  .login_eye.login_activation {
-    visibility: visible;
-  }
-
-  .login_eye:hover {
-    cursor: pointer;
-  }
-
-  .login_popup .selector {
-    width: 1.375em;
-    height: 1.375em;
-    border: 0.0825em solid #000000;
-    box-sizing: border-box;
-    border-radius: 0.275em;
-    left: 10em;
-  }
-
-  .login_popup .selector:hover {
-    cursor: pointer;
-  }
-
-  .login_popup .selector:active {
-    background-color: #FFA16D;
-  }
-
-  .login_popup .login_popup_footer {
-    padding-top: 10em;
-    text-align: center;
-    left: 10em;
-    opacity: 0
-  }
-
-  .login_popup .login_popup_footer .login_item {
-    display: block;
-
-  }
-
-  .login_popup .login_btn {
-    width: 18.9375em;
-    height: 3.75em;
-    background-color: #FFA16D;
-    border: none;
-    border-radius: 1em;
-    top: 9.46875em;
-    transition: .3s ease all;
-  }
-
-  .login_popup .login_btn:hover {
-    cursor: pointer;
-    background: rgba(255, 161, 109, .8);
-  }
-
-  /*PopUp*/
-  .login_popup_overlay {
-    background: rgba(0, 0, 0, .3);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-  }
-
-  .login_popup_overlay.login_active {
-    visibility: visible;
-  }
-
-  .login_popup {
-    background: #F8F8F8;
-    box-shadow: 0 0 0.3125em 0 rgba(0, 0, 0, .3);
-    border-radius: 0.1875em;
-    padding: 1.25em;
-    text-align: center;
-    width: 38.5625em;
-    color: #000000;
-    transition: .3s ease all;
-    transform: scale(0.6);
-    opacity: 0;
-    margin-top: 4.5em;
-  }
-
-  .login_popup .btn-cerrar-login_popup {
-    font-size: 1em;
-    line-height: 1em;
-    display: block;
-    text-align: right;
-    color: #BBBBBB;
-    transition: .3s ease all;
-  }
-
-  .login_popup .btn-cerrar-login_popup:hover {
-    color: #000000;
-  }
-
-  .login_popup .login_popup_footer .forgot {
-    padding-top: 1em;
-  }
-
-  .login_form_field {
-    opacity: 0;
-  }
-
-  .login_popup .login_t1 {
-    opacity: 0;
-  }
-
-  .login_popup .login_t2 {
-    opacity: 0;
-  }
-
-  /*PopUp Animations*/
-  .login_popup.login_active {
-    opacity: 1;
-    transform: scale(0.84);
-  }
-
-  .login_popup.login_active .login_t1 {
-    animation: login_Title1_animation .8s ease .5s forwards;
-  }
-
-  .login_popup.login_active .login_t2 {
-    animation: login_Title2_animation .8s ease .5s forwards;
-  }
-
-  .login_popup.login_active .login_form_field {
-    animation: login_Input_animation 1s linear 1s forwards;
-  }
-
-  .login_popup.login_active .login_popup_footer {
-    animation: login_Footer_animation .8s ease .5s forwards;
-  }
-
-  @keyframes login_Title1_animation {
-    from {
-      opacity: 0;
-      transform: translateY(-1.5625em);
+    .login_popup_title {
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        text-align: center;
+        list-style: none;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-  @keyframes login_Title2_animation {
-    from {
-      opacity: 0;
-      transform: translateY(1.5625em);
+    .login_popup .bold {
+        font-weight: bold;
+        font-size: 2em;
+        color: #000000;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-  @keyframes login_Input_animation {
-    from {
-      opacity: 0;
+    .login_popup .link {
+        color: #FF833D;
     }
-    to {
-      opacity: 1;
-    }
-  }
 
-  @keyframes login_Footer_animation {
-    from {
-      opacity: 0;
-      transform: translateY(1.5625em);
+    .login_popup .link:hover {
+        text-decoration: underline;
+        cursor: pointer;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-  .border_error{
-    border: #ac1f38;
-  }
+    .login_popup .regular {
+        font-weight: bold;
+        padding-top: 1em;
+        color: #000000;
+    }
+
+    .login_popup .login_form_field {
+        padding-top: 5em;
+        display: block;
+        text-align: center;
+    }
+
+    .login_popup .text-field {
+        width: 18.9375em;
+        height: 3.75em;
+        background-color: #CEB7E5;
+        border: none;
+        border-radius: 1em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login_eye {
+        position: absolute;
+        right: 4em;
+        top: 29em;
+        visibility: hidden;
+    }
+
+    #login_vision {
+        top: 29.2em;
+    }
+
+    .login_eye.login_activation {
+        visibility: visible;
+    }
+
+    .login_eye:hover {
+        cursor: pointer;
+    }
+
+    .login_popup .selector {
+        width: 1.375em;
+        height: 1.375em;
+        border: 0.0825em solid #000000;
+        box-sizing: border-box;
+        border-radius: 0.275em;
+        left: 10em;
+    }
+
+    .login_popup .selector:hover {
+        cursor: pointer;
+    }
+
+    .login_popup .selector:active {
+        background-color: #FFA16D;
+    }
+
+    .login_popup .login_popup_footer {
+        padding-top: 10em;
+        text-align: center;
+        left: 10em;
+        opacity: 0
+    }
+
+    .login_popup .login_popup_footer .login_item {
+        display: block;
+
+    }
+
+    .login_popup .login_btn {
+        width: 18.9375em;
+        height: 3.75em;
+        background-color: #FFA16D;
+        border: none;
+        border-radius: 1em;
+        top: 9.46875em;
+        transition: .3s ease all;
+    }
+
+    .login_popup .login_btn:hover {
+        cursor: pointer;
+        background: rgba(255, 161, 109, .8);
+    }
+
+    /*PopUp*/
+    .login_popup_overlay {
+        background: rgba(0, 0, 0, .3);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+    }
+
+    .login_popup_overlay.login_active {
+        visibility: visible;
+    }
+
+    .login_popup {
+        background: #F8F8F8;
+        box-shadow: 0 0 0.3125em 0 rgba(0, 0, 0, .3);
+        border-radius: 0.1875em;
+        padding: 1.25em;
+        text-align: center;
+        width: 38.5625em;
+        color: #000000;
+        transition: .3s ease all;
+        transform: scale(0.6);
+        opacity: 0;
+        margin-top: 4.5em;
+    }
+
+    .login_popup .btn-cerrar-login_popup {
+        font-size: 1em;
+        line-height: 1em;
+        display: block;
+        text-align: right;
+        color: #BBBBBB;
+        transition: .3s ease all;
+    }
+
+    .login_popup .btn-cerrar-login_popup:hover {
+        color: #000000;
+    }
+
+    .login_popup .login_popup_footer .forgot {
+        padding-top: 1em;
+    }
+
+    .login_form_field {
+        opacity: 0;
+    }
+
+    .login_popup .login_t1 {
+        opacity: 0;
+    }
+
+    .login_popup .login_t2 {
+        opacity: 0;
+    }
+
+    /*PopUp Animations*/
+    .login_popup.login_active {
+        opacity: 1;
+        transform: scale(0.84);
+    }
+
+    .login_popup.login_active .login_t1 {
+        animation: login_Title1_animation .8s ease .5s forwards;
+    }
+
+    .login_popup.login_active .login_t2 {
+        animation: login_Title2_animation .8s ease .5s forwards;
+    }
+
+    .login_popup.login_active .login_form_field {
+        animation: login_Input_animation 1s linear 1s forwards;
+    }
+
+    .login_popup.login_active .login_popup_footer {
+        animation: login_Footer_animation .8s ease .5s forwards;
+    }
+
+    @keyframes login_Title1_animation {
+        from {
+            opacity: 0;
+            transform: translateY(-1.5625em);
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes login_Title2_animation {
+        from {
+            opacity: 0;
+            transform: translateY(1.5625em);
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes login_Input_animation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes login_Footer_animation {
+        from {
+            opacity: 0;
+            transform: translateY(1.5625em);
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .border_error{
+        border: #ac1f38;
+    }
+
+    .warnings {
+        width: 100%;
+        color: #ac1f38;
+        font-size: 1em;
+        text-align: center;
+        position: absolute;
+        bottom: 11em;
+        transition: 0.3s ease all;
+    }
 
 }
 
 /*Diseño Móvil*/
 @media screen and (max-width: 980px){
-  .login_popup_title {
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-    text-align: center;
-    list-style: none;
-  }
-
-  .login_popup .bold {
-    font-weight: bold;
-    font-size: 2em;
-    color: #000000;
-  }
-
-  .login_popup .link {
-    color: #FF833D;
-  }
-
-  .login_popup .link:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
-  .login_popup .regular {
-    font-weight: bold;
-    padding-top: 1em;
-    color: #000000;
-  }
-
-  .login_popup .login_form_field {
-    padding-top: 5em;
-    display: block;
-    text-align: center;
-  }
-
-  .login_popup .text-field {
-    width: 18.9375em;
-    height: 3.75em;
-    background-color: #CEB7E5;
-    border: none;
-    border-radius: 1em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .login_eye {
-    position: absolute;
-    right: 4em;
-    top: 29em;
-    visibility: hidden;
-  }
-
-  #login_vision {
-    top: 29.2em;
-  }
-
-  .login_eye.login_activation {
-    visibility: visible;
-  }
-
-  .login_eye:hover {
-    cursor: pointer;
-  }
-
-  .login_popup .selector {
-    width: 1.375em;
-    height: 1.375em;
-    border: 0.0825em solid #000000;
-    box-sizing: border-box;
-    border-radius: 0.275em;
-    left: 10em;
-  }
-
-  .login_popup .selector:hover {
-    cursor: pointer;
-  }
-
-  .login_popup .selector:active {
-    background-color: #FFA16D;
-  }
-
-  .login_popup .login_popup_footer {
-    padding-top: 10em;
-    text-align: center;
-    left: 10em;
-    opacity: 0
-  }
-
-  .login_popup .login_popup_footer .login_item {
-    display: block;
-
-  }
-
-  .login_popup .login_btn {
-    width: 18.9375em;
-    height: 3.75em;
-    background-color: #FFA16D;
-    border: none;
-    border-radius: 1em;
-    top: 9.46875em;
-    transition: .3s ease all;
-  }
-
-  .login_popup .login_btn:hover {
-    cursor: pointer;
-    background: rgba(255, 161, 109, .8);
-  }
-
-  /*PopUp*/
-  .login_popup_overlay {
-    background: rgba(0, 0, 0, .3);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-  }
-
-  .login_popup_overlay.login_active {
-    visibility: visible;
-  }
-
-  .login_popup {
-    background: #F8F8F8;
-    box-shadow: 0 0 0.3125em 0 rgba(0, 0, 0, .3);
-    border-radius: 0.1875em;
-    padding: 1.25em;
-    text-align: center;
-    width: 38.5625em;
-    color: #000000;
-    transition: .3s ease all;
-    transform: scale(0.6);
-    opacity: 0;
-    margin-top: 4.5em;
-  }
-
-  .login_popup .btn-cerrar-login_popup {
-    font-size: 1em;
-    line-height: 1em;
-    display: block;
-    text-align: right;
-    color: #BBBBBB;
-    transition: .3s ease all;
-  }
-
-  .login_popup .btn-cerrar-login_popup:hover {
-    color: #000000;
-  }
-
-  .login_popup .login_popup_footer .forgot {
-    padding-top: 1em;
-  }
-
-  .login_form_field {
-    opacity: 0;
-  }
-
-  .login_popup .login_t1 {
-    opacity: 0;
-  }
-
-  .login_popup .login_t2 {
-    opacity: 0;
-  }
-
-  /*PopUp Animations*/
-  .login_popup.login_active {
-    opacity: 1;
-    transform: scale(1.70);
-  }
-
-  .login_popup.login_active .login_t1 {
-    animation: login_Title1_animation .8s ease .5s forwards;
-  }
-
-  .login_popup.login_active .login_t2 {
-    animation: login_Title2_animation .8s ease .5s forwards;
-  }
-
-  .login_popup.login_active .login_form_field {
-    animation: login_Input_animation 1s linear 1s forwards;
-  }
-
-  .login_popup.login_active .login_popup_footer {
-    animation: login_Footer_animation .8s ease .5s forwards;
-  }
-
-  @keyframes login_Title1_animation {
-    from {
-      opacity: 0;
-      transform: translateY(-1.5625em);
+    .login_popup_title {
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        text-align: center;
+        list-style: none;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-  @keyframes login_Title2_animation {
-    from {
-      opacity: 0;
-      transform: translateY(1.5625em);
+    .login_popup .bold {
+        font-weight: bold;
+        font-size: 2em;
+        color: #000000;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-  @keyframes login_Input_animation {
-    from {
-      opacity: 0;
+    .login_popup .link {
+        color: #FF833D;
     }
-    to {
-      opacity: 1;
-    }
-  }
 
-  @keyframes login_Footer_animation {
-    from {
-      opacity: 0;
-      transform: translateY(1.5625em);
+    .login_popup .link:hover {
+        text-decoration: underline;
+        cursor: pointer;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-  .border_error{
-    border: #ac1f38;
-  }
+    .login_popup .regular {
+        font-weight: bold;
+        padding-top: 1em;
+        color: #000000;
+    }
+
+    .login_popup .login_form_field {
+        padding-top: 5em;
+        display: block;
+        text-align: center;
+    }
+
+    .login_popup .text-field {
+        width: 18.9375em;
+        height: 3.75em;
+        background-color: #CEB7E5;
+        border: none;
+        border-radius: 1em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login_eye {
+        position: absolute;
+        right: 4em;
+        top: 29em;
+        visibility: hidden;
+    }
+
+    #login_vision {
+        top: 29.2em;
+    }
+
+    .login_eye.login_activation {
+        visibility: visible;
+    }
+
+    .login_eye:hover {
+        cursor: pointer;
+    }
+
+    .login_popup .selector {
+        width: 1.375em;
+        height: 1.375em;
+        border: 0.0825em solid #000000;
+        box-sizing: border-box;
+        border-radius: 0.275em;
+        left: 10em;
+    }
+
+    .login_popup .selector:hover {
+        cursor: pointer;
+    }
+
+    .login_popup .selector:active {
+        background-color: #FFA16D;
+    }
+
+    .login_popup .login_popup_footer {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        text-align: center;
+        left: 10em;
+        opacity: 0
+    }
+
+    .login_popup .login_popup_footer .login_item {
+        display: block;
+
+    }
+
+    .login_popup .login_btn {
+        width: 18.9375em;
+        height: 3.75em;
+        background-color: #FFA16D;
+        border: none;
+        border-radius: 1em;
+        top: 9.46875em;
+        transition: .3s ease all;
+    }
+
+    .login_popup .login_btn:hover {
+        cursor: pointer;
+        background: rgba(255, 161, 109, .8);
+    }
+
+    /*PopUp*/
+    .login_popup_overlay {
+        background: rgba(0, 0, 0, .3);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+    }
+
+    .login_popup_overlay.login_active {
+        visibility: visible;
+    }
+
+    .login_popup {
+        background: #F8F8F8;
+        box-shadow: 0 0 0.3125em 0 rgba(0, 0, 0, .3);
+        border-radius: 0.1875em;
+        padding: 1.25em;
+        text-align: center;
+        width: 38.5625em;
+        color: #000000;
+        transition: .3s ease all;
+        transform: scale(0.6);
+        opacity: 0;
+        margin-top: 4.5em;
+    }
+
+    .login_popup .btn-cerrar-login_popup {
+        font-size: 1em;
+        line-height: 1em;
+        display: block;
+        text-align: right;
+        color: #BBBBBB;
+        transition: .3s ease all;
+    }
+
+    .login_popup .btn-cerrar-login_popup:hover {
+        color: #000000;
+    }
+
+    .login_popup .login_popup_footer .forgot {
+        padding-top: 1em;
+    }
+
+    .login_form_field {
+        opacity: 0;
+    }
+
+    .login_popup .login_t1 {
+        opacity: 0;
+    }
+
+    .login_popup .login_t2 {
+        opacity: 0;
+    }
+
+    /*PopUp Animations*/
+    .login_popup.login_active {
+        opacity: 1;
+        transform: scale(1.70);
+    }
+
+    .login_popup.login_active .login_t1 {
+        animation: login_Title1_animation .8s ease .5s forwards;
+    }
+
+    .login_popup.login_active .login_t2 {
+        animation: login_Title2_animation .8s ease .5s forwards;
+    }
+
+    .login_popup.login_active .login_form_field {
+        animation: login_Input_animation 1s linear 1s forwards;
+    }
+
+    .login_popup.login_active .login_popup_footer {
+        animation: login_Footer_animation .8s ease .5s forwards;
+    }
+
+    @keyframes login_Title1_animation {
+        from {
+            opacity: 0;
+            transform: translateY(-1.5625em);
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes login_Title2_animation {
+        from {
+            opacity: 0;
+            transform: translateY(1.5625em);
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes login_Input_animation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes login_Footer_animation {
+        from {
+            opacity: 0;
+            transform: translateY(1.5625em);
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .border_error{
+        border: #ac1f38;
+    }
+
+    .warnings {
+        width: 100%;
+        color: #ac1f38;
+        font-size: 1em;
+        text-align: center;
+        position: absolute;
+        bottom: 11em;
+        transition: 0.3s ease all;
+    }
 
 }

@@ -27,7 +27,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+                "src/styles.css",
+                "src/assets/CSS_Files/normalize-8.0.1.css",
+                "src/assets/CSS_Files/glider-1.7.7.css",
+                "src/app/slider/slider.component.css",
+                "src/app/search-result/search-result.component.css",
+                "src/app/slider-result/slider-result.component.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

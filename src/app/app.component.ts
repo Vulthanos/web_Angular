@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoadScriptsService } from "./load-scripts.service";
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+    constructor(private _LoadScripts:LoadScriptsService) {
+        _LoadScripts.LoadUrl(["https://code.jquery.com/jquery-3.6.0.js"]);
+        _LoadScripts.LoadLinks(["https://fonts.googleapis.com/icon?family=Material+Icons"]);
+    }
+
 }
 
 
