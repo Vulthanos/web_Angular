@@ -3,7 +3,7 @@ const login_overlay = document.getElementById('login_popup_overlay'),
 
 const login_open = document.getElementById('user_profile');
 
-let loged = false;
+let loged;
 
 login_open.addEventListener('click', function (e) {
   e.preventDefault();
@@ -22,6 +22,7 @@ login_close.addEventListener('click', function (e) {
   e.preventDefault();
   login_overlay.classList.remove('login_active');
   login_popup.classList.remove('login_active');
+    successfulLogin(loged);
 });
 
 const open_singup = document.getElementById('open_singup');
@@ -30,6 +31,7 @@ open_singup.addEventListener('click', function () {
   login_overlay.classList.remove('login_active');
   login_popup.classList.remove('login_active');
 });
+
 const login_vision = document.getElementById('login_vision'),
   login_sin_vision = document.getElementById('login_sin_vision');
 
@@ -72,7 +74,6 @@ login_btn.addEventListener('click', function (e) {
         login_overlay.classList.remove('login_active');
         login_popup.classList.remove('login_active');
         successfulLogin();
-        location.href = "http://localhost:4200/profile-page";
     }
 });
 
@@ -126,9 +127,8 @@ function API_Consult() {
   });
 }
 
-function successfulLogin() {
-    let profile_link = document.getElementById('profile_link');
-    profile_link.routerLink='/profile-page';
-    profile_link.href="/profile-page";
-    loged = true;
+function successfulLogin(loged) {
+    if (loged) {
+        location.href = "http://localhost:4200/profile-page";
+    }
 }
