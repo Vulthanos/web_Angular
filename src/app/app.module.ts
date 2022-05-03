@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
@@ -30,31 +30,32 @@ import { GenerateTicketComponent } from './generate-ticket/generate-ticket.compo
 import { GenerateTicket2Component } from './generate-ticket2/generate-ticket2.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: SliderComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent },
-      { path: 'search', component: SearchResultComponent },
-      { path: 'result', component: SliderResultComponent},
-      { path: 'help', component: HelpComponent },
-      { path: 'information', component: InformationComponent },
-        { path: 'ticket-end', component: TicketEndComponent },
-        { path: 'profile-page', component: ProfilePageComponent },
-        { path: 'newsletter', component: NewsletterComponent },
-        { path: 'newsletter-end', component: NewsletterEndComponent },
-        { path: 'generate-ticket', component: GenerateTicketComponent },
-        { path: 'generate-ticket2', component: GenerateTicket2Component },
-        { path: 'show-giveaway', component: ShowGiveawayComponent },
-        { path: 'giveaway', component: GiveawayComponent },
-        { path: 'giveaway-end', component: GiveawayEndComponent }
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        RouterModule.forRoot([
+            {path: '', component: SliderComponent},
+            {path: 'products/:productId', component: ProductDetailsComponent},
+            {path: 'cart', component: CartComponent},
+            {path: 'shipping', component: ShippingComponent},
+            {path: 'search', component: SearchResultComponent},
+            {path: 'result', component: SliderResultComponent},
+            {path: 'help', component: HelpComponent},
+            {path: 'information', component: InformationComponent},
+            {path: 'ticket-end', component: TicketEndComponent},
+            {path: 'profile-page', component: ProfilePageComponent},
+            {path: 'newsletter', component: NewsletterComponent},
+            {path: 'newsletter-end', component: NewsletterEndComponent},
+            {path: 'generate-ticket', component: GenerateTicketComponent},
+            {path: 'generate-ticket2', component: GenerateTicket2Component},
+            {path: 'show-giveaway', component: ShowGiveawayComponent},
+            {path: 'giveaway', component: GiveawayComponent},
+            {path: 'giveaway-end', component: GiveawayEndComponent}
 
-    ])
-  ],
+        ]),
+        FormsModule
+    ],
   declarations: [
     AppComponent,
     TopBarComponent,
