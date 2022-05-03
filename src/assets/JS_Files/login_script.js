@@ -22,7 +22,6 @@ login_close.addEventListener('click', function (e) {
   e.preventDefault();
   login_overlay.classList.remove('login_active');
   login_popup.classList.remove('login_active');
-    successfulLogin(loged);
 });
 
 const open_singup = document.getElementById('open_singup');
@@ -73,7 +72,7 @@ login_btn.addEventListener('click', function (e) {
     if(loged) {
         login_overlay.classList.remove('login_active');
         login_popup.classList.remove('login_active');
-        successfulLogin();
+        successfulLogin(loged);
     }
 });
 
