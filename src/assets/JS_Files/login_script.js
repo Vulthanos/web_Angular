@@ -72,7 +72,6 @@ login_btn.addEventListener('click', function (e) {
     if(loged) {
         login_overlay.classList.remove('login_active');
         login_popup.classList.remove('login_active');
-        successfulLogin(loged);
     }
 });
 
@@ -108,6 +107,7 @@ function formSubmit() {
   } else {
     if (API_Consult) {
       loged = true;
+        successfulLogin(true);
     } else {
       errores += 'La combinacion de email y contraseña no existe<br>';
       login_warnings.innerHTML = errores;
