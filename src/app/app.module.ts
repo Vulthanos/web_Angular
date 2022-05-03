@@ -17,6 +17,10 @@ import { SliderComponent } from './slider/slider.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { SliderResultComponent } from './slider-result/slider-result.component';
 import { LoadScriptsService } from './load-scripts.service';
+import { AngularFireModule} from '@angular/fire/compat';
+import {environment} from "../environments/environment";
+import { AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   imports: [
@@ -30,7 +34,11 @@ import { LoadScriptsService } from './load-scripts.service';
       { path: 'shipping', component: ShippingComponent },
       { path: 'search', component: SearchResultComponent },
       { path: 'result', component: SliderResultComponent},
-    ])
+        {path: 'fernando', component: ProductListComponent},
+        {path: 'firestore', component: ProductsComponent}
+    ]),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   declarations: [
     AppComponent,
@@ -45,7 +53,8 @@ import { LoadScriptsService } from './load-scripts.service';
     SinginComponent,
     SliderComponent,
     SearchResultComponent,
-    SliderResultComponent
+    SliderResultComponent,
+    ProductsComponent
   ],
   bootstrap: [
     AppComponent
