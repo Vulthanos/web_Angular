@@ -71,6 +71,8 @@ login_btn.addEventListener('click', function (e) {
     if(loged) {
         login_overlay.classList.remove('login_active');
         login_popup.classList.remove('login_active');
+        successfulLogin();
+        location.href = "http://localhost:4200/profile-page";
     }
 });
 
@@ -105,7 +107,6 @@ function formSubmit() {
     return false;
   } else {
     if (API_Consult) {
-      successfulLogin();
       loged = true;
     } else {
       errores += 'La combinacion de email y contraseña no existe<br>';
@@ -127,7 +128,7 @@ function API_Consult() {
 
 function successfulLogin() {
     let profile_link = document.getElementById('profile_link');
-    profile_link.setAttribute('routerLink', '/profile-page');
+    profile_link.routerLink='/profile-page';
     profile_link.href="/profile-page";
     loged = true;
 }
