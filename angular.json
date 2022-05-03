@@ -32,7 +32,9 @@
                 "src/assets/CSS_Files/glider-1.7.7.css",
                 "src/app/slider/slider.component.css",
                 "src/app/search-result/search-result.component.css",
-                "src/app/slider-result/slider-result.component.css"
+                "src/app/slider-result/slider-result.component.css",
+                "src/app/show-giveaway/show-giveaway.component.css",
+                "src/app/footer/footer.component.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -102,7 +104,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+                "src/app/show-giveaway/show-giveaway.component.css"
             ],
             "scripts": []
           }

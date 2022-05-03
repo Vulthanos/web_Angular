@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -242,7 +243,7 @@ body{
   .informacion-util {
     position: relative;
     top: 14em;
-    left: 10%;
+    left: 6%;
     max-width: 25em;
     background-color: #ffffff;
     margin-top: 1em;
@@ -265,7 +266,7 @@ body{
   .pagos {
     position: relative;
     top: 17em;
-    left: 10%;
+    left: 6%;
     background-color: #ffffff;
     margin-top: 1em;
     padding: 15px 40px;
@@ -333,7 +334,7 @@ body{
   .pregunta-cuenta {
     position: relative;
     top: 20em;
-    left: 10%;
+    left: 6%;
     max-width: 25em;
     background-color: #ffffff;
     margin-top: 1em;
@@ -365,6 +366,10 @@ body{
     box-shadow: 0 15px 25px rgba(0,0,50,0.2);
     margin-bottom: 4em;
 
+  }
+
+  .footer_help{
+      top: -56em;
   }
 
 

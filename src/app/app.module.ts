@@ -43,14 +43,14 @@ import { GenerateTicket2Component } from './generate-ticket2/generate-ticket2.co
       { path: 'result', component: SliderResultComponent},
       { path: 'help', component: HelpComponent },
       { path: 'information', component: InformationComponent },
-      { path: 'show-giveaway', component: ShowGiveawayComponent },
-        { path: 'newsletter-end', component: NewsletterEndComponent },
         { path: 'ticket-end', component: TicketEndComponent },
         { path: 'profile-page', component: ProfilePageComponent },
         { path: 'newsletter', component: NewsletterComponent },
-        { path: 'giveaway', component: GiveawayComponent },
+        { path: 'newsletter-end', component: NewsletterEndComponent },
         { path: 'generate-ticket', component: GenerateTicketComponent },
         { path: 'generate-ticket2', component: GenerateTicket2Component },
+        { path: 'show-giveaway', component: ShowGiveawayComponent },
+        { path: 'giveaway', component: GiveawayComponent },
         { path: 'giveaway-end', component: GiveawayEndComponent }
 
     ])

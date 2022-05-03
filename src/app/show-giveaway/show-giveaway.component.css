@@ -34,21 +34,21 @@ body{
     .sorteo1{
         position: absolute;
         top: 21.875em;
-        left: 14.5625em;
+        left: 9.5em;
     }
 
     /*Imagen sorteo 2*/
     .sorteo2{
         position: absolute;
         top: 21.875em;
-        left: 49.375em;
+        left: 46.5em;
     }
 
     /*Imagen sorteo 3*/
     .sorteo3{
         position: absolute;
         top: 21.875em;
-        left: 84.6875em;
+        left: 81.5em;
 
     }
 
@@ -101,21 +101,21 @@ body{
     .sorteo1{
         position: absolute;
         top: 21.875em;
-        left: 14.5625em;
+        left: 5.5em;
     }
 
     /*Imagen sorteo 2*/
     .sorteo2{
         position: absolute;
         top: 21.875em;
-        left: 49.375em;
+        left: 39.3em;
     }
 
     /*Imagen sorteo 3*/
     .sorteo3{
         position: absolute;
-        top: 70em;
-        left: 33em;
+        top: 65em;
+        left: 26em;
 
     }
 
@@ -155,9 +155,10 @@ body{
         color: black;
     }
 
-    .footer-sorteo{
+    .footerGiveaway{
         position: absolute;
-        bottom: -70em;
+        margin-top: auto;
+        bottom: -71em;
     }
 
 
@@ -236,6 +237,8 @@ body{
     .entrar-sorteo{
         color: black;
     }
+
+
 
 }
 
