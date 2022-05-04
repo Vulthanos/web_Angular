@@ -3,10 +3,17 @@ const login_overlay = document.getElementById('login_popup_overlay'),
 
 const login_open = document.getElementById('user_profile');
 
+let loged;
+
 login_open.addEventListener('click', function (e) {
   e.preventDefault();
-  login_overlay.classList.add('login_active');
-  login_popup.classList.add('login_active');
+  if (!loged) {
+      login_overlay.classList.add('login_active');
+      login_popup.classList.add('login_active');
+  } else {
+      login_overlay.classList.remove('login_active');
+      login_popup.classList.remove('login_active');
+  }
 });
 
 const login_close = document.getElementById('btn-cerrar-login_popup');
@@ -23,6 +30,7 @@ open_singup.addEventListener('click', function () {
   login_overlay.classList.remove('login_active');
   login_popup.classList.remove('login_active');
 });
+
 const login_vision = document.getElementById('login_vision'),
   login_sin_vision = document.getElementById('login_sin_vision');
 
@@ -58,13 +66,21 @@ const login_btn = document.getElementById('login_btn');
 const login_warnings = document.getElementById('login_warnings');
 const login_email = document.getElementById('login_email');
 
+login_btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    formSubmit();
+    if(loged) {
+        login_overlay.classList.remove('login_active');
+        login_popup.classList.remove('login_active');
+    }
+});
+
 function formSubmit() {
   login_warnings.innerHTML = "";
   let errores = "";
   let email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   let password_regex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}$/;
   let error = false;
-  let successful_login = false;
   if (login_email.value.length === 0) {
     errores += 'El correo no puede estar vacío<br>';
     error = true;
@@ -90,11 +106,12 @@ function formSubmit() {
     return false;
   } else {
     if (API_Consult) {
-      return true;
+      loged = true;
+        successfulLogin(true);
     } else {
       errores += 'La combinacion de email y contraseña no existe<br>';
       login_warnings.innerHTML = errores;
-      return false;
+      loged = false;
     }
   }
 }
@@ -109,14 +126,8 @@ function API_Consult() {
   });
 }
 
-function successfulLogin(log_in) {
-  if(log_in) {
-    login_btn.addEventListener('click', function (e) {
-      e.preventDefault();
-      login_overlay.classList.remove('login_active');
-      login_popup.classList.remove('login_active');
-    });
-    const profile_link = document.getElementById('profile_link');
-    profile_link.setAttribute('href', 'profile_page.html');
-  }
+function successfulLogin(loged) {
+    if (loged) {
+        location.href = "http://localhost:4200/profile-page";
+    }
 }
