@@ -1,7 +1,6 @@
-import { getLogged, setLogged } from './firebase_logs';
+import { getLogged, setLogged } from './firebase_logs.mjs';
 
 let logs = getLogged();
-let setLog = setLogged();
 let loged;
 
 const login_overlay = document.getElementById('login_popup_overlay'),
@@ -27,7 +26,7 @@ login_close.addEventListener('click', function (e) {
   login_overlay.classList.remove('login_active');
   login_popup.classList.remove('login_active');
     console.log(logs);
-    console.log(setLog);
+    setLogged(true).then();
 });
 
 const open_singup = document.getElementById('open_singup');

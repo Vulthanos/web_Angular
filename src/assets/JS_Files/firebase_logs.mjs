@@ -39,11 +39,11 @@ async function getLoggedUser() {
     }
 }
 
-async function setLogged() {
+async function setLogged(state) {
     const docRef = doc(db, "logs", "logged");
     const docSnap = await getDoc(docRef);
     if (docSnap.exists()) {
-        return docSnap.logged;
+        docSnap.logged = state;
     } else {
         console.log("No existe el document");
     }
