@@ -19,14 +19,20 @@ export class ProductsComponent implements OnInit {
     users: Observable<Usuario[]>;
 
     public carrito?: Producto[] = [];
-    cosascarrito: Observable<Producto[]>;
+    //cosascarrito: Observable<Producto[]>;
 
     constructor(
       private productoService: ProductsService, private usersService: UsersService) {
       this.products = this.productoService.getProductos();
       this.users = this.usersService.getUsers();
-      this.cosascarrito = this.usersService.getUCart();
+
+     // this.users.subscribe(usuarios => { for usuario of usuarios {
+      //      console.log(usuario.cart)
+       // }})
+      //this.cosascarrito = this.usersService.getProductsByCart(this.carrito);
+
   }
+
 
   ngOnInit(): void {
       this.usersService.getUsers().subscribe()

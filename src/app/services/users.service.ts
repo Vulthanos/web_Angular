@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import {AngularFirestore} from "@angular/fire/compat/firestore";
 import {Usuario} from "../interfaces/usuario.interface";
 import {Producto} from "../interfaces/producto.interface";
+import {documentId} from "@angular/fire/firestore";
+import { doc, setDoc } from "firebase/firestore";
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +20,12 @@ export class UsersService {
     }
 
     getUCart(){
-    return this.af.collection<Producto>('ususuaris').valueChanges()}
+    return this.af.collection<Producto>('products').valueChanges()}
+
+    getProductsByCart(cart: []){
+        return this.af.collection('products', ref => ref.where(documentId(), "in", cart)).valueChanges();
+    }
+
 }
 
 
