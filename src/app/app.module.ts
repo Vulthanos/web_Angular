@@ -16,7 +16,7 @@ import { SinginComponent } from './singin/singin.component';
 import { SliderComponent } from './slider/slider.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { SliderResultComponent } from './slider-result/slider-result.component';
-import { LoadScriptsService } from './load-scripts.service';
+import { LoadScriptsService } from './services/load-scripts.service';
 import { AngularFireModule} from '@angular/fire/compat';
 import {environment} from "../environments/environment";
 import { AngularFirestoreModule} from '@angular/fire/compat/firestore';
