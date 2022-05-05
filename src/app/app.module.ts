@@ -17,6 +17,11 @@ import { SliderComponent } from './slider/slider.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { SliderResultComponent } from './slider-result/slider-result.component';
 import { LoadScriptsService } from './load-scripts.service';
+import { AngularFireModule} from '@angular/fire/compat';
+import {environment} from "../environments/environment";
+import { AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { ProductsComponent } from './products/products.component';
+import { CreditCardShippingComponent } from './credit-card-shipping/credit-card-shipping.component';
 import { GenerateTicketComponent } from './generate-ticket/generate-ticket.component';
 import { GenerateTicket2Component } from './generate-ticket2/generate-ticket2.component';
 import { GiveawayComponent } from './giveaway/giveaway.component';
@@ -28,6 +33,7 @@ import { NewsletterEndComponent } from './newsletter-end/newsletter-end.componen
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
+
 
 @NgModule({
   imports: [
@@ -52,7 +58,12 @@ import { TicketEndComponent } from './ticket-end/ticket-end.component';
         { path: 'generate-ticket', component: GenerateTicketComponent },
         { path: 'generate-ticket2', component: GenerateTicket2Component },
         { path: 'giveaway-end', component: GiveawayEndComponent }
-    ])
+        { path: 'fernando', component: ProductListComponent},
+        { path: 'firestore', component: ProductsComponent},
+        { path: 'shipping2', component: CreditCardShippingComponent}
+    ]),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   declarations: [
     AppComponent,
@@ -68,6 +79,8 @@ import { TicketEndComponent } from './ticket-end/ticket-end.component';
     SliderComponent,
     SearchResultComponent,
     SliderResultComponent,
+    ProductsComponent,
+    CreditCardShippingComponent
     GenerateTicketComponent,
     GenerateTicket2Component,
     GiveawayComponent,
