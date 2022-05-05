@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CartService } from '../cart.service';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-shipping',
@@ -8,7 +8,7 @@ import { CartService } from '../cart.service';
 })
 
 export class ShippingComponent {
-  
+
   shippingCosts = this.cartService.getShippingPrices();
 
   constructor(private cartService: CartService) { }

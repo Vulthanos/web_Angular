@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
-  selector: 'app-generate-ticket2',
-  templateUrl: './generate-ticket2.component.html',
-  styleUrls: ['./generate-ticket2.component.css']
+    selector: 'app-generate-ticket2',
+    templateUrl: './generate-ticket2.component.html',
+    styleUrls: ['./generate-ticket2.component.css']
 })
 export class GenerateTicket2Component {
     signupForm: FormGroup;
@@ -19,3 +19,4 @@ export class GenerateTicket2Component {
     }
 
 }
+

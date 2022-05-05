@@ -9,22 +9,25 @@
 
 
 <div class="container">
-    <form [formGroup]="signupForm" (ngSubmit)="submit(signupForm.value)">
-        <label>ID del pedido</label>
-        <input formControlName="identidad" type="text" class="form-control"/><br>
+    <form>
+        <div class="columna-opciones">
+            <label for="id-pedido"><strong>Id del pedido</strong></label>
+            <input type="text" id="id-pedido" placeholder="Escriba el id del pedido" pattern="[a-zA-Z0-9]+" required>
+        </div>
 
-        <label>Email de contacto</label>
-        <input formControlName="email" type="email" class="form-control" required/><br>
+        <div class="columna-opciones">
+            <label for="metodo-pago"><strong>Metodo de pago</strong></label>
+            <input type="text" id="metodo-pago" placeholder="Escriba el metodo de pago" pattern="[A-Z][a-z]{1,15}" required>
+        </div>
 
-        <label>Metodo de pagoㅤㅤ</label>
-        <select [(ngModel)]='ngDropdown' name="dropdownOption" id="dropdownOption" class='form-control-desplegable'>
-            <option value="1">tarjeta de credito/debito</option>
-            <option value="2">paypal</option>
-            <option value="3">transferencia bancaria</option>
-        </select><br>
+        <div class="columna-opciones">
+            <label for="correo"><strong>Correo de contacto</strong></label>
+            <input type="email" id="correo" placeholder="Escriba su correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </div>
     </form>
 
-    <button [disabled]="signupForm.invalid" type="submit" class="boton-continuar" routerLink="/generate-ticket2">Continuar</button>
-
+    <button type="submit" class="boton-continuar">
+        <a routerLink="/generate-ticket2" style="text-decoration: none"><span>Continuar</span></a>
+    </button>
 
 </div>

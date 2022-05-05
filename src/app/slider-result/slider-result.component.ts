@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadScriptsService } from '../load-scripts.service';
+import { LoadScriptsService } from '../services/load-scripts.service';
 
 @Component({
   selector: 'app-slider-result',

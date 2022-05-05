@@ -3,9 +3,11 @@ $.getJSON("./assets/JSON_Files/giveaway.json", function(data) {
         let item;
 
         item = '<section class="sorteo'+value.id+'">' +
-            '<label class="txt-sorteo'+value.id+'">' + value.title + '</label>' +
+            '<div class="txt-sorteo'+value.id+'">' + value.title + '</div>' +
             '<img class="img-sorteo'+value.id+'" src="' + value.img + '" alt="sorteo '+value.id+'"><br>' +
-            '<a href="../giveaway" class="unir-sorteo'+value.id+'" id="unir-sorteo'+value.id+'" style="text-decoration: none"><button>Haz click aqui para participar</button></a>' +
+            '<button class="unir-sorteo'+value.id+'" id="unir-sorteo'+value.id+'">' +
+            '<a routerLink="/giveaway" class="entrar-sorteo" style="text-decoration: none">Haz click aqui para participar</a>' +
+            '</button>' +
             '</section>';
 
         $("#sorteos").append(item);
