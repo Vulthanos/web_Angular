@@ -39,4 +39,14 @@ async function getLoggedUser() {
     }
 }
 
-export { getLogs, getLogged, getLoggedUser };
+async function setLogged() {
+    const docRef = doc(db, "logs", "logged");
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+        return docSnap.logged;
+    } else {
+        console.log("No existe el document");
+    }
+}
+
+export { getLogs, getLogged, getLoggedUser, setLogged};
