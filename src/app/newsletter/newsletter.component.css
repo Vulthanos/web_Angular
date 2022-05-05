@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+
+.contenedor-newsletter{
+    position: absolute;
+    margin: 14em;
+    text-align: center
+}
+
+.container{
+    max-width: 40em;
+    display: flex;
+    margin-top: 3em;
+    margin-left: 32em;
+    align-items: center;
+    justify-content: center;
+    perspective: 800px;
+    -webkit-perspective:800px;
+}
+
+.button:hover{
+    transform:rotateX(-120deg);
+}
+
+input[type="email"]{
+    width:270px;
+    height: 17px;
+    border-radius: 1em;
+    padding: 5px;
+    padding-left:10px;
+    font-size:20px;
+}
+
+button{
+    background-color: #FFA16D;
+    border-radius: 1em;
+    border: none;
+    color:white;
+    font-size: 19px;
+    padding: 4px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*Diseño Escritorio*/
+@media screen and (min-width: 1367px){
+
+
+    .suscripcion{
+        position: absolute;
+        top:25px;
+        left:25px;
+    }
+}
+
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+    .contenedor-newsletter{
+        left: 2em;
+    }
+
+    .suscripcion{
+        position: absolute;
+        left: -23em;
+    }
+
+}
+
+
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
+    .titulo1{
+        position: absolute;
+        top: -1em;
+        font-size:1.5em;
+    }
+
+    .titulo2{
+        position: absolute;
+        top: 23em;
+        left: 9em;
+        font-size:1.25em;
+        margin: -17em;
+    }
+
+    .titulo3{
+        position: absolute;
+        top: 31em;
+        left: 11em;
+        font-size:1em;
+        margin: -17em;
+    }
+
+    .container{
+        position: absolute;
+        top: 20em;
+        left: -35em;
+    }
+}
+
+
+
+
+
+

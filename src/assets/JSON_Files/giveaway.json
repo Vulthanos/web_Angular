@@ -1,0 +1,19 @@
+{
+  "imgLottery": [
+    {
+      "id": "1",
+      "title": "Sorteo de una playstation 5",
+      "img": "./assets/IMGS/sorteo/sorteo_350x500.png"
+    },
+    {
+      "id": "2",
+      "title": "Sorteo de una xbox series S",
+      "img": "./assets/IMGS/sorteo/sorteo2_350x500.png"
+    },
+    {
+      "id": "3",
+      "title": "Sorteo del videojuego: Cyberpunk",
+      "img": "./assets/IMGS/sorteo/sorteo3_350x500.png"
+    }
+  ]
+}

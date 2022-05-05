@@ -27,7 +27,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+                "src/styles.css",
+                "src/app/search-result/search-result.component.css",
+                "src/app/slider-result/slider-result.component.css",
+                "src/app/show-giveaway/show-giveaway.component.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

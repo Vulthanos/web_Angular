@@ -9,6 +9,7 @@ import { LoadScriptsService } from '../load-scripts.service';
 export class SliderComponent implements OnInit {
 
   constructor( private _LoadScripts:LoadScriptsService) {
+      _LoadScripts.LoadHead(["glider"]);
       _LoadScripts.Load(["slider"]);
   }
 
