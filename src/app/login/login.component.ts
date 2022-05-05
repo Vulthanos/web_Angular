@@ -9,7 +9,7 @@ import { LoadScriptsService } from '../services/load-scripts.service';
 export class LoginComponent implements OnInit {
 
   constructor(private _LoadScripts:LoadScriptsService) {
-      _LoadScripts.Load(["login_script"])
+      _LoadScripts.LoadModules(["login_script"])
   }
 
   ngOnInit(): void {
