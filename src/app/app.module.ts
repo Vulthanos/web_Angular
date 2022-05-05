@@ -57,7 +57,7 @@ import { TicketEndComponent } from './ticket-end/ticket-end.component';
         { path: 'giveaway', component: GiveawayComponent },
         { path: 'generate-ticket', component: GenerateTicketComponent },
         { path: 'generate-ticket2', component: GenerateTicket2Component },
-        { path: 'giveaway-end', component: GiveawayEndComponent }
+        { path: 'giveaway-end', component: GiveawayEndComponent },
         { path: 'fernando', component: ProductListComponent},
         { path: 'firestore', component: ProductsComponent},
         { path: 'shipping2', component: CreditCardShippingComponent}
@@ -80,7 +80,7 @@ import { TicketEndComponent } from './ticket-end/ticket-end.component';
     SearchResultComponent,
     SliderResultComponent,
     ProductsComponent,
-    CreditCardShippingComponent
+    CreditCardShippingComponent,
     GenerateTicketComponent,
     GenerateTicket2Component,
     GiveawayComponent,
