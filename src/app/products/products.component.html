@@ -1,62 +1,78 @@
-<p>products nuevo vamos firstoreeeee works!</p>
-<p>products nuevo vamos firstoreeeee works!</p>
-<br>
-<p>products nuevo vamos firstoreeeee works!</p>
 <br>
 <br>
-'<br><br><br><br><br>v
+<br>
+<br>
+
+<div *ngFor="let usuario of users | async">
+    <h1 class="title">{{usuario.name}} {{usuario.surname}}</h1>
+    <h1 class="title">{{usuario.email}}</h1>
+    {{usuario.cart}}
+</div>
+
+<div *ngFor="let prod of cosascarrito | async">
+    <h1 class="title">{{prod.name}}</h1>
+</div>
 
 
-<p>products nuevo vamos firstoreeeee works!</p>
 
-<p>products nuevo vamos firstoreeeee works!</p>
 
-<p>products nuevo vamos firstoreeeee works!</p>
 
-<p>products nuevo vamos firstoreeeee works!</p>
 
-<p>products nuevo vamos firstoreeeee works!</p>
 
-hola
+
+
+
+
+
+<div class="CartContainer" id="Carrito2">
+    <div class="HeaderCart">
+        <h3 class="Heading">Shopping Cart</h3>
+        <h5 class="Action">Remove all</h5>
+    </div>
+
+    <div *ngFor="let producto of products | async">
+        <div class="Cart-Items pad">
+            <div class="image-box"><img src='{{producto.img}}' height="130px" alt=""/></div>
+            <div class="about">
+                <h1 class="title">{{producto.name}}</h1>
+                <h3 class="subtitle">{{producto.description}}</h3>
+                <div class="puntoVerde"><img src='https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/veg.png?alt=media&token=ed46b324-a4b7-4134-a057-7ce9ffb5b3db' height="20px"></div>
+            </div>
+
+            <div class="prices">
+                <div class="amount">
+                    {{producto.price|currency}}
+                </div>
+                <div class="remove">Remove</div>
+            </div>
+        </div>
+    </div>
+        <div class="wrap">
+            <a href="/shipping">
+            <button class="button">Proceder al pago</button>
+            </a>
+        </div>
+</div>
+
+
+
 
 <!--
-<li *ngFor="let producto of products | async">
-    <div class="text-gray-900 font-bold text-xl mb-2">{{producto.name}}</div>
-    <div class="text-gray-900 font-bold text-xl mb-2">{{producto.description}}</div>
-    <img src='{{producto.img}}'>
-</li>
--->
-
-
-
-
 <p class="text-4x1 text-gray-800">Productos</p>
 
-<div class="grid grid-cols-3 gap-3 mt-5">
-
-<div class="w-full 1g:max-w-full 1g:flex" *ngFor="let producto of products | async">
-<div class=" h-24 sm:h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t 1g:rounded-t-none 1g:rounded-1 text-center overflow-hidden"
-   style="background-size: cover; background-position: center; background-image: url('{{producto.img}}')"
-title="Woman holdingamug">
-    <img src='{{producto.img}}'  width="20" height="40" alt="">
-</div>
-<div
-    class="border-r border-b border-1 border-gray-400 lg:border-1-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded">
-   <div class="mb-8">
-<div class="text-gray-900 font-bold text-xl mb-2">{{producto.name}}</div>
-<p class="text-gray-700 text-base">{{producto.description}}</p>
-<p class="text-3x1 font-bold text-gray-800">{{producto.price|currency}}</p>
-    </div>
-    </div>
-    </div>
-    </div>
 
 
+<div *ngFor="let producto of products | async">
+    <img src='{{producto.img}}'  width="40" height="40" alt="">
 
+    <div class="text-gray-900 font-bold text-xl mb-2">{{producto.name}}</div>
+    <p class="text-gray-700 text-base">{{producto.description}}</p>
+    <p class="text-3x1 font-bold text-gray-800">{{producto.price|currency}}</p>
+    </div>
 
 adios
 
-
+-->
 
 
 

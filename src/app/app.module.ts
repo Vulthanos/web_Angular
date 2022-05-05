@@ -21,6 +21,7 @@ import { AngularFireModule} from '@angular/fire/compat';
 import {environment} from "../environments/environment";
 import { AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import { ProductsComponent } from './products/products.component';
+import { CreditCardShippingComponent } from './credit-card-shipping/credit-card-shipping.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { ProductsComponent } from './products/products.component';
       { path: 'search', component: SearchResultComponent },
       { path: 'result', component: SliderResultComponent},
         {path: 'fernando', component: ProductListComponent},
-        {path: 'firestore', component: ProductsComponent}
+        {path: 'firestore', component: ProductsComponent},
+        {path: 'shipping2', component: CreditCardShippingComponent}
     ]),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule
@@ -54,7 +56,8 @@ import { ProductsComponent } from './products/products.component';
     SliderComponent,
     SearchResultComponent,
     SliderResultComponent,
-    ProductsComponent
+    ProductsComponent,
+    CreditCardShippingComponent
   ],
   bootstrap: [
     AppComponent
