@@ -1,0 +1,162 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+
+/*Nombre de la pagina*/
+.titulo-central{
+    position: relative;
+    top: 5em;
+    text-align: center;
+    font-size: 1.875em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*Titulo apartado Genere un ticket*/
+.titulo-seccion{
+    position: absolute;
+    font-size: 1.4em;
+    left: 10.1875em;
+    top: 10em;
+}
+
+
+.linea-temporal{
+    position: absolute;
+    top: 15em;
+    left: 40em;
+}
+
+
+/*Titulo apartado informacion del pedido*/
+.informacion-pedido{
+    position: absolute;
+    left: 13.5em;
+    top: 23em;
+}
+
+.container{
+    width: 70%;
+    max-width: 60em;
+    padding: 35px 50px;
+    transform: translate(-50%,-50%);
+    position: relative;
+    left: 60em;
+    top: 31em;
+    border-radius: 10px;
+}
+
+.columna-opciones{
+    margin-top: 2em;
+}
+
+form{
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
+}
+
+label{
+    color: #FFA16D;
+    font-size: 14px;
+}
+
+input{
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    margin-top: 5px;
+}
+
+input:focus{
+    outline: none;
+    border-color: #FFA16D;
+}
+
+
+button{
+    background: #FFA16D;
+    width: 6.25em;
+    height: 2em;
+    border-radius: 0.375em;
+    border: none;
+    position: absolute;
+    top: 25em;
+    left: 48%;
+    font-size: 1em;
+}
+
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+
+    .linea-temporal{
+        position: absolute;
+        top: 20em;
+        left: 19.5em;
+    }
+
+
+    .container{
+        left: 37em;
+        top: 36em;
+    }
+
+}
+
+
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px) {
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        left: 4em;
+        top: 7em;
+    }
+
+    /*Titulo apartado Genere un ticket*/
+    .titulo-seccion{
+        position: relative;
+        left: 5em;
+        top: 12em;
+    }
+
+
+    .linea-temporal{
+        position: relative;
+        max-width: fit-content;
+        top: 20em;
+        left: 1em;
+    }
+
+
+    /*Titulo apartado informacion del pedido*/
+    .informacion-pedido{
+        position: absolute;
+        left: 13.5em;
+        top: 23em;
+    }
+
+    .container{
+        width: 70%;
+        max-width: 60em;
+        padding: 35px 50px;
+        transform: translate(-50%,-50%);
+        position: relative;
+        left: 18em;
+        top: 31em;
+        border-radius: 10px;
+    }
+
+}

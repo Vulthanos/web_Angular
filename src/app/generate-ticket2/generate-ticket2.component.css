@@ -1,0 +1,301 @@
+/*Diseño Escritorio*/
+@media screen and (min-width: 1367px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+
+
+    /*Nombre de la pagina*/
+    .titulo-ayuda{
+        position: relative;
+        max-width: fit-content;
+        left: 15em;
+        top: 1em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    .titulo-ticket{
+        position: relative;
+        max-width: fit-content;
+        top: 3em;
+        font-size: 1.4em;
+
+    }
+
+    .titulo-seccion{
+        position: relative;
+        max-width: fit-content;
+
+    }
+
+    .linea-temporal{
+        max-width: fit-content;
+        position: relative;
+        top: 2em;
+        left: 28em;
+    }
+
+    .container{
+        width: 70%;
+        max-width: 60em;
+        padding: 35px 50px;
+        transform: translate(-50%,-50%);
+        position: relative;
+        left: 52em;
+        top: 33em;
+        border-radius: 10px;
+    }
+
+
+    .columna-opciones{
+        position: relative;
+        margin-top: 4em;
+    }
+
+    input{
+        width: 100%;
+        font-weight: 400;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border: 1.2px solid #c4cae0;
+        margin-top: 5px;
+    }
+
+    input:focus{
+        outline: none;
+        border-color: #FFA16D;
+    }
+
+
+
+    .crear-ticket{
+        margin-top: 5em;
+        border: none;
+        background: #FFA16D;
+        width: 6.25em;
+        height: 2em;
+        border-radius: 0.375em;
+        position: relative;
+        left: 48%;
+        font-size: 1em;
+    }
+
+    .contendor{
+        position: absolute;
+        top: 12em;
+        left: 5em;
+    }
+
+}
+
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+
+
+    /*Nombre de la pagina*/
+    .titulo-ayuda{
+        position: relative;
+        max-width: fit-content;
+        left: 15em;
+        top: 1em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    .titulo-ticket{
+        position: relative;
+        max-width: fit-content;
+        top: 3em;
+        font-size: 1.4em;
+
+    }
+
+    .titulo-seccion{
+        position: relative;
+        max-width: fit-content;
+
+    }
+
+    .linea-temporal{
+        max-width: fit-content;
+        position: relative;
+        top: 2em;
+        left: 28em;
+    }
+
+    .container{
+        width: 70%;
+        max-width: 60em;
+        padding: 35px 50px;
+        transform: translate(-50%,-50%);
+        position: relative;
+        left: 40em;
+        top: 31em;
+        border-radius: 10px;
+    }
+
+
+    .columna-opciones{
+        position: relative;
+        margin-top: 4em;
+    }
+
+    input{
+        width: 100%;
+        font-weight: 400;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border: 1.2px solid #c4cae0;
+        margin-top: 5px;
+    }
+
+    input:focus{
+        outline: none;
+        border-color: #FFA16D;
+    }
+
+    .subir-imagenes{
+        position: relative;
+        border: none;
+        max-width: 15em;
+        max-height: 10em;
+    }
+
+    .crear-ticket{
+        margin-top: 5em;
+        border: none;
+        background: #FFA16D;
+        width: 6.25em;
+        height: 2em;
+        border-radius: 0.375em;
+        position: relative;
+        left: 48%;
+        font-size: 1em;
+    }
+
+
+}
+
+
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+
+    /*Nombre de la pagina*/
+    .titulo-ayuda{
+        position: relative;
+        left: 15em;
+        top: -15em;
+        text-align: center;
+        font-size: 2em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    .titulo-ticket{
+        position: relative;
+        max-width: fit-content;
+        top: -25em;
+        left: 29em;
+        font-size: 1em;
+
+    }
+
+    .titulo-seccion{
+        position: relative;
+        max-width: fit-content;
+        top: -18em;
+        left: 35em;
+        font-size: 0.8em;
+
+    }
+
+    .linea-temporal{
+        max-width: fit-content;
+        position: relative;
+        top: -18em;
+        left: 29em;
+    }
+
+    .container{
+        max-width: fit-content;
+        transform: translate(-50%,-50%);
+        position: relative;
+        top: 63em;
+        left: 6em;
+        border-radius: 10px;
+    }
+
+
+    .columna-opciones{
+        position: relative;
+        margin-top: 4em;
+        top: -12em;
+        left: 42em;
+        font-size: 0.8em;
+    }
+
+    .cuadro-imagenes{
+        position: relative;
+        margin-top: 4em;
+        left: -14em;
+        border: none;
+        max-width: 18em;
+    }
+
+    .crear-ticket{
+        margin-top: 5em;
+        border: none;
+        background: #FFA16D;
+        width: 6.25em;
+        height: 2em;
+        border-radius: 0.375em;
+        position: relative;
+        left: 44em;
+        top: -14em;
+        font-size: 1em;
+    }
+}
+
+
+
+
+

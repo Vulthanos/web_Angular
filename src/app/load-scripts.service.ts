@@ -27,6 +27,17 @@ export class LoadScriptsService {
         }
     }
 
+    LoadCSS( archivos:string[] ) {
+        for ( let archivo in archivos ) {
+            let link = document.createElement('link');
+            link.rel = "stylesheet";
+            link.type = 'text/html text/css';
+            link.href = "./assets/CSS_Files/" + archivo + ".css";
+            let head = document.getElementsByTagName('head')[0];
+            head.appendChild(link);
+        }
+    }
+
     LoadUrl(archivos:string[]) {
         for ( let archivo of archivos ) {
             let script = document.createElement('script');

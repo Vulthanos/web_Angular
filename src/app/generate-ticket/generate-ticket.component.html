@@ -1,0 +1,33 @@
+<section class="titulo-central">Ayuda</section>
+
+
+<section class="titulo-seccion"><strong>Genere un ticket</strong></section>
+
+<section class="linea-temporal">
+    <img src="./assets/IMGS/barra_progreso_ticket1.png" alt="barra progreso 1">
+</section>
+
+
+<div class="container">
+    <form>
+        <div class="columna-opciones">
+            <label for="id-pedido"><strong>Id del pedido</strong></label>
+            <input type="text" id="id-pedido" placeholder="Escriba el id del pedido" pattern="[a-zA-Z0-9]+" required>
+        </div>
+
+        <div class="columna-opciones">
+            <label for="metodo-pago"><strong>Metodo de pago</strong></label>
+            <input type="text" id="metodo-pago" placeholder="Escriba el metodo de pago" pattern="[A-Z][a-z]{1,15}" required>
+        </div>
+
+        <div class="columna-opciones">
+            <label for="correo"><strong>Correo de contacto</strong></label>
+            <input type="email" id="correo" placeholder="Escriba su correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </div>
+    </form>
+
+    <button type="submit" class="boton-continuar">
+        <a routerLink="/generate-ticket2" style="text-decoration: none"><span>Continuar</span></a>
+    </button>
+
+</div>
