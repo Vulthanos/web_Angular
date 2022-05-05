@@ -42,9 +42,8 @@
             </label>
         </section>
 
-        <button class="crear-ticket">
-            <a routerLink="/ticket-end" style="text-decoration: none"><span>Crear ticket</span></a>
-        </button>
+        <button [disabled]="signupForm.invalid" type="submit" class="crear-ticket" routerLink="/ticket-end">Crear ticket</button>
+
 
     </form>
 
