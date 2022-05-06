@@ -1,4 +1,4 @@
-import { setLogged, getLogged, getLoggedUser } from './firebase_logs.mjs';
+import { setLogged, getLogged, getUsers } from './firebase_logs.mjs';
 
 const login_overlay = document.getElementById('login_popup_overlay'),
     login_popup = document.getElementById('login_popup');

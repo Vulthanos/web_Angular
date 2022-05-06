@@ -52,4 +52,4 @@ async function setLogged(state, user) {
     updateDoc(doc(db, "logs", "logged"), newValues);
 }
 
-export { getLogs, getLoggedUser, setLogged, getLogged};
+export { getLogs, getLoggedUser, setLogged, getLogged, getUsers};
