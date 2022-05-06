@@ -1,5 +1,12 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
-import { getFirestore, collection, getDocs, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
+import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+import {
+    collection,
+    doc,
+    getDoc,
+    getDocs,
+    getFirestore,
+    updateDoc
+} from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAOs5F1izcHbBhvDIZf_-SjG6rHkegt9dQ",
@@ -14,39 +21,31 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 async function getLogs() {
-    const logsCol = collection(db, 'logs');
-    const logsSnapshot = await getDocs(logsCol);
-    return logsSnapshot.docs.map(doc => doc.data());
+    return await getDocs(collection(db, 'logs'));
 }
 
 async function getLogged() {
-    const docRef = doc(db, "logs", "logged");
-    const docSnap = await getDoc(docRef);
+    const docSnap = await getDoc(doc(db, "logs", "logged"));
     if (docSnap.exists()) {
-        return docSnap.data().logged;
+        return docSnap;
     } else {
         console.log("No existe el document");
     }
 }
 
 async function getLoggedUser() {
-    const docRef = doc(db, "logs", "logged");
-    const docSnap = await getDoc(docRef);
+    const docSnap = await getDoc(doc(db, "logs", "logged"));
     if (docSnap.exists()) {
-        return docSnap.data().loggedUser;
+        return docSnap;
     } else {
         console.log("No existe el document");
     }
 }
 
-async function setLogged(state) {
-    const docRef = doc(db, "logs", "logged");
-    const docSnap = await getDoc(docRef);
-    if (docSnap.exists()) {
-        docSnap.logged = state;
-    } else {
-        console.log("No existe el document");
-    }
+async function setLogged(state, user) {
+    const newValues = {logged: state,
+    loggedUser: user};
+    updateDoc(doc(db, "logs", "logged"), newValues);
 }
 
-export { getLogs, getLogged, getLoggedUser, setLogged};
+export { getLogs, getLoggedUser, setLogged, getLogged};
