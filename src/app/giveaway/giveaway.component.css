@@ -39,6 +39,7 @@ button {
   border-radius: 10px;
 }
 
+
 /*Diseño tablet*/
 @media screen and (min-width: 981px) and (max-width: 1366px) {
 
@@ -51,6 +52,8 @@ button {
     top: 30em;
     left: 43em;
   }
+
+
 
 }
 
