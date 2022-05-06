@@ -9,7 +9,7 @@ import { LoadScriptsService } from '../services/load-scripts.service';
 export class SinginComponent implements OnInit {
 
   constructor(private _LoadScripts:LoadScriptsService) {
-      _LoadScripts.Load(["singup_script"]);
+      _LoadScripts.LoadModules(["singup_script"]);
   }
 
   ngOnInit(): void {
