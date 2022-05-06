@@ -1,4 +1,4 @@
-import { setLogged, getLogs, getLogged, getLoggedUser } from './firebase_logs.mjs';
+import { setLogged, getLogged, getLoggedUser } from './firebase_logs.mjs';
 
 async function isLogged() {
     const isLogged = await getLogged();
@@ -131,6 +131,7 @@ function API_Consult() {
 
 function successfulLogin(loged) {
     if (loged) {
+        setLogged(loged).then();
         location.href = "http://localhost:4200/profile-page";
     }
 }
