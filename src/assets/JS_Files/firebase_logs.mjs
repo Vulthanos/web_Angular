@@ -24,6 +24,10 @@ async function getLogs() {
     return await getDocs(collection(db, 'logs'));
 }
 
+async function getUsers() {
+    return await getDocs(collection(db, "users")).data();
+}
+
 async function getLogged() {
     const docSnap = await getDoc(doc(db, "logs", "logged"));
     if (docSnap.exists()) {

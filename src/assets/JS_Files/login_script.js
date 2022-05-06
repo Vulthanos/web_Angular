@@ -104,11 +104,11 @@ async function formSubmit() {
         return false;
     } else {
         if (API_Consult) {
-            setLogged(true, "logged").then();
+            setLogged(true, "logged").finally();
             successfulLogin(true);
             return true;
         } else {
-            setLogged(false, "not logged").then();
+            setLogged(false, "not logged").finally();
             errores += 'La combinacion de email y contraseña no existe<br>';
             login_warnings.innerHTML = errores;
             return false;
@@ -116,14 +116,8 @@ async function formSubmit() {
     }
 }
 
-function API_Consult() {
-    fetch("http://localhost:3000/users").then((response) => response.json()).then(users => {
-        users.forEach(user => {
-            if (login_password.value === user.pass && login_email.value === user.email) {
-                return true;
-            }
-        });
-    });
+async function API_Consult() {
+    return true;
 }
 
 function successfulLogin(loged) {
