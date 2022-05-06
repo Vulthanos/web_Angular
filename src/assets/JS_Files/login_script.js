@@ -1,17 +1,12 @@
 import { setLogged, getLogged, getLoggedUser } from './firebase_logs.mjs';
 
-async function isLogged() {
-    const isLogged = await getLogged();
-    return isLogged.data().logged;
-}
-
 const login_overlay = document.getElementById('login_popup_overlay'),
     login_popup = document.getElementById('login_popup');
 
 const login_open = document.getElementById('user_profile');
 
 login_open.addEventListener('click', async function () {
-    const logged = await isLogged();
+    const isLogged = await getLogged();
     if (!logged) {
         login_overlay.classList.add('login_active');
         login_popup.classList.add('login_active');
