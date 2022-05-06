@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
@@ -34,37 +34,43 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
 
+import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
+import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
+import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([
-        { path: '', component: SliderComponent },
-        { path: 'products/:productId', component: ProductDetailsComponent },
-        { path: 'cart', component: CartComponent },
-        { path: 'shipping', component: ShippingComponent },
-        { path: 'search', component: SearchResultComponent },
-        { path: 'result', component: SliderResultComponent},
-        { path: 'help', component: HelpComponent },
-        { path: 'information', component: InformationComponent },
-        { path: 'show-giveaway', component: ShowGiveawayComponent },
-        { path: 'newsletter-end', component: NewsletterEndComponent },
-        { path: 'ticket-end', component: TicketEndComponent },
-        { path: 'profile-page', component: ProfilePageComponent },
-        { path: 'newsletter', component: NewsletterComponent },
-        { path: 'giveaway', component: GiveawayComponent },
-        { path: 'generate-ticket', component: GenerateTicketComponent },
-        { path: 'generate-ticket2', component: GenerateTicket2Component },
-        { path: 'giveaway-end', component: GiveawayEndComponent },
-        { path: 'fernando', component: ProductListComponent},
-        { path: 'firestore', component: ProductsComponent},
-        { path: 'shipping2', component: CreditCardShippingComponent}
-    ]),
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        RouterModule.forRoot([
+            {path: '', component: SliderComponent},
+            {path: 'products/:productId', component: ProductDetailsComponent},
+            {path: 'cart', component: CartComponent},
+            {path: 'search', component: SearchResultComponent},
+            {path: 'result', component: SliderResultComponent},
+            {path: 'help', component: HelpComponent},
+            {path: 'information', component: InformationComponent},
+            {path: 'show-giveaway', component: ShowGiveawayComponent},
+            {path: 'newsletter-end', component: NewsletterEndComponent},
+            {path: 'ticket-end', component: TicketEndComponent},
+            {path: 'profile-page', component: ProfilePageComponent},
+            {path: 'newsletter', component: NewsletterComponent},
+            {path: 'giveaway', component: GiveawayComponent},
+            {path: 'generate-ticket', component: GenerateTicketComponent},
+            {path: 'generate-ticket2', component: GenerateTicket2Component},
+            {path: 'giveaway-end', component: GiveawayEndComponent},
+            {path: 'fernando', component: ProductListComponent},
+            {path: 'firestore', component: ProductsComponent},
+            {path: 'shipping', component: CreditCardShippingComponent},
+
+            {path: 'tutorials', component: TutorialsListComponent},
+            {path: 'add', component: AddTutorialComponent}        //{ path: 'shipping', component: ShippingComponent },
+        ]),
+        AngularFireModule.initializeApp(environment.firebaseConfig),
+        AngularFirestoreModule,
+        FormsModule
+    ],
   declarations: [
     AppComponent,
     TopBarComponent,
@@ -94,6 +100,13 @@ import { TicketEndComponent } from './ticket-end/ticket-end.component';
     TicketEndComponent,
       ProductsComponent,
       CreditCardShippingComponent,
+      AddTutorialComponent,
+      TutorialDetailsComponent,
+      TutorialsListComponent,
+
+      AddTutorialComponent,
+      TutorialDetailsComponent,
+      TutorialsListComponent
   ],
   bootstrap: [
     AppComponent

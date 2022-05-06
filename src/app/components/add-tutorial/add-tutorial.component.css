@@ -10,10 +10,8 @@
 }
 
 .container{
-    padding: 10em;
-    height: auto;
     min-height: 100vh;
-    background: white;
+    background: #eee;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +19,7 @@
     padding-bottom: 60px;
 }
 
-.container form{
+.container .submit-form{
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0,0,0,.1);
@@ -30,18 +28,18 @@
     padding-top: 160px;
 }
 
-.container form .inputBox{
+.container .submit-form .inputBox{
     margin-top: 20px;
 }
 
-.container form .inputBox span{
+.container .submit-form .inputBox span{
     display: block;
-    color:black;
+    color:#999;
     padding-bottom: 5px;
 }
 
-.container form .inputBox input,
-.container form .inputBox select{
+.container .submit-form.inputBox input,
+.container .submit-form .inputBox select{
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -49,16 +47,16 @@
     color:#444;
 }
 
-.container form .flexbox{
+.container .submit-form .flexbox{
     display: flex;
     gap:15px;
 }
 
-.container form .flexbox .inputBox{
+.container .submit-form .flexbox .inputBox{
     flex:1 1 150px;
 }
 
-.container form .submit-btn{
+.container .submit-form .submit-btn{
     width: 100%;
     background:linear-gradient(45deg, #FFA16D, #FF833D);
     margin-top: 20px;
@@ -70,7 +68,7 @@
     transition: .2s linear;
 }
 
-.container form .submit-btn:hover{
+.container .submit-form .submit-btn:hover{
     letter-spacing: 2px;
     opacity: .8;
 }
