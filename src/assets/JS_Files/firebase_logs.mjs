@@ -43,9 +43,9 @@ async function getLoggedUser() {
     }
 }
 
-async function setLogged(state) {
+async function setLogged(state, user) {
     const newValues = {logged: state,
-    loggedUser: "Prueba"};
+    loggedUser: user};
     updateDoc(doc(db, "logs", "logged"), newValues);
 }
 

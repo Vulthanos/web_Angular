@@ -70,15 +70,16 @@ const login_btn = document.getElementById('login_btn');
 const login_warnings = document.getElementById('login_warnings');
 const login_email = document.getElementById('login_email');
 
-login_btn.addEventListener('click', function (e) {
+login_btn.addEventListener('click', async function (e) {
     e.preventDefault();
-    if(formSubmit()) {
+    const validation = await formSubmit().then();
+    if(validation) {
         login_overlay.classList.remove('login_active');
         login_popup.classList.remove('login_active');
     }
 });
 
-function formSubmit() {
+async function formSubmit() {
     login_warnings.innerHTML = "";
     let errores = "";
     let email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -109,9 +110,11 @@ function formSubmit() {
         return false;
     } else {
         if (API_Consult) {
+            setLogged(true, "logged").then();
             successfulLogin(true);
             return true;
         } else {
+            setLogged(false, "not logged").then();
             errores += 'La combinacion de email y contraseña no existe<br>';
             login_warnings.innerHTML = errores;
             return false;
@@ -131,7 +134,6 @@ function API_Consult() {
 
 function successfulLogin(loged) {
     if (loged) {
-        setLogged(loged).then();
         location.href = "http://localhost:4200/profile-page";
     }
 }
