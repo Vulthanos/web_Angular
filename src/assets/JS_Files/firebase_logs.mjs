@@ -25,7 +25,7 @@ async function getLogs() {
 }
 
 async function getUsers() {
-    return await getDocs(collection(db, "users")).data();
+    return await getDocs(collection(db, "users"));
 }
 
 async function getLogged() {

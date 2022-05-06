@@ -103,8 +103,7 @@ async function formSubmit() {
         login_warnings.innerHTML = errores;
         return false;
     } else {
-        if (API_Consult) {
-            setLogged(true, "logged").finally();
+        if (API_Consult(login_email.value, login_password.value).then()) {
             successfulLogin(true);
             return true;
         } else {
@@ -116,8 +115,17 @@ async function formSubmit() {
     }
 }
 
-async function API_Consult() {
-    return true;
+async function API_Consult(email, password) {
+    const users = await getUsers();
+    users.forEach(user => {
+        const userData = user.data();
+        if (email === userData.email && password === userData.password) {
+            console.log("User finded");
+            setLogged(true, user.id).then();
+            return true;
+        }
+    });
+    return false;
 }
 
 function successfulLogin(loged) {
