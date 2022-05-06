@@ -11,8 +11,6 @@ login_open.addEventListener('click', async function () {
         login_overlay.classList.add('login_active');
         login_popup.classList.add('login_active');
     } else {
-        login_overlay.classList.remove('login_active');
-        login_popup.classList.remove('login_active');
         successfulLogin(true);
     }
 });
