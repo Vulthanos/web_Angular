@@ -66,7 +66,7 @@ const login_email = document.getElementById('login_email');
 
 login_btn.addEventListener('click', async function (e) {
     e.preventDefault();
-    const validation = await formSubmit().then();
+    const validation = await formSubmit();
     if(validation) {
         login_overlay.classList.remove('login_active');
         login_popup.classList.remove('login_active');
@@ -103,11 +103,12 @@ async function formSubmit() {
         login_warnings.innerHTML = errores;
         return false;
     } else {
-        if (API_Consult(login_email.value, login_password.value).then()) {
+        const consult = await API_Consult(login_email.value, login_password.value);
+        console.log(consult);
+        if (consult) {
             successfulLogin(true);
             return true;
         } else {
-            setLogged(false, "not logged").finally();
             errores += 'La combinacion de email y contraseña no existe<br>';
             login_warnings.innerHTML = errores;
             return false;
@@ -116,16 +117,17 @@ async function formSubmit() {
 }
 
 async function API_Consult(email, password) {
+    let success = false;
     const users = await getUsers();
     users.forEach(user => {
         const userData = user.data();
         if (email === userData.email && password === userData.password) {
             console.log("User finded");
-            setLogged(true, user.id).then();
-            return true;
+            setLogged(true, user.id);
+            success = true;
         }
     });
-    return false;
+    return success;
 }
 
 function successfulLogin(loged) {

@@ -40,7 +40,7 @@ async function getLogged() {
 async function getLoggedUser() {
     const docSnap = await getDoc(doc(db, "logs", "logged"));
     if (docSnap.exists()) {
-        return docSnap;
+        return docSnap.data().loggedUser;
     } else {
         console.log("No existe el document");
     }
@@ -49,7 +49,7 @@ async function getLoggedUser() {
 async function setLogged(state, user) {
     const newValues = {logged: state,
     loggedUser: user};
-    updateDoc(doc(db, "logs", "logged"), newValues);
+    updateDoc(doc(db, "logs", "logged"), newValues).then();
 }
 
-export { getLogs, getLoggedUser, setLogged, getLogged, getUsers};
+export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, updateDoc, doc, db};
