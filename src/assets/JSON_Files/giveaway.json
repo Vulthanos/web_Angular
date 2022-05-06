@@ -3,17 +3,17 @@
     {
       "id": "1",
       "title": "Sorteo de una playstation 5",
-      "img": "./assets/IMGS/sorteo/sorteo_350x500.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fsorteo%2Fsorteo_350x500.png?alt=media&token=97f4551c-24cd-4383-8d5f-d400d39cb2ba"
     },
     {
       "id": "2",
       "title": "Sorteo de una xbox series S",
-      "img": "./assets/IMGS/sorteo/sorteo2_350x500.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fsorteo%2Fsorteo2_350x500.png?alt=media&token=a2299b85-3e96-476b-a3cd-f790ff454d7a"
     },
     {
       "id": "3",
       "title": "Sorteo del videojuego: Cyberpunk",
-      "img": "./assets/IMGS/sorteo/sorteo3_350x500.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fsorteo%2Fsorteo3_350x500.png?alt=media&token=2dcad4d1-aa49-4eda-9ddd-f4e6b933972e"
     }
   ]
 }
