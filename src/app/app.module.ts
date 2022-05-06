@@ -97,7 +97,7 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
     TicketEndComponent,
     UploadFormComponent,
     UploadListComponent,
-    UploadDetailsComponent
+    UploadDetailsComponent,
       ProductsComponent,
       CreditCardShippingComponent,
   ],
