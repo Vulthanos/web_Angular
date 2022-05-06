@@ -27,6 +27,11 @@ body{
     top: 13em;
 }
 
+.btn btn-success btn-sm{
+    color: black;
+    max-width: fit-content;
+}
+
 /*Diseño Escritorio*/
 @media screen and (min-width: 1367px){
 
@@ -53,7 +58,7 @@ body{
     }
 
     /*Estilo de los botones para unirse*/
-    button {
+    .unir-sorteo {
         background: #FFA16D;
         width: 31.3125em;
         height: 3.75em;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-generate-ticket',
@@ -9,17 +9,22 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 export class GenerateTicketComponent {
     ngOptions = [1,2,3]
     ngDropdown = 1;
-    signupForm: FormGroup;
 
-    constructor(private builder: FormBuilder) {
-        this.signupForm = this.builder.group({
-            identidad: ['', Validators.required] ,
-            email: ['', Validators.compose([Validators.required, Validators.email])] ,
-        });
+    formGrp: FormGroup;
+
+
+    constructor(formBuilder: FormBuilder) {
+        this.formGrp = formBuilder.group({
+            emailctrl: ['', [Validators.required, Validators.email]]
+        })
     }
 
-    submit(value:any) {
-        console.log(this.signupForm.value);
+    get emailid(){
+        return this.formGrp.controls;
+    }
+
+    doSubmit() {
+        console.log(this.formGrp.value);
     }
 
 }

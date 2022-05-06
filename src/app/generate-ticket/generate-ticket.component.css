@@ -106,9 +106,9 @@ button{
     margin-bottom: 5px;
 }
 
-option:hover{
-    background-color: white;
-    color: #FFA16D;
+
+.show-error{
+    color: red;
 }
 
 
@@ -175,21 +175,7 @@ option:hover{
     }
 
 
-    .form-control-desplegable{
-        padding: 2.5px 5px;
-        background-color: #FFA16D;
-        color: black;
-        height: 25px;
-        border-radius: 5px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
 
-    option:hover{
-        background-color: white;
-        color: #FFA16D;
-        height: 25px;
-    }
 
 
 }
