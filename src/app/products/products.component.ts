@@ -4,21 +4,21 @@ import {Producto} from "../interfaces/producto.interface";
 import {forkJoin, mergeMap, Observable, Subject} from "rxjs";
 import {Usuario} from "../interfaces/usuario.interface";
 import {UsersService} from "../services/users.service";
-import {products} from "../products";
+
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+    selector: 'app-products',
+    templateUrl: './products.component.html',
+    styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
 
-  //  subject = new Subject<Array<any>>();
+    //  subject = new Subject<Array<any>>();
 
     //public productos?: Producto[] = [];
     products: Observable<Producto[]>;
 
-   // public usuarios?: Usuario[] = [];
+    // public usuarios?: Usuario[] = [];
     users: Observable<Usuario[]>;
 
     //productosCarrito: Array<any>=[];
@@ -28,12 +28,12 @@ export class ProductsComponent implements OnInit {
     //cosascarrito: Observable<Producto[]>;
 
     constructor(
-      private productoService: ProductsService, private usersService: UsersService) {
-      this.products = this.productoService.getProductos();
-      this.users = this.usersService.getUsers();
+        private productoService: ProductsService, private usersService: UsersService) {
+        this.products = this.productoService.getProductos();
+        this.users = this.usersService.getUsers();
 
-      this.getUser()
-  }
+        this.getUser()
+    }
 
     getUser(){
         this.usersService.getUserByID('1B010snvDnobXXvbETxb').pipe(
@@ -52,12 +52,14 @@ export class ProductsComponent implements OnInit {
     }
 
 
-  ngOnInit(): void {
-    console.log(this.productosCarrito);
-      //this.usersService.getUsers().subscribe()
-      //this.usersService.getUCart().subscribe()
-      //this.productoService.getProductos().subscribe()
-  }
+    ngOnInit(): void {
+        console.log(this.productosCarrito);
+        //this.usersService.getUsers().subscribe()
+        //this.usersService.getUCart().subscribe()
+        //this.productoService.getProductos().subscribe()
+    }
 
 
 }
+
+
