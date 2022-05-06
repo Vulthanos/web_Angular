@@ -22,9 +22,7 @@ import {environment} from "../environments/environment";
 import { AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import { ProductsComponent } from './products/products.component';
 import { CreditCardShippingComponent } from './credit-card-shipping/credit-card-shipping.component';
-import { AddTutorialComponent } from './add-tutorial/add-tutorial.component';
-import { TutorialsListComponent } from './tutorials-list/tutorials-list.component';
-import { TutorialsDetailsComponent } from './tutorials-details/tutorials-details.component';
+
 
 @NgModule({
   imports: [
@@ -41,8 +39,6 @@ import { TutorialsDetailsComponent } from './tutorials-details/tutorials-details
         {path: 'fernando', component: ProductListComponent},
         {path: 'firestore', component: ProductsComponent},
         {path: 'shipping2', component: CreditCardShippingComponent},
-        { path: 'tutorials', component: TutorialsListComponent },
-        { path: 'add', component: AddTutorialComponent }
     ]),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule
@@ -63,9 +59,6 @@ import { TutorialsDetailsComponent } from './tutorials-details/tutorials-details
     SliderResultComponent,
     ProductsComponent,
     CreditCardShippingComponent,
-    AddTutorialComponent,
-    TutorialsListComponent,
-    TutorialsDetailsComponent
   ],
   bootstrap: [
     AppComponent

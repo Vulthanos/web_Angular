@@ -26,6 +26,9 @@ export class UsersService {
         return this.af.collection('products', ref => ref.where(documentId(), "in", cart)).valueChanges();
     }
 
+    getUserByID(id: string){
+        return this.af.collection('users').doc(id).valueChanges();
+    }
 }
 
 
