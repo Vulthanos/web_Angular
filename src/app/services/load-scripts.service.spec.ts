@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { LoadScriptsService } from './load-scripts.service';
+import { LoadScriptsService } from './services/load-scripts.service';
 
 describe('LoadScriptsService', () => {
   let service: LoadScriptsService;
