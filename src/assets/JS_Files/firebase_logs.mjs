@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
-import { getFirestore, collection, getDocs, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
+import { getFirestore, collection, getDocs, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAOs5F1izcHbBhvDIZf_-SjG6rHkegt9dQ",
@@ -20,8 +20,8 @@ async function getLogs() {
 }
 
 async function getLogged() {
-    const docRef = doc(db, "logs", "logged");
-    const docSnap = await getDoc(docRef);
+    let docRef = doc(db, "logs", "logged");
+    let docSnap = await getDoc(docRef);
     if (docSnap.exists()) {
         return docSnap.data().logged;
     } else {
@@ -40,13 +40,9 @@ async function getLoggedUser() {
 }
 
 async function setLogged(state) {
-    const docRef = doc(db, "logs", "logged");
-    const docSnap = await getDoc(docRef);
-    if (docSnap.exists()) {
-        docSnap.logged = state;
-    } else {
-        console.log("No existe el document");
-    }
+    const newValues = {logged: state,
+    loggedUser: "Prueba"};
+    updateDoc(doc(db, "logs", "logged"), newValues);
 }
 
 export { getLogs, getLogged, getLoggedUser, setLogged};

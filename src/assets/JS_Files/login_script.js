@@ -25,8 +25,7 @@ login_close.addEventListener('click', function (e) {
   e.preventDefault();
   login_overlay.classList.remove('login_active');
   login_popup.classList.remove('login_active');
-    console.log(logs);
-    setLogged(true).then();
+  console.log(logs);
 });
 
 const open_singup = document.getElementById('open_singup');
