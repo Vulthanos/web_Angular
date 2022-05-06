@@ -6,7 +6,7 @@ import {documentId} from "@angular/fire/firestore";
 import { doc, setDoc } from "firebase/firestore";
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 
 export class UsersService {
@@ -20,7 +20,7 @@ export class UsersService {
     }
 
     getUCart(){
-    return this.af.collection<Producto>('products').valueChanges()}
+        return this.af.collection<Producto>('products').valueChanges()}
 
     getProductsByCart(cart: []){
         return this.af.collection('products', ref => ref.where(documentId(), "in", cart)).valueChanges();

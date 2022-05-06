@@ -22,6 +22,17 @@ import {environment} from "../environments/environment";
 import { AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import { ProductsComponent } from './products/products.component';
 import { CreditCardShippingComponent } from './credit-card-shipping/credit-card-shipping.component';
+import { GenerateTicketComponent } from './generate-ticket/generate-ticket.component';
+import { GenerateTicket2Component } from './generate-ticket2/generate-ticket2.component';
+import { GiveawayComponent } from './giveaway/giveaway.component';
+import { GiveawayEndComponent } from './giveaway-end/giveaway-end.component';
+import { HelpComponent } from './help/help.component';
+import { InformationComponent } from './information/information.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { NewsletterEndComponent } from './newsletter-end/newsletter-end.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
+import { TicketEndComponent } from './ticket-end/ticket-end.component';
 
 
 @NgModule({
@@ -80,7 +91,9 @@ import { CreditCardShippingComponent } from './credit-card-shipping/credit-card-
     NewsletterEndComponent,
     ProfilePageComponent,
     ShowGiveawayComponent,
-    TicketEndComponent
+    TicketEndComponent,
+      ProductsComponent,
+      CreditCardShippingComponent,
   ],
   bootstrap: [
     AppComponent
@@ -92,8 +105,4 @@ import { CreditCardShippingComponent } from './credit-card-shipping/credit-card-
 
 export class AppModule { }
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+
