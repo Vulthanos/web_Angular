@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadScriptsService } from '../load-scripts.service';
+import { LoadScriptsService } from '../services/load-scripts.service';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +9,7 @@ import { LoadScriptsService } from '../load-scripts.service';
 export class LoginComponent implements OnInit {
 
   constructor(private _LoadScripts:LoadScriptsService) {
-      _LoadScripts.Load(["login_script"])
+      _LoadScripts.LoadModules(["login_script"])
   }
 
   ngOnInit(): void {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoadScriptsService} from '../load-scripts.service';
+import { LoadScriptsService} from '../services/load-scripts.service';
 @Component({
   selector: 'app-show-giveaway',
   templateUrl: './show-giveaway.component.html',

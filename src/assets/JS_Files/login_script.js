@@ -1,9 +1,12 @@
+import { getLogged, setLogged } from './firebase_logs.mjs';
+
+let logs = getLogged();
+let loged;
+
 const login_overlay = document.getElementById('login_popup_overlay'),
-  login_popup = document.getElementById('login_popup');
+    login_popup = document.getElementById('login_popup');
 
 const login_open = document.getElementById('user_profile');
-
-let loged;
 
 login_open.addEventListener('click', function (e) {
   e.preventDefault();
@@ -22,6 +25,8 @@ login_close.addEventListener('click', function (e) {
   e.preventDefault();
   login_overlay.classList.remove('login_active');
   login_popup.classList.remove('login_active');
+    console.log(logs);
+    setLogged(true).then();
 });
 
 const open_singup = document.getElementById('open_singup');

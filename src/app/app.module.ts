@@ -16,7 +16,7 @@ import { SinginComponent } from './singin/singin.component';
 import { SliderComponent } from './slider/slider.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { SliderResultComponent } from './slider-result/slider-result.component';
-import { LoadScriptsService } from './load-scripts.service';
+import { LoadScriptsService } from './services/load-scripts.service';
 import { AngularFireModule} from '@angular/fire/compat';
 import {environment} from "../environments/environment";
 import { AngularFirestoreModule} from '@angular/fire/compat/firestore';
@@ -30,15 +30,26 @@ import { CreditCardShippingComponent } from './credit-card-shipping/credit-card-
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: SliderComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent },
-      { path: 'search', component: SearchResultComponent },
-      { path: 'result', component: SliderResultComponent},
-        {path: 'fernando', component: ProductListComponent},
-        {path: 'firestore', component: ProductsComponent},
-        {path: 'shipping2', component: CreditCardShippingComponent},
+        { path: '', component: SliderComponent },
+        { path: 'products/:productId', component: ProductDetailsComponent },
+        { path: 'cart', component: CartComponent },
+        { path: 'shipping', component: ShippingComponent },
+        { path: 'search', component: SearchResultComponent },
+        { path: 'result', component: SliderResultComponent},
+        { path: 'help', component: HelpComponent },
+        { path: 'information', component: InformationComponent },
+        { path: 'show-giveaway', component: ShowGiveawayComponent },
+        { path: 'newsletter-end', component: NewsletterEndComponent },
+        { path: 'ticket-end', component: TicketEndComponent },
+        { path: 'profile-page', component: ProfilePageComponent },
+        { path: 'newsletter', component: NewsletterComponent },
+        { path: 'giveaway', component: GiveawayComponent },
+        { path: 'generate-ticket', component: GenerateTicketComponent },
+        { path: 'generate-ticket2', component: GenerateTicket2Component },
+        { path: 'giveaway-end', component: GiveawayEndComponent },
+        { path: 'fernando', component: ProductListComponent},
+        { path: 'firestore', component: ProductsComponent},
+        { path: 'shipping2', component: CreditCardShippingComponent}
     ]),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule
@@ -59,6 +70,17 @@ import { CreditCardShippingComponent } from './credit-card-shipping/credit-card-
     SliderResultComponent,
     ProductsComponent,
     CreditCardShippingComponent,
+    GenerateTicketComponent,
+    GenerateTicket2Component,
+    GiveawayComponent,
+    GiveawayEndComponent,
+    HelpComponent,
+    InformationComponent,
+    NewsletterComponent,
+    NewsletterEndComponent,
+    ProfilePageComponent,
+    ShowGiveawayComponent,
+    TicketEndComponent
   ],
   bootstrap: [
     AppComponent
