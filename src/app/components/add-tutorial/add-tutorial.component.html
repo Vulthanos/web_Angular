@@ -85,10 +85,15 @@
                 />
             </div>
 
+            <div class="inputBox">
+                <span>cvv</span>
+                <input type="text" maxlength="4" class="cvv-input">
+            </div>
+
             <div class="form-group inputBox">
                 <label for="Name">Nombre (cómo aparece en la tarjeta)</label>
                 <input
-                    class="form-control"
+                    class="form-control card-holder-input"
                     id="Name"
                     required
                     [(ngModel)]="tutorial.CardHolder"

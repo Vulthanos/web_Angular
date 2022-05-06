@@ -33,10 +33,8 @@ import { NewsletterEndComponent } from './newsletter-end/newsletter-end.componen
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
-
 import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
-import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
-import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+
 
 @NgModule({
     imports: [
@@ -63,8 +61,6 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
             {path: 'fernando', component: ProductListComponent},
             {path: 'firestore', component: ProductsComponent},
             {path: 'shipping', component: CreditCardShippingComponent},
-
-            {path: 'tutorials', component: TutorialsListComponent},
             {path: 'add', component: AddTutorialComponent}        //{ path: 'shipping', component: ShippingComponent },
         ]),
         AngularFireModule.initializeApp(environment.firebaseConfig),
@@ -101,12 +97,6 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
       ProductsComponent,
       CreditCardShippingComponent,
       AddTutorialComponent,
-      TutorialDetailsComponent,
-      TutorialsListComponent,
-
-      AddTutorialComponent,
-      TutorialDetailsComponent,
-      TutorialsListComponent
   ],
   bootstrap: [
     AppComponent

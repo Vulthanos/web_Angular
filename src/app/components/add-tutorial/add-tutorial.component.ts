@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Tutorial } from 'src/app/interfaces/shippping&payment.interface';
 import { TutorialService } from 'src/app/services/tutorial.service';
+import { LoadScriptsService} from "../../services/load-scripts.service";
+
 @Component({
     selector: 'app-add-tutorial',
     templateUrl: './add-tutorial.component.html',
@@ -9,7 +11,8 @@ import { TutorialService } from 'src/app/services/tutorial.service';
 export class AddTutorialComponent implements OnInit {
     tutorial: Tutorial = new Tutorial();
     submitted = false;
-    constructor(private tutorialService: TutorialService) { }
+    constructor(private tutorialService: TutorialService, private loadScriptsService: LoadScriptsService) {
+        loadScriptsService.Load(["CreditCardAnimation"])    }
     ngOnInit(): void {
     }
     saveTutorial(): void {

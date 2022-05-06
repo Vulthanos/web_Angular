@@ -35,15 +35,68 @@
     </div>
 
     <form action="">
-        <div class="inputBox">
-            <span>Your full address</span>
-            <input type="text" maxlength="16" class="address-input">
+        <div class="submit-form">
+            <div *ngIf="!submitted">
+
+                <div class="form-group inputBox">
+                    <label for="dirección">Dirección Completa</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="dirección"
+                        required
+                        [(ngModel)]="tutorial.address"
+                        name="dirección"
+                    />
+                </div>
+
+                <div class="form-group inputBox">
+                    <label for="NúmeroDeTeléfono">Número de Teléfono</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="NúmeroDeTeléfono"
+                        required
+                        [(ngModel)]="tutorial.PhoneNumber"
+                        name="NúmeroDeTeléfono"
+                    />
+                </div>
+
+                <div class="form-group inputBox">
+                    <label for="Tarjeta">Número de Tarjeta</label>
+                    <input
+                        class="form-control"
+                        id="Tarjeta"
+                        required
+                        [(ngModel)]="tutorial.CardNumber"
+                        name="Tarjeta"
+                    />
+                </div>
+
+                <div class="form-group inputBox">
+                    <label for="Name">Nombre (cómo aparece en la tarjeta)</label>
+                    <input
+                        class="form-control card-holder-input"
+                        id="Name"
+                        required
+                        [(ngModel)]="tutorial.CardHolder"
+                        name="Name"
+                    />
+                </div>
+
+                <div class="inputBox">
+                    <span>cvv</span>
+                    <input type="text" maxlength="4" class="cvv-input">
+                </div>
+
+                <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+            </div>
+            <div *ngIf="submitted">
+                <h4>You submitted successfully!</h4>
+                <button class="btn btn-success" (click)="newTutorial()">Add</button>
+            </div>
         </div>
 
-        <div class="inputBox">
-            <span>Phone Number</span>
-            <input type="text" maxlength="16" class="phone-number-input">
-        </div>
 
         <div class="inputBox">
             <span>card number</span>

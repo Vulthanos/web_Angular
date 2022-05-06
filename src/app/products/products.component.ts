@@ -4,6 +4,7 @@ import {Producto} from "../interfaces/producto.interface";
 import {forkJoin, mergeMap, Observable, Subject} from "rxjs";
 import {Usuario} from "../interfaces/usuario.interface";
 import {UsersService} from "../services/users.service";
+import {CheckUserService} from "../services/check-user.service";
 
 
 @Component({
@@ -25,17 +26,23 @@ export class ProductsComponent implements OnInit {
 
     productosCarrito: any[] = [];
 
+    ellogeado;
+
     //cosascarrito: Observable<Producto[]>;
 
     constructor(
-        private productoService: ProductsService, private usersService: UsersService) {
+        private productoService: ProductsService, private usersService: UsersService, private checkUserService: CheckUserService) {
         this.products = this.productoService.getProductos();
         this.users = this.usersService.getUsers();
-
+    this.ellogeado = this.checkUserService.getU()
         this.getUser()
+
     }
 
+
+
     getUser(){
+        console.log(this.ellogeado);
         this.usersService.getUserByID('1B010snvDnobXXvbETxb').pipe(
             mergeMap((res1) => this.usersService.getProductsByCart(res1['cart'])),
         ).subscribe((res3) => {
