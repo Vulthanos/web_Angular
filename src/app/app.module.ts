@@ -33,6 +33,9 @@ import { NewsletterEndComponent } from './newsletter-end/newsletter-end.componen
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
+import { UploadFormComponent } from './upload-form/upload-form.component';
+import { UploadListComponent } from './upload-list/upload-list.component';
+import { UploadDetailsComponent } from './upload-details/upload-details.component';
 
 
 @NgModule({
@@ -92,6 +95,9 @@ import { TicketEndComponent } from './ticket-end/ticket-end.component';
     ProfilePageComponent,
     ShowGiveawayComponent,
     TicketEndComponent,
+    UploadFormComponent,
+    UploadListComponent,
+    UploadDetailsComponent
       ProductsComponent,
       CreditCardShippingComponent,
   ],

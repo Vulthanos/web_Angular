@@ -31,16 +31,15 @@
             <p>Puede adjuntar una imagen que nos ayude a comprender el problema</p>
         </section>
 
-        <section class="cuadro-imagenes">
-            <figure class="image-container">
-                <img id="seleccion-imagen">
-                <figcaption id="nombre-archivo"></figcaption>
-            </figure>
-            <input type="file" id="subir-imagen" accept="image/*">
-            <label for="subir-imagen">
-                <i class="fas fa-upload"></i>
-            </label>
+        <section class="columna-opciones">
+                <div class="my-3">
+                    <app-upload-form></app-upload-form>
+                </div>
+                <div class="my-2">
+                    <app-upload-list></app-upload-list>
+                </div>
         </section>
+
 
         <button [disabled]="signupForm.invalid" type="submit" class="crear-ticket" routerLink="/ticket-end">Crear ticket</button>
 

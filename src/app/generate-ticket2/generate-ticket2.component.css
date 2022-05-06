@@ -1,6 +1,6 @@
 /*Diseño Escritorio*/
 @media screen and (min-width: 1367px){
-    
+
 
     *{
         margin: 0;
@@ -38,6 +38,7 @@
     .titulo-seccion{
         position: relative;
         max-width: fit-content;
+        margin-bottom: 10px;
 
     }
 
