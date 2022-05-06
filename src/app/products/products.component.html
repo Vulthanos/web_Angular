@@ -6,12 +6,15 @@
 <div *ngFor="let usuario of users | async">
     <h1 class="title">{{usuario.name}} {{usuario.surname}}</h1>
     <h1 class="title">{{usuario.email}}</h1>
-    {{usuario.cart}}
 </div>
 
+<div *ngFor="let jaja of productosCarrito">
+    <h1>{{jaja.name}}</h1>
+</div>
+<!--
 <div *ngFor="let prod of cosascarrito | async">
     <h1 class="title">{{prod.name}}</h1>
-</div>
+</div>-->
 
 
 
@@ -30,7 +33,7 @@
         <h5 class="Action">Remove all</h5>
     </div>
 
-    <div *ngFor="let producto of products | async">
+    <div *ngFor="let producto of productosCarrito">
         <div class="Cart-Items pad">
             <div class="image-box"><img src='{{producto.img}}' height="130px" alt=""/></div>
             <div class="about">

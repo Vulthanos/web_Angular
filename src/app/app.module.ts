@@ -22,17 +22,6 @@ import {environment} from "../environments/environment";
 import { AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import { ProductsComponent } from './products/products.component';
 import { CreditCardShippingComponent } from './credit-card-shipping/credit-card-shipping.component';
-import { GenerateTicketComponent } from './generate-ticket/generate-ticket.component';
-import { GenerateTicket2Component } from './generate-ticket2/generate-ticket2.component';
-import { GiveawayComponent } from './giveaway/giveaway.component';
-import { GiveawayEndComponent } from './giveaway-end/giveaway-end.component';
-import { HelpComponent } from './help/help.component';
-import { InformationComponent } from './information/information.component';
-import { NewsletterComponent } from './newsletter/newsletter.component';
-import { NewsletterEndComponent } from './newsletter-end/newsletter-end.component';
-import { ProfilePageComponent } from './profile-page/profile-page.component';
-import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
-import { TicketEndComponent } from './ticket-end/ticket-end.component';
 
 
 @NgModule({
