@@ -7,12 +7,13 @@ const login_open = document.getElementById('user_profile');
 
 login_open.addEventListener('click', async function () {
     const isLogged = await getLogged();
-    if (!logged) {
+    if (!isLogged) {
         login_overlay.classList.add('login_active');
         login_popup.classList.add('login_active');
     } else {
         login_overlay.classList.remove('login_active');
         login_popup.classList.remove('login_active');
+        successfulLogin(true);
     }
 });
 
