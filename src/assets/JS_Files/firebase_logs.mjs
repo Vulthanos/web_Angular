@@ -27,7 +27,7 @@ async function getLogs() {
 async function getLogged() {
     const docSnap = await getDoc(doc(db, "logs", "logged"));
     if (docSnap.exists()) {
-        return docSnap;
+        return docSnap.data().logged;
     } else {
         console.log("No existe el document");
     }
