@@ -1,7 +1,4 @@
-import { getLogged, setLogged } from './firebase_logs.mjs';
-
-let logs = getLogged();
-let loged;
+import { getLogged, setLogged} from './firebase_logs.mjs';
 
 const login_overlay = document.getElementById('login_popup_overlay'),
     login_popup = document.getElementById('login_popup');
@@ -10,7 +7,8 @@ const login_open = document.getElementById('user_profile');
 
 login_open.addEventListener('click', function (e) {
   e.preventDefault();
-  if (!loged) {
+  let isLogged = getLogged().then();
+  if (!isLogged) {
       login_overlay.classList.add('login_active');
       login_popup.classList.add('login_active');
   } else {
@@ -25,7 +23,6 @@ login_close.addEventListener('click', function (e) {
   e.preventDefault();
   login_overlay.classList.remove('login_active');
   login_popup.classList.remove('login_active');
-  console.log(logs);
 });
 
 const open_singup = document.getElementById('open_singup');
@@ -73,7 +70,8 @@ const login_email = document.getElementById('login_email');
 login_btn.addEventListener('click', function (e) {
     e.preventDefault();
     formSubmit();
-    if(loged) {
+    let isLogged = getLogged().then();
+    if(isLogged) {
         login_overlay.classList.remove('login_active');
         login_popup.classList.remove('login_active');
     }
@@ -110,12 +108,11 @@ function formSubmit() {
     return false;
   } else {
     if (API_Consult) {
-      loged = true;
-        successfulLogin(true);
+        let isLogged = getLogged().then();
+      successfulLogin(isLogged);
     } else {
       errores += 'La combinacion de email y contraseña no existe<br>';
       login_warnings.innerHTML = errores;
-      loged = false;
     }
   }
 }
@@ -133,5 +130,6 @@ function API_Consult() {
 function successfulLogin(loged) {
     if (loged) {
         location.href = "http://localhost:4200/profile-page";
+        setLogged(true).then();
     }
 }
