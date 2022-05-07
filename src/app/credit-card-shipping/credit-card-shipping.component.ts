@@ -13,7 +13,7 @@ export class CreditCardShippingComponent implements OnInit {
     submitted = false;
 
     constructor(private tutorialService: TutorialService, private loadScriptsService: LoadScriptsService) {
-        loadScriptsService.Load(["CreditCardAnimation"])
+        loadScriptsService.Load(["CreditCardAnimation","FormValidation"])
     }
 
     ngOnInit(): void {

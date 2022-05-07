@@ -33,7 +33,7 @@ import { NewsletterEndComponent } from './newsletter-end/newsletter-end.componen
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
-import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
+import { SuccessfulPurchaseComponent } from './successful-purchase/successful-purchase.component';
 
 
 @NgModule({
@@ -59,6 +59,7 @@ import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.com
             {path: 'giveaway-end', component: GiveawayEndComponent},
             {path: 'cart', component: ProductsComponent},
             {path: 'shipping', component: CreditCardShippingComponent},
+            {path: 'success', component: SuccessfulPurchaseComponent}
         ]),
         AngularFireModule.initializeApp(environment.firebaseConfig),
         AngularFirestoreModule,
@@ -93,7 +94,7 @@ import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.com
     TicketEndComponent,
       ProductsComponent,
       CreditCardShippingComponent,
-      AddTutorialComponent,
+      SuccessfulPurchaseComponent,
   ],
   bootstrap: [
     AppComponent

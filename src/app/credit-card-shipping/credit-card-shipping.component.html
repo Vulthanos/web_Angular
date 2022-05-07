@@ -34,7 +34,7 @@
 
     </div>
 
-    <form action="">
+    <form action="" name="registration">
         <div class="submit-form">
             <div *ngIf="!submitted">
 
@@ -53,7 +53,7 @@
                 <div class="form-group inputBox">
                     <label for="NúmeroDeTeléfono">Número de Teléfono</label>
                     <input
-                        type="text"
+                        type="number"
                         class="form-control"
                         id="NúmeroDeTeléfono"
                         required
@@ -67,6 +67,7 @@
                 <div class="form-group inputBox">
                     <label for="Tarjeta">Número de Tarjeta</label>
                     <input
+                        type="number"
                         class="form-control card-number-input"
                         id="Tarjeta"
                         required
@@ -78,6 +79,7 @@
                 <div class="form-group inputBox">
                     <label for="Name">Nombre (cómo aparece en la tarjeta)</label>
                     <input
+                        type="text"
                         class="form-control card-holder-input"
                         id="Name"
                         required
@@ -143,7 +145,7 @@
             </div>
             <div *ngIf="submitted">
                 <h4>Estamos procesando el pago. Puedes continuar.</h4>
-                <button class="btn btn-success submit-btn" onclick="window.location.href='/firestore'">Finalizar Compra</button>
+                <button class="btn btn-success submit-btn" onclick="window.location.href='/success'">Finalizar Compra</button>
             </div>
         </div>
     </form>
