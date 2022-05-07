@@ -6,7 +6,8 @@ import {
     getDocs,
     getFirestore,
     updateDoc,
-    addDoc
+    addDoc,
+    setDoc
 } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -50,7 +51,7 @@ async function getLoggedUser() {
 async function setLogged(state, user) {
     const newValues = {logged: state,
     loggedUser: user};
-    updateDoc(doc(db, "logs", "logged"), newValues).then();
+    setDoc(doc(db, "logs", "logged"), newValues).then();
 }
 
 async function newUser(newUser) {

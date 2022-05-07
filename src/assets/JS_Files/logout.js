@@ -1,5 +1,13 @@
-import { setLogged } from "../../assets/JS_Files/firebase_logs.mjs";
+import {getLogged, setLogged} from "./firebase_logs.mjs";
+
+async function logOut() {
+    const isOut = await getLogged();
+    if (!isOut) {
+        location.href = "http://localhost:4200";
+    }
+}
+
 document.getElementById("logout").addEventListener("click", async function() {
-    setLogged(false,"notlogged").finally();
-    location.href="http://localhost:4200/";
+    await setLogged(false, "not logged");
+    await logOut();
 });
