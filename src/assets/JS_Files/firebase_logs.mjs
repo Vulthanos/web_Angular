@@ -54,6 +54,7 @@ async function setLogged(state, user) {
 }
 
 async function newUser(newUser) {
+    await setLogged(true, "newUser.id");
     addDoc(collection(db, "users"), newUser);
 }
 

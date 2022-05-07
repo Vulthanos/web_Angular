@@ -1,4 +1,4 @@
-import { newUser } from './firebase_logs.mjs';
+import {newUser, setLogged} from './firebase_logs.mjs';
 
 const singup_overlay = document.getElementById('singup_popup_overlay'),
   singup_popup = document.getElementById('singup_popup');
@@ -82,7 +82,7 @@ singup_btn.addEventListener('click', async function (e) {
             password: singup_password.value,
             surname: singup_surname_field.value
         };
-        newUser(createUser).finally();
+        newUser(createUser).then();
         location.href = "http://localhost:4200/profile-page";
     }
 });
