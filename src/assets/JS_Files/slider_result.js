@@ -5,7 +5,8 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
 
     top_item = '<article class="article_slider">' +
       '<img class="img_slider" src="' + value.img + '" alt="">' +
-      '<label>' + value.name + '</label>'
+      '<label>' + value.name + '</label>' +
+        '<input type="button" class="buy_button" value="Comprar" onclick="buyProduct()"/>' +
     '</article>';
 
     $("#top").append(top_item);
@@ -18,10 +19,15 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
 
     bot_item ='<article class="article_slider">' +
       '<img class="img_slider" src="' + value.img + '" alt="">' +
-      '<label>' + value.name + '</label>'
+      '<label>' + value.name + '</label>' +
+        '<input type="button" class="buy_button" value="Comprar" onclick="buyProduct()"/>' +
     '</article>';
 
     $("#bot").append(bot_item);
 
   });
 });
+
+function buyProduct() {
+    console.log("funciona el boton");
+}
