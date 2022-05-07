@@ -1,0 +1,510 @@
+@media screen and (min-width: 10px) and (max-width: 980px) {
+    /*Smartphone*/
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mitabla{
+        align-items: center;
+        margin-top: 20% ;
+        margin-bottom: 10%;
+        width: 100%;
+    }
+
+    .HeadingResumen{
+        font-size: 4em;
+    }
+    .TableAlign{
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 2em;
+    }
+    #successful {
+        width: 1em;
+        height: auto;
+        margin-top: 40%;
+        margin-left: 60%;
+    }
+
+    .contentPurchase {
+        width: 70%;
+        float: left;
+    }
+
+    .TextoCompraFinal {
+        margin-top: 5%;
+        margin-left: 25%;
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.25em;
+        line-height: 1.25em;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+
+    .GoToMain {
+        margin-top: 11%;
+        margin-left: 40%;
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5em;
+        line-height: 1.25em;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.02em;
+        color: #0075FF;
+    }
+
+    .OrangeRectangle {
+        position: absolute;
+        text-align: center;
+        left: 20%;
+        top: 40%;
+        width: 38em;
+        height: 50em;
+        background: #FFAE81;
+        border-radius: 30% 10%;
+    }
+
+    .WhiteRectangle {
+        position: absolute;
+        width: 27em;
+        height: 38em;
+        background: #FFFFFF;
+        border-radius: 10%;
+        padding: 2.5em;
+        margin-left: 2%;
+        left: 6%;
+        right: 8%;
+        top: 7%;
+        align-items: center;
+    }
+
+    .Rectangle {
+        float: right;
+        box-shadow: 0 0.12em 0.4em rgba(0, 0, 0, 0.14);
+
+    }
+
+    .testLeft {
+        float: left;
+        height: auto;
+        margin-right: 4%;
+        margin-top: 0;
+        margin-left: 8%;
+    }
+
+    .BlueRectangle {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+        margin: 1.5em;
+        background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
+        box-shadow: 0 0.25em 0.25em rgba(14, 53, 191, 0.25);
+        border-radius: 0.38em;
+    }
+
+    .WhiteText {
+        align-items: center;
+        text-align: center;
+        margin-top: 1em;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 1.25em;
+        color: #F6F6F6;
+    }
+
+    #naranjita {
+        color: #FFAE81;
+        font-family: Montserrat, sans-serif;
+        font-size: 0.81em;
+    }
+
+    .norton img {
+        font-family: Montserrat, sans-serif;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 20% 1.44em 1.44em 40%;
+    }
+
+    .progressBar {
+        position: absolute;
+        left: 11%;
+        width: 47em;
+        height: 6.25em;
+    }
+
+    #AllSuccess {
+        padding-top: 7.5em;
+    }
+
+    th, td {
+        font-size: 2.1em;
+        width: 100%;
+
+
+        font-family: Montserrat, sans-serif;
+    }
+
+    .politicas {
+        padding-top: 0.625em;
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (min-width: 981px) and (max-width: 1300px) {
+    /*TABLET*/
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mitabla{
+        font-size: 1.6em;
+        align-items: center;
+        margin-top: 10% ;
+        margin-bottom: 10%;
+        width: 100%;
+    }
+
+    .HeadingResumen{
+        font-size: 2em;
+    }
+    .TableAlign{
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 2em;
+    }
+    #successful {
+        width: 0.625em;
+        height: auto;
+        margin-top: 20%;
+        margin-left: 40%;
+    }
+
+    .contentPurchase {
+        width: 70%;
+        float: left;
+
+    }
+
+    .TextoCompraFinal {
+        margin-top: 1%;
+        margin-left: 15%;
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.25em;
+        line-height: 1.25em;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+
+    .GoToMain {
+        margin-top: 5%;
+        margin-left: 23%;
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5em;
+        line-height: 1.25em;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.02em;
+        color: #0075FF;
+    }
+
+    .OrangeRectangle {
+        position: absolute;
+        left: 65%;
+        width: 28em;
+        height: 43em;
+        background: #FFAE81;
+        border-radius: 30% 10%;
+    }
+
+    .WhiteRectangle {
+        position: absolute;
+        width: 17em;
+        height: 30em;
+        background: #FFFFFF;
+        border-radius: 10%;
+        padding: 2.5em;
+        margin-left: 2%;
+        left: 8%;
+        right: 8%;
+        top: 10%;
+    }
+
+    .Rectangle {
+        float: right;
+        box-shadow: 0 0.125em 0.38em rgba(0, 0, 0, 0.14);
+        perspective: 6.25em;
+        margin-top: auto;
+    }
+
+    .testLeft {
+        float: left;
+        height: auto;
+        margin-right: 4%;
+        margin-top: 0;
+        margin-left: 8%;
+    }
+
+    .BlueRectangle {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+        margin: 1.5em;
+        background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
+        box-shadow: 0 0.25em 0.25em rgba(14, 53, 191, 0.25);
+        border-radius: 0.38em;
+    }
+
+    .WhiteText {
+        align-items: center;
+        text-align: center;
+        margin-top: 1em;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 1.25em;
+        color: #F6F6F6;
+    }
+
+    #naranjita {
+        color: #FFAE81;
+        font-family: Montserrat, sans-serif;
+        font-size: 0.81em;
+    }
+
+    .politicas {
+        padding-top: 1em;
+        margin-left: 10%;
+    }
+
+    .norton img {
+        font-family: Montserrat, sans-serif;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 20% 1.44em 1.44em 40%;
+    }
+
+    .progressBar {
+        position: absolute;
+        left: 11%;
+        width: 47em;
+        height: 6.25em;
+    }
+
+    #AllSuccess {
+        padding-top: 7.5em;
+    }
+
+    th, td {
+        padding: 1em;
+        font-family: Montserrat, sans-serif;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 1301px){
+    /*Desktop*/
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mitabla{
+        font-size: 1.6em;
+        align-items: center;
+        margin-top: 10% ;
+        margin-bottom: 10%;
+        width: 100%;
+    }
+
+    .HeadingResumen{
+        font-size: 2em;
+    }
+    .TableAlign{
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 2em;
+    }
+    #successful {
+        width: 0.625em;
+        height: auto;
+        margin-top: 20%;
+        margin-left: 40%;
+    }
+
+    .contentPurchase {
+        width: 70%;
+        float: left;
+
+    }
+
+    .TextoCompraFinal {
+        margin-top: 1%;
+        margin-left: 15%;
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.25em;
+        line-height: 1.25em;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+
+    .GoToMain {
+        margin-top: 5%;
+        margin-left: 23%;
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5em;
+        line-height: 1.25em;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.02em;
+        color: #0075FF;
+    }
+
+    .OrangeRectangle {
+        position: absolute;
+        left: 65%;
+        width: 28em;
+        height: 43em;
+        background: #FFAE81;
+        border-radius: 30% 10%;
+    }
+
+    .WhiteRectangle {
+        position: absolute;
+        width: 17em;
+        height: 30em;
+        background: #FFFFFF;
+        border-radius: 10%;
+        padding: 2.5em;
+        margin-left: 2%;
+        left: 8%;
+        right: 8%;
+        top: 10%;
+    }
+
+    .Rectangle {
+        float: right;
+        box-shadow: 0 0.125em 0.38em rgba(0, 0, 0, 0.14);
+        perspective: 6.25em;
+        margin-top: auto;
+    }
+
+    .testLeft {
+        float: left;
+        height: auto;
+        margin-right: 4%;
+        margin-top: 0;
+        margin-left: 8%;
+    }
+
+    .BlueRectangle {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+        margin: 1.5em;
+        background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
+        box-shadow: 0 0.25em 0.25em rgba(14, 53, 191, 0.25);
+        border-radius: 0.38em;
+    }
+
+    .WhiteText {
+        align-items: center;
+        text-align: center;
+        margin-top: 1em;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 1.25em;
+        color: #F6F6F6;
+    }
+
+    #naranjita {
+        color: #FFAE81;
+        font-family: Montserrat, sans-serif;
+        font-size: 0.81em;
+    }
+
+    .politicas {
+        padding-top: 1em;
+        margin-left: 10%;
+    }
+
+    .norton img {
+        font-family: Montserrat, sans-serif;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 20% 1.44em 1.44em 40%;
+    }
+
+    .progressBar {
+        position: absolute;
+        left: 11%;
+        width: 47em;
+        height: 6.25em;
+    }
+
+    #AllSuccess {
+        padding-top: 7.5em;
+    }
+
+    th, td {
+        padding: 1em;
+        font-family: Montserrat, sans-serif;
+        text-align: center;
+    }
+}
