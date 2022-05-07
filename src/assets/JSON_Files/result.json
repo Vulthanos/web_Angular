@@ -1,107 +1,107 @@
 {
   "slider_result_top_images": [
     {
-      "img": "./assets/IMGS/result/pc_prueba.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fpc_prueba.jpg?alt=media&token=7b26802c-2b5b-4545-bc5a-302909b0aea4",
       "name": "Ordenador de Sobremesa"
     },
     {
-      "img": "./assets/IMGS/result/auriculares.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fauriculares.png?alt=media&token=f2db9c93-3dd2-4786-83f0-6b00b38dd644",
       "name": "Cascos Gaming"
     },
     {
-      "img": "./assets/IMGS/result/Gran_Turismo.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2FGran_Turismo.png?alt=media&token=c91c6d96-8ead-4859-a76d-37d990789859",
       "name": "Gran Turismo para PS5"
     },
     {
-      "img": "./assets/IMGS/result/mando.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fmando.png?alt=media&token=db695749-0d36-4b0c-a413-54dab3520c42",
       "name": "Mando XBOX series X"
     }
   ],
   "slider_result_bot_images": [
     {
-      "img": "./assets/IMGS/result/monitor.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fmonitor.png?alt=media&token=a5db0e96-d2c8-4684-8646-74260b9bac82",
       "name": "Monitor MSI"
     },
     {
-      "img": "./assets/IMGS/result/nintendo_switch.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fnintendo_switch.png?alt=media&token=a53ff7d3-21d7-42f3-8bec-ddac94046133",
       "name": "Nintendo Switch"
     },
     {
-      "img": "./assets/IMGS/result/portatil.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fportatil.png?alt=media&token=80a4f479-245d-49f5-9cf2-79557fccfd2f",
       "name": "Portatil MSI"
     },
     {
-      "img": "./assets/IMGS/result/teclado.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fteclado.png?alt=media&token=80967739-3fe8-4a3c-a5f5-7d7f0c69103b",
       "name": "Teclado por Cable"
     }
   ],
   "search_result_top_images": [
     {
       "id": 1,
-      "img": "./assets/IMGS/result/pc_prueba.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fpc_prueba.jpg?alt=media&token=7b26802c-2b5b-4545-bc5a-302909b0aea4",
       "name": "Ordenador de Sobremesa"
     },
     {
       "id": 2,
-      "img": "./assets/IMGS/result/auriculares.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fauriculares.png?alt=media&token=f2db9c93-3dd2-4786-83f0-6b00b38dd644",
       "name": "Cascos Gaming"
     },
     {
       "id": 3,
-      "img": "./assets/IMGS/result/Gran_Turismo.png",
+      "img": ".https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2FGran_Turismo.png?alt=media&token=c91c6d96-8ead-4859-a76d-37d990789859",
       "name": "Gran Turismo para PS5"
     }
   ],
   "search_result_bot_images": [
     {
       "id": 1,
-      "img": "./assets/IMGS/result/monitor.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fmonitor.png?alt=media&token=a5db0e96-d2c8-4684-8646-74260b9bac82",
       "name": "Monitor MSI"
     },
     {
       "id": 2,
-      "img": "./assets/IMGS/result/nintendo_switch.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fnintendo_switch.png?alt=media&token=a53ff7d3-21d7-42f3-8bec-ddac94046133",
       "name": "Nintendo Switch"
     },
     {
       "id": 3,
-      "img": "./assets/IMGS/result/portatil.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fportatil.png?alt=media&token=80a4f479-245d-49f5-9cf2-79557fccfd2f",
       "name": "Portatil MSI"
     }
   ],
   "top_mvl_products": [
     {
       "id": 1,
-      "img": "./assets/IMGS/result/Gran_Turismo.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2FGran_Turismo.png?alt=media&token=c91c6d96-8ead-4859-a76d-37d990789859",
       "name": "Gran Turismo para PS5"
     },
     {
       "id": 2,
-      "img": "./assets/IMGS/result/portatil.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fportatil.png?alt=media&token=80a4f479-245d-49f5-9cf2-79557fccfd2f",
       "name": "Portatil MSI"
     }
   ],
   "bot_mvl_products1": [
     {
       "id": 1,
-      "img": "./assets/IMGS/result/raton_msi.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fraton_msi.jpg?alt=media&token=4bec702b-f3e1-4cf3-9813-8caf5eecbc5e",
       "name": "Ratón MSI"
     },
     {
       "id": 2,
-      "img": "./assets/IMGS/result/portatil_asus.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fportatil_asus.jpg?alt=media&token=e2150556-8d03-4715-bd81-03f0a8211d34",
       "name": "Portatil ASUS"
     }
   ],
   "bot_mvl_products2": [
     {
       "id": 1,
-      "img": "./assets/IMGS/result/grafica_RTX3070.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fgrafica_RTX3070.jpg?alt=media&token=8fe1912f-e28e-41c7-bb9e-533b5c8ff15d",
       "name": "Gráfica RTX 3070"
     },
     {
       "id": 2,
-      "img": "./assets/IMGS/result/raton_logitech.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fresult%2Fraton_logitech.jpg?alt=media&token=24bb733b-8173-4292-acfe-ca4e380b9db7",
       "name": "Ratón Logitech"
     }
   ]

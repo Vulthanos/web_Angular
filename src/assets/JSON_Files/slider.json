@@ -1,19 +1,19 @@
 {
   "slider_images": [
     {
-      "img": "./assets/IMGS/slider/pc_prueba.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fslider%2Fpc_prueba.jpg?alt=media&token=2d65ab59-9dd9-4316-9a06-a6a5bbff67e2",
       "link": "/result"
     },
     {
-      "img": "./assets/IMGS/slider/pc_prueba1.png",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fslider%2Fpc_prueba1.png?alt=media&token=8fc43c82-61b0-4705-9aa7-442e0e8ee643",
       "link": "/result"
     },
     {
-      "img": "./assets/IMGS/slider/pc_prueba2.jpeg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fslider%2Fpc_prueba2.jpeg?alt=media&token=00ba1c98-b828-49fb-8b5d-f5c2671a1e75",
       "link": "/result"
     },
     {
-      "img": "./assets/IMGS/slider/pc_prueba3.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fslider%2Fpc_prueba3.jpg?alt=media&token=9c632e92-663f-4cb1-af88-16d03eec5f21",
       "link": "/result"
     }
   ]

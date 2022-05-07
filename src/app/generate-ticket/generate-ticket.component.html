@@ -4,30 +4,42 @@
 <section class="titulo-seccion"><strong>Genere un ticket</strong></section>
 
 <section class="linea-temporal">
-    <img src="./assets/IMGS/barra_progreso_ticket1.png" alt="barra progreso 1">
+    <img src="https://firebasestorage.googleapis.com/v0/b/vulthanosangular.appspot.com/o/IMGS%2Fbarra_progreso_ticket1.png?alt=media&token=9ddafa6f-dec7-47ee-80a3-97e051205afc" alt="barra progreso 1">
 </section>
 
 
 <div class="container">
-    <form>
+    <form [formGroup]="formGrp" novalidate>
         <div class="columna-opciones">
             <label for="id-pedido"><strong>Id del pedido</strong></label>
-            <input type="text" id="id-pedido" placeholder="Escriba el id del pedido" pattern="[a-zA-Z0-9]+" required>
+            <input type="text" id="id-pedido" placeholder="Escriba el id del pedido" pattern="[a-zA-Z0-9]+" >
         </div>
 
         <div class="columna-opciones">
-            <label for="metodo-pago"><strong>Metodo de pago</strong></label>
-            <input type="text" id="metodo-pago" placeholder="Escriba el metodo de pago" pattern="[A-Z][a-z]{1,15}" required>
+            <label><strong>Correo de contacto</strong></label>&nbsp;
+            <label class="show-error"><small>(Obligatorio)</small> </label><br>
+            <input type="email" formControlName="emailctrl" placeholder="Introduzca su correo">
+
+            <div *ngIf="emailid['emailctrl'].touched && emailid['emailctrl'].invalid" class="show-error">
+                <div *ngIf="emailid['emailctrl'].errors?.['required'] && emailid['emailctrl'].dirty">Introduzca un email valido</div>
+                <div *ngIf="emailid['emailctrl'].errors?.['email'] && emailid['emailctrl'].dirty">Introduzca un email valido</div>
+            </div>
         </div>
 
         <div class="columna-opciones">
-            <label for="correo"><strong>Correo de contacto</strong></label>
-            <input type="email" id="correo" placeholder="Escriba su correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <label for="menuPago"><strong>Metodos de pago</strong></label>&nbsp;
+            <select [(ngModel)]='ngDropdown' name="menuPago" id="menuPago" class='form-control-desplegable'>
+                <option value="1">Tarjeta de credito-debito</option>
+                <option value="2">Paypal</option>
+                <option value="3">Bizum</option>
+            </select>
         </div>
+
+
+
     </form>
 
-    <button type="submit" class="boton-continuar">
-        <a routerLink="/generate-ticket2" style="text-decoration: none"><span>Continuar</span></a>
-    </button>
+    <button type="submit" style="text-decoration: none" class="crear-ticket" routerLink="/generate-ticket2">Continuar</button>
+
 
 </div>
