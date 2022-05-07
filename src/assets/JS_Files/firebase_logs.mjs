@@ -58,4 +58,14 @@ async function newUser(newUser) {
     addDoc(collection(db, "users"), newUser);
 }
 
-export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser};
+async function getUserCart() {
+    const userId = await getLoggedUser();
+    const userCart = await getDoc(doc(db, "users", userId));
+    if (userCart.exists()) {
+        return userCart.data().cart;
+    } else {
+        console.log("No existe el usuario");
+    }
+}
+
+export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser, getUserCart};

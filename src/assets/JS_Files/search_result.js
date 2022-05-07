@@ -1,3 +1,8 @@
+
+function buyProduct() {
+    console.log("works");
+}
+
 $.getJSON("./assets/JSON_Files/result.json", function(data) {
   $.each(data.search_result_top_images, function(key, value) {
 
@@ -6,12 +11,14 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
     if (value.id === 3) {
       top_item = '<article class="movil_inactive">' +
         '<img  class="product" src="' + value.img + '" alt="">' +
-        '<label>' + value.name + '</label>'
+        '<label>' + value.name + '</label>' +
+          '<input type="button" class="buy_button" value="Comprar" onclick="buyProduct()"/>' +
       '</article>';
     } else {
       top_item = '<article>' +
         '<img  class="product" src="' + value.img + '" alt="">' +
-        '<label>' + value.name + '</label>'
+        '<label>' + value.name + '</label>' +
+          '<input type="button" class="buy_button" value="Comprar" onclick="buyProduct()"/>' +
       '</article>';
     }
 
@@ -26,12 +33,14 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
     if (value.id === 3) {
       bot_item = '<article class="movil_inactive">' +
         '<img  class="product" src="' + value.img + '" alt="">' +
-        '<label>' + value.name + '</label>'
+        '<label>' + value.name + '</label>' +
+          '<input type="button" class="buy_button" value="Comprar" onclick="buyProduct()"/>' +
       '</article>';
     } else {
       bot_item = '<article>' +
         '<img  class="product" src="' + value.img + '" alt="">' +
-        '<label>' + value.name + '</label>'
+        '<label>' + value.name + '</label>' +
+          '<input type="button" class="buy_button" value="Comprar" onclick="buyProduct()"/>' +
       '</article>';
     }
 
@@ -45,7 +54,8 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
 
     mvl_item = '<article>' +
       '<img class="product" src="' + value.img + '" alt="">' +
-      '<label>' + value.name + '</label>'
+      '<label>' + value.name + '</label>' +
+        '<input type="button" class="buy_button" value="Comprar" onclick="buyProduct()"/>'
       + '</article>';
 
     $("#top-mvl_products").append(mvl_item);
@@ -58,7 +68,8 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
 
     mvl_item = '<article>' +
       '<img class="product" src="' + value.img + '" alt="">' +
-      '<label>' + value.name + '</label>'
+      '<label>' + value.name + '</label>' +
+        '<input type="button" class="buy_button" value="Comprar" onclick="buyProduct()"/>'
       + '</article>';
 
     $("#bot-mvl_products1").append(mvl_item);
@@ -71,7 +82,8 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
 
     mvl_item = '<article>' +
       '<img class="product" src="' + value.img + '" alt="">' +
-      '<label>' + value.name + '</label>'
+      '<label>' + value.name + '</label>' +
+      '<input type="button" class="buy_button" value="Comprar" onclick="buyProduct()"/>'
       + '</article>';
 
     $("#bot-mvl_products2").append(mvl_item);
