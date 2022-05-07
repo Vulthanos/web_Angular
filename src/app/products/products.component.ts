@@ -53,7 +53,13 @@ export class ProductsComponent implements OnInit {
     }
 
     getUser() {
+        this.usersService.getUserByID('1B010snvDnobXXvbETxb').pipe(
+            mergeMap((res1) => this.usersService.getProductsByCart(res1['cart'])),
+        ).subscribe((res3) => {
+            console.log(res3);
+            this.productosCarrito=res3;
 
+            /*
         this.checkUserService.getU().then(res1=>{
             //console.log(res1);
             this.subject.next(res1);
@@ -66,10 +72,8 @@ export class ProductsComponent implements OnInit {
             ).subscribe((res3) => {
                 //console.log(res3);
                 this.productosCarrito=res3;
-            });
+            }); */
         });
-        //const observable = from(this.checkUserService.getU());
-
     }
 
 

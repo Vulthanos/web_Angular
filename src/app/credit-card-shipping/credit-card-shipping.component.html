@@ -142,8 +142,8 @@
                 <button (click)="saveTutorial()" class="btn btn-success submit-btn">Submit</button>
             </div>
             <div *ngIf="submitted">
-                <h4>You submitted successfully!</h4>
-                <button class="btn btn-success" (click)="newTutorial()">Add</button>
+                <h4>Estamos procesando el pago. Puedes continuar.</h4>
+                <button class="btn btn-success submit-btn" onclick="window.location.href='/firestore'">Finalizar Compra</button>
             </div>
         </div>
     </form>
