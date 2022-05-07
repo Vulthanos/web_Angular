@@ -9,7 +9,7 @@ import { LoadScriptsService } from '../services/load-scripts.service';
 export class SliderResultComponent implements OnInit {
 
   constructor(private _LoadScripts:LoadScriptsService) {
-      _LoadScripts.Load(["slider_result"]);
+      _LoadScripts.LoadModules(["slider_result"]);
   }
 
   ngOnInit(): void {

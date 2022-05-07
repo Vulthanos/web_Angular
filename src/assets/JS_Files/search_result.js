@@ -6,12 +6,12 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
     if (value.id === 3) {
       top_item = '<article class="movil_inactive">' +
         '<img  class="product" src="' + value.img + '" alt="">' +
-        '<label>' + value.name + '</label>'
+        '<label>' + value.name + '</label>' +
       '</article>';
     } else {
       top_item = '<article>' +
         '<img  class="product" src="' + value.img + '" alt="">' +
-        '<label>' + value.name + '</label>'
+        '<label>' + value.name + '</label>' +
       '</article>';
     }
 
@@ -26,12 +26,12 @@ $.getJSON("./assets/JSON_Files/result.json", function(data) {
     if (value.id === 3) {
       bot_item = '<article class="movil_inactive">' +
         '<img  class="product" src="' + value.img + '" alt="">' +
-        '<label>' + value.name + '</label>'
+        '<label>' + value.name + '</label>' +
       '</article>';
     } else {
       bot_item = '<article>' +
         '<img  class="product" src="' + value.img + '" alt="">' +
-        '<label>' + value.name + '</label>'
+        '<label>' + value.name + '</label>' +
       '</article>';
     }
 
