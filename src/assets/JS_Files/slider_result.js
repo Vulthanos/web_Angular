@@ -1,4 +1,7 @@
 
+async function buyProduct() {
+    console.log("userCart");
+}
 
 $.getJSON("./assets/JSON_Files/result.json", function(data) {
   $.each(data.slider_result_top_images, function(key, value) {
