@@ -8,5 +8,7 @@ export class Tutorial {
     PhoneNumber?: string;
     CardNumber?: string;
     CardHolder?: string;
-    CVV?: boolean;
+    cvv?: boolean;
+    mm?: number;
+    yy?: number;
 }
