@@ -56,7 +56,7 @@ export class CheckUserService {
                         console.log(userPassword);
                         const userSurname = user.data()['surname'];
                         console.log(userSurname);
-                        setDoc(user, {userCart, userEmail, userName, userPassword, userSurname});
+                        //setDoc(user, {userCart, userEmail, userName, userPassword, userSurname});
                     }
                 });
             } else{
