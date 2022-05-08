@@ -74,4 +74,9 @@ async function getUserCart() {
     }
 }
 
-export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser, getUserCart };
+async function getUserById(userId) {
+    const user = await getDoc(doc(db, "users", userId));
+    return user.data();
+}
+
+export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser, getUserCart, getUserById };
