@@ -62,7 +62,6 @@ async function newUser(newUser) {
             setLogged(true, doc.id);
         }
     });
-    //await setLogged(true, docSnap.id);
 }
 
 async function getUserCart() {
@@ -75,4 +74,4 @@ async function getUserCart() {
     }
 }
 
-export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser, getUserCart};
+export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser, getUserCart };
