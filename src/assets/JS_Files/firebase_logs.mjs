@@ -5,7 +5,8 @@ import {
     getDoc,
     getDocs,
     getFirestore,
-    updateDoc
+    addDoc,
+    setDoc
 } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -24,6 +25,10 @@ async function getLogs() {
     return await getDocs(collection(db, 'logs'));
 }
 
+async function getUsers() {
+    return await getDocs(collection(db, "users"));
+}
+
 async function getLogged() {
     const docSnap = await getDoc(doc(db, "logs", "logged"));
     if (docSnap.exists()) {
@@ -36,7 +41,7 @@ async function getLogged() {
 async function getLoggedUser() {
     const docSnap = await getDoc(doc(db, "logs", "logged"));
     if (docSnap.exists()) {
-        return docSnap;
+        return docSnap.data().loggedUser;
     } else {
         console.log("No existe el document");
     }
@@ -45,7 +50,33 @@ async function getLoggedUser() {
 async function setLogged(state, user) {
     const newValues = {logged: state,
     loggedUser: user};
-    updateDoc(doc(db, "logs", "logged"), newValues);
+    setDoc(doc(db, "logs", "logged"), newValues).then();
 }
 
-export { getLogs, getLoggedUser, setLogged, getLogged};
+async function newUser(newUser) {
+    addDoc(collection(db, "users"), newUser);
+    const docsSnap = await getDocs(collection(db, "users"));
+    docsSnap.forEach(doc => {
+        const data = doc.data();
+        if (data.email === newUser.email && data.password === newUser.password && data.name === newUser.name && data.surname === newUser.surname) {
+            setLogged(true, doc.id);
+        }
+    });
+}
+
+async function getUserCart() {
+    const userId = await getLoggedUser();
+    const userCart = await getDoc(doc(db, "users", userId));
+    if (userCart.exists()) {
+        return userCart.data().cart;
+    } else {
+        console.log("No existe el usuario");
+    }
+}
+
+async function getUserById(userId) {
+    const user = await getDoc(doc(db, "users", userId));
+    return user.data();
+}
+
+export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser, getUserCart, getUserById };

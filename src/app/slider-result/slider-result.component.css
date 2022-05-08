@@ -25,6 +25,7 @@
         text-align: center;
         align-items: center;
         margin-top: 2em;
+        margin-left: 8em;
     }
 
     .img_slider {
@@ -35,8 +36,23 @@
     .article_slider label {
         font-weight: bold;
         text-align: center;
-        display: inline-block;
+        display: block;
         padding-top: 0.5em;
+    }
+
+    .buy_button {
+        width: 6em;
+        height: 2em;
+        background-color: #FFA16D;
+        border: none;
+        border-radius: 0.5em;
+        top: 9.46875em;
+        transition: .3s ease all;
+    }
+
+    .buy_button:hover {
+        cursor: pointer;
+        background: rgba(255, 161, 109, .8);
     }
 }
 

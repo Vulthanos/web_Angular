@@ -1,4 +1,4 @@
-import { setLogged, getLogged, getLoggedUser } from './firebase_logs.mjs';
+import { setLogged, getLogged, getUsers } from './firebase_logs.mjs';
 
 const login_overlay = document.getElementById('login_popup_overlay'),
     login_popup = document.getElementById('login_popup');
@@ -66,7 +66,7 @@ const login_email = document.getElementById('login_email');
 
 login_btn.addEventListener('click', async function (e) {
     e.preventDefault();
-    const validation = await formSubmit().then();
+    const validation = await formSubmit();
     if(validation) {
         login_overlay.classList.remove('login_active');
         login_popup.classList.remove('login_active');
@@ -103,12 +103,12 @@ async function formSubmit() {
         login_warnings.innerHTML = errores;
         return false;
     } else {
-        if (API_Consult) {
-            setLogged(true, "logged").then();
+        const consult = await API_Consult(login_email.value, login_password.value);
+        console.log(consult);
+        if (consult) {
             successfulLogin(true);
             return true;
         } else {
-            setLogged(false, "not logged").then();
             errores += 'La combinacion de email y contraseña no existe<br>';
             login_warnings.innerHTML = errores;
             return false;
@@ -116,14 +116,18 @@ async function formSubmit() {
     }
 }
 
-function API_Consult() {
-    fetch("http://localhost:3000/users").then((response) => response.json()).then(users => {
-        users.forEach(user => {
-            if (login_password.value === user.pass && login_email.value === user.email) {
-                return true;
-            }
-        });
+async function API_Consult(email, password) {
+    let success = false;
+    const users = await getUsers();
+    users.forEach(user => {
+        const userData = user.data();
+        if (email === userData.email && password === userData.password) {
+            console.log("User finded");
+            setLogged(true, user.id);
+            success = true;
+        }
     });
+    return success;
 }
 
 function successfulLogin(loged) {
