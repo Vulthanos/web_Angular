@@ -24,7 +24,6 @@ export class SliderResultComponent implements OnInit {
   }
 
   ngOnInit(): void {
-      this.products = this.productService.getProductos();
   }
 
 }
