@@ -75,4 +75,4 @@ async function getUserCart() {
     }
 }
 
-export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser, getUserCart};
+export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser, getUserCart };
