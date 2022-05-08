@@ -33,10 +33,10 @@ import { NewsletterEndComponent } from './newsletter-end/newsletter-end.componen
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
+import { SuccessfulPurchaseComponent } from './successful-purchase/successful-purchase.component';
 import { UploadFormComponent } from './upload-form/upload-form.component';
 import { UploadListComponent } from './upload-list/upload-list.component';
 import { UploadDetailsComponent } from './upload-details/upload-details.component';
-
 
 @NgModule({
     imports: [
@@ -46,8 +46,6 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
         RouterModule.forRoot([
             {path: '', component: SliderComponent},
             {path: 'products/:productId', component: ProductDetailsComponent},
-            {path: 'cart', component: CartComponent},
-            {path: 'shipping', component: ShippingComponent},
             {path: 'search', component: SearchResultComponent},
             {path: 'result', component: SliderResultComponent},
             {path: 'help', component: HelpComponent},
@@ -61,9 +59,9 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
             {path: 'generate-ticket', component: GenerateTicketComponent},
             {path: 'generate-ticket2', component: GenerateTicket2Component},
             {path: 'giveaway-end', component: GiveawayEndComponent},
-            {path: 'fernando', component: ProductListComponent},
-            {path: 'firestore', component: ProductsComponent},
-            {path: 'shipping2', component: CreditCardShippingComponent}
+            {path: 'cart', component: ProductsComponent},
+            {path: 'shipping', component: CreditCardShippingComponent},
+            {path: 'success', component: SuccessfulPurchaseComponent}
         ]),
         AngularFireModule.initializeApp(environment.firebaseConfig),
         AngularFirestoreModule,
@@ -102,6 +100,7 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
     UploadDetailsComponent,
       ProductsComponent,
       CreditCardShippingComponent,
+      SuccessfulPurchaseComponent,
   ],
   bootstrap: [
     AppComponent
