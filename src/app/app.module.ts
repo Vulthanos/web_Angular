@@ -1,39 +1,34 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
-import { CartComponent } from './cart/cart.component';
+import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ShippingComponent } from './shipping/shipping.component';
-import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
-import { SinginComponent } from './singin/singin.component';
-import { SliderComponent } from './slider/slider.component';
-import { SearchResultComponent } from './search-result/search-result.component';
-import { SliderResultComponent } from './slider-result/slider-result.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { SinginComponent } from './components/singin/singin.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { SearchResultComponent } from './components/search-result/search-result.component';
+import { SliderResultComponent } from './components/slider-result/slider-result.component';
 import { LoadScriptsService } from './services/load-scripts.service';
 import { AngularFireModule} from '@angular/fire/compat';
-import {environment} from "../environments/environment";
+import { environment } from "../environments/environment";
 import { AngularFirestoreModule} from '@angular/fire/compat/firestore';
-import { ProductsComponent } from './products/products.component';
-import { CreditCardShippingComponent } from './credit-card-shipping/credit-card-shipping.component';
-import { GenerateTicketComponent } from './generate-ticket/generate-ticket.component';
-import { GenerateTicket2Component } from './generate-ticket2/generate-ticket2.component';
-import { GiveawayComponent } from './giveaway/giveaway.component';
-import { GiveawayEndComponent } from './giveaway-end/giveaway-end.component';
-import { HelpComponent } from './help/help.component';
-import { InformationComponent } from './information/information.component';
-import { NewsletterComponent } from './newsletter/newsletter.component';
-import { NewsletterEndComponent } from './newsletter-end/newsletter-end.component';
-import { ProfilePageComponent } from './profile-page/profile-page.component';
-import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
-import { TicketEndComponent } from './ticket-end/ticket-end.component';
-import { SuccessfulPurchaseComponent } from './successful-purchase/successful-purchase.component';
+import { ProductsComponent } from './components/products/products.component';
+import { CreditCardShippingComponent } from './components/credit-card-shipping/credit-card-shipping.component';
+import { GenerateTicketComponent } from './components/generate-ticket/generate-ticket.component';
+import { GenerateTicket2Component } from './components/generate-ticket2/generate-ticket2.component';
+import { GiveawayComponent } from './components/giveaway/giveaway.component';
+import { GiveawayEndComponent } from './components/giveaway-end/giveaway-end.component';
+import { HelpComponent } from './components/help/help.component';
+import { InformationComponent } from './components/information/information.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
+import { NewsletterEndComponent } from './components/newsletter-end/newsletter-end.component';
+import { ProfilePageComponent } from './components/profile-page/profile-page.component';
+import { ShowGiveawayComponent } from './components/show-giveaway/show-giveaway.component';
+import { TicketEndComponent } from './components/ticket-end/ticket-end.component';
+import { SuccessfulPurchaseComponent } from './components/successful-purchase/successful-purchase.component';
 
 
 @NgModule({
@@ -43,7 +38,6 @@ import { SuccessfulPurchaseComponent } from './successful-purchase/successful-pu
         ReactiveFormsModule,
         RouterModule.forRoot([
             {path: '', component: SliderComponent},
-            {path: 'products/:productId', component: ProductDetailsComponent},
             {path: 'search', component: SearchResultComponent},
             {path: 'result', component: SliderResultComponent},
             {path: 'help', component: HelpComponent},
@@ -69,11 +63,6 @@ import { SuccessfulPurchaseComponent } from './successful-purchase/successful-pu
     declarations: [
         AppComponent,
         TopBarComponent,
-        ProductListComponent,
-        ProductAlertsComponent,
-        ProductDetailsComponent,
-        CartComponent,
-        ShippingComponent,
         FooterComponent,
         LoginComponent,
         SinginComponent,
