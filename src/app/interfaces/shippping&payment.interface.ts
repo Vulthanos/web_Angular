@@ -3,7 +3,6 @@ export class Tutorial {
     description?: string;
     id?: string;
     published?: boolean;
-
     address?: string;
     PhoneNumber?: string;
     CardNumber?: string;

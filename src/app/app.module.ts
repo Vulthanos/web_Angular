@@ -36,6 +36,7 @@ import { TicketEndComponent } from './ticket-end/ticket-end.component';
 import { SuccessfulPurchaseComponent } from './successful-purchase/successful-purchase.component';
 import {FileUploaderComponent} from "./file-uploader/file-uploader.component";
 
+
 @NgModule({
     imports: [
         BrowserModule,
