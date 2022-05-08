@@ -15,7 +15,7 @@ export class SliderComponent implements OnInit {
 
   constructor( private _LoadScripts:LoadScriptsService, private productService: ProductsService) {
       _LoadScripts.LoadHead(["glider"]);
-      _LoadScripts.Load(["slider"]);
+      _LoadScripts.Load(["slider", "glider"]);
       this.products = this.productService.getProductos();
   }
 
