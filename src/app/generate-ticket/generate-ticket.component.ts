@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-generate-ticket',
   templateUrl: './generate-ticket.component.html',
   styleUrls: ['./generate-ticket.component.css']
 })
-export class GenerateTicketComponent implements OnInit {
+export class GenerateTicketComponent {
+    ngOptions = [1,2,3]
+    ngDropdown = 1;
 
-  constructor() { }
+    formGrp: FormGroup;
 
-  ngOnInit(): void {
-  }
+
+    constructor(formBuilder: FormBuilder) {
+        this.formGrp = formBuilder.group({
+            emailctrl: ['', [Validators.required, Validators.email]]
+        })
+    }
+
+    get emailid(){
+        return this.formGrp.controls;
+    }
+
+    doSubmit() {
+        console.log(this.formGrp.value);
+    }
 
 }

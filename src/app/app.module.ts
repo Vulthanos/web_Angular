@@ -34,7 +34,9 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
 import { SuccessfulPurchaseComponent } from './successful-purchase/successful-purchase.component';
-
+import { UploadFormComponent } from './upload-form/upload-form.component';
+import { UploadListComponent } from './upload-list/upload-list.component';
+import { UploadDetailsComponent } from './upload-details/upload-details.component';
 
 @NgModule({
     imports: [
@@ -63,7 +65,8 @@ import { SuccessfulPurchaseComponent } from './successful-purchase/successful-pu
         ]),
         AngularFireModule.initializeApp(environment.firebaseConfig),
         AngularFirestoreModule,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
     ],
   declarations: [
     AppComponent,
@@ -92,6 +95,9 @@ import { SuccessfulPurchaseComponent } from './successful-purchase/successful-pu
     ProfilePageComponent,
     ShowGiveawayComponent,
     TicketEndComponent,
+    UploadFormComponent,
+    UploadListComponent,
+    UploadDetailsComponent,
       ProductsComponent,
       CreditCardShippingComponent,
       SuccessfulPurchaseComponent,

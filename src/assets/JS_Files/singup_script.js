@@ -1,3 +1,5 @@
+import {newUser, setLogged} from './firebase_logs.mjs';
+
 const singup_overlay = document.getElementById('singup_popup_overlay'),
   singup_popup = document.getElementById('singup_popup');
 
@@ -68,6 +70,22 @@ const singup_surname_field = document.getElementById('surname-field');
 const singup_email_field = document.getElementById('email-field');
 const singup_warnings = document.getElementById('singup_warnings');
 const singup_checkbox = document.getElementById('selector');
+const singup_btn = document.getElementById('singup_btn');
+
+singup_btn.addEventListener('click', async function (e) {
+    e.preventDefault();
+    if (singupFormSubmit()) {
+        const createUser = {
+            cart: [],
+            email: singup_email_field.value,
+            name: singup_name_field.value,
+            password: singup_password.value,
+            surname: singup_surname_field.value
+        };
+        newUser(createUser).then();
+        location.href = "http://localhost:4200/profile-page";
+    }
+});
 
 function singupFormSubmit() {
   singup_warnings.classList.add('w_inactive');

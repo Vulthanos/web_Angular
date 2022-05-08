@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import { FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
     selector: 'app-generate-ticket2',
@@ -7,16 +7,22 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
     styleUrls: ['./generate-ticket2.component.css']
 })
 export class GenerateTicket2Component {
+
     signupForm: FormGroup;
 
     constructor(private builder: FormBuilder) {
         this.signupForm = this.builder.group({
-            email: ['', Validators.compose([Validators.required, Validators.email])] ,
-        });}
+            email: ['', Validators.compose([Validators.required, Validators.email])],
+        });
+    }
 
     submit(value:any) {
         console.log(this.signupForm.value);
     }
+
+
+
+
 
 }
 

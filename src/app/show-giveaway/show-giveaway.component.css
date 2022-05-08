@@ -27,6 +27,17 @@ body{
     top: 13em;
 }
 
+/*Estilo de los botones para unirse*/
+button {
+    background: #FFA16D;
+    width: 31.3125em;
+    height: 3.75em;
+    border-radius: 0.375em;
+    border: 0;
+
+}
+
+
 /*Diseño Escritorio*/
 @media screen and (min-width: 1367px){
 
@@ -34,31 +45,21 @@ body{
     .sorteo1{
         position: absolute;
         top: 21.875em;
-        left: 14.5625em;
+        left: 9.5em;
     }
 
     /*Imagen sorteo 2*/
     .sorteo2{
         position: absolute;
         top: 21.875em;
-        left: 49.375em;
+        left: 46.5em;
     }
 
     /*Imagen sorteo 3*/
     .sorteo3{
         position: absolute;
         top: 21.875em;
-        left: 84.6875em;
-
-    }
-
-    /*Estilo de los botones para unirse*/
-    button {
-        background: #FFA16D;
-        width: 31.3125em;
-        height: 3.75em;
-        border-radius: 0.375em;
-        border: 0;
+        left: 81.5em;
 
     }
 
@@ -84,10 +85,6 @@ body{
         left: 26em;
     }
 
-    .entrar-sorteo{
-        color: black;
-    }
-
     .inactivo{
         display: none;
     }
@@ -101,33 +98,24 @@ body{
     .sorteo1{
         position: absolute;
         top: 21.875em;
-        left: 14.5625em;
+        left: 5.5em;
     }
 
     /*Imagen sorteo 2*/
     .sorteo2{
         position: absolute;
         top: 21.875em;
-        left: 49.375em;
+        left: 39.3em;
     }
 
     /*Imagen sorteo 3*/
     .sorteo3{
         position: absolute;
-        top: 70em;
-        left: 33em;
+        top: 65em;
+        left: 26em;
 
     }
 
-    /*Estilo de los botones para unirse*/
-    button {
-        background: #FFA16D;
-        width: 31.3125em;
-        height: 3.75em;
-        border-radius: 0.375em;
-        border: 0;
-
-    }
 
     /*colocacion titulo sorteo 1*/
     .txt-sorteo1{
@@ -151,13 +139,10 @@ body{
         left: 23em;
     }
 
-    .entrar-sorteo{
-        color: black;
-    }
-
-    .footer-sorteo{
+    .footerGiveaway{
         position: absolute;
-        bottom: -70em;
+        margin-top: auto;
+        bottom: -71em;
     }
 
 
@@ -201,15 +186,6 @@ body{
 
     }
 
-    /*Estilo de los botones para unirse*/
-    button {
-        background: #FFA16D;
-        width: 31.3125em;
-        height: 3.75em;
-        border-radius: 0.375em;
-        border: 0;
-
-    }
 
     /*colocacion titulo sorteo 1*/
     .txt-sorteo1{
@@ -233,9 +209,6 @@ body{
         left: 27em;
     }
 
-    .entrar-sorteo{
-        color: black;
-    }
 
 }
 

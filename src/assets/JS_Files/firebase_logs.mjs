@@ -5,8 +5,8 @@ import {
     getDoc,
     getDocs,
     getFirestore,
-    updateDoc,
-    addDoc
+    addDoc,
+    setDoc
 } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -49,12 +49,34 @@ async function getLoggedUser() {
 
 async function setLogged(state, user) {
     const newValues = {logged: state,
-        loggedUser: user};
-    updateDoc(doc(db, "logs", "logged"), newValues).then();
+    loggedUser: user};
+    setDoc(doc(db, "logs", "logged"), newValues).then();
 }
 
 async function newUser(newUser) {
     addDoc(collection(db, "users"), newUser);
+    const docsSnap = await getDocs(collection(db, "users"));
+    docsSnap.forEach(doc => {
+        const data = doc.data();
+        if (data.email === newUser.email && data.password === newUser.password && data.name === newUser.name && data.surname === newUser.surname) {
+            setLogged(true, doc.id);
+        }
+    });
 }
 
-export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser};
+async function getUserCart() {
+    const userId = await getLoggedUser();
+    const userCart = await getDoc(doc(db, "users", userId));
+    if (userCart.exists()) {
+        return userCart.data().cart;
+    } else {
+        console.log("No existe el usuario");
+    }
+}
+
+async function getUserById(userId) {
+    const user = await getDoc(doc(db, "users", userId));
+    return user.data();
+}
+
+export { getLogs, getLoggedUser, setLogged, getLogged, getUsers, newUser, getUserCart, getUserById };
