@@ -36,6 +36,10 @@ import { TicketEndComponent } from './ticket-end/ticket-end.component';
 import { UploadFormComponent } from './upload-form/upload-form.component';
 import { UploadListComponent } from './upload-list/upload-list.component';
 import { UploadDetailsComponent } from './upload-details/upload-details.component';
+import { UploadFilesComponent } from './upload-files/upload-files.component';
+import { DropzoneDirective } from './directives/dropzone.directive';
+import { UploadTaskComponent } from './upload-task/upload-task.component';
+import { FileUploaderComponent } from './file-uploader/file-uploader.component';
 
 
 @NgModule({
@@ -102,6 +106,10 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
     UploadDetailsComponent,
       ProductsComponent,
       CreditCardShippingComponent,
+      UploadFilesComponent,
+      DropzoneDirective,
+      UploadTaskComponent,
+      FileUploaderComponent,
   ],
   bootstrap: [
     AppComponent
