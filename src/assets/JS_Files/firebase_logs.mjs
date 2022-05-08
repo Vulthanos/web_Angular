@@ -5,7 +5,6 @@ import {
     getDoc,
     getDocs,
     getFirestore,
-    updateDoc,
     addDoc,
     setDoc
 } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
@@ -55,8 +54,15 @@ async function setLogged(state, user) {
 }
 
 async function newUser(newUser) {
-    await setLogged(true, "newUser.id");
     addDoc(collection(db, "users"), newUser);
+    const docsSnap = await getDocs(collection(db, "users"));
+    docsSnap.forEach(doc => {
+        const data = doc.data();
+        if (data.email === newUser.email && data.password === newUser.password && data.name === newUser.name && data.surname === newUser.surname) {
+            setLogged(true, doc.id);
+        }
+    });
+    //await setLogged(true, docSnap.id);
 }
 
 async function getUserCart() {
