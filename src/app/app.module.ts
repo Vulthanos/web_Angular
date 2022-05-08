@@ -38,6 +38,7 @@ import { UploadFormComponent } from './upload-form/upload-form.component';
 import { UploadListComponent } from './upload-list/upload-list.component';
 import { UploadDetailsComponent } from './upload-details/upload-details.component';
 
+
 @NgModule({
     imports: [
         BrowserModule,
