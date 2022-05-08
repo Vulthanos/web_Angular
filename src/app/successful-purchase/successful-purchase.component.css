@@ -17,7 +17,6 @@
     }
     .TableAlign{
         align-items: center;
-        margin-left: 30px;
         margin-top: 2em;
     }
     #successful {
@@ -190,7 +189,6 @@
     }
     .TableAlign{
         align-items: center;
-        margin-left: 30px;
         margin-top: 2em;
     }
     #successful {
@@ -203,6 +201,7 @@
     .contentPurchase {
         width: 70%;
         float: left;
+        margin-left: 50%;
 
     }
 
@@ -360,8 +359,8 @@
     }
     .TableAlign{
         align-items: center;
-        margin-left: 30px;
         margin-top: 2em;
+        width: 100%;
     }
     #successful {
         width: 0.625em;
@@ -373,6 +372,7 @@
     .contentPurchase {
         width: 70%;
         float: left;
+        margin-left: 20%;
 
     }
 
@@ -478,8 +478,7 @@
     }
 
     .politicas {
-        padding-top: 1em;
-        margin-left: 10%;
+        padding-top: 2em;
     }
 
     .norton img {
@@ -503,8 +502,16 @@
     }
 
     th, td {
-        padding: 1em;
+        font-size: 0.8em;
         font-family: Montserrat, sans-serif;
         text-align: center;
+        width: 100%;
     }
+}
+
+
+.miniSecion{
+    width: 100%;
+    margin-top: 15em;
+    margin-left: 33%;
 }
