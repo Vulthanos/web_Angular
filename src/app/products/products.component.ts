@@ -4,8 +4,7 @@ import {Producto} from "../interfaces/producto.interface";
 import {forkJoin, from, map, mergeMap, Observable, Subject, tap} from "rxjs";
 import {Usuario} from "../interfaces/usuario.interface";
 import {UsersService} from "../services/users.service";
-import {CheckUserService} from "../services/check-user.service";
-
+import {CheckUserService} from "src/app/services/check-user.service";
 
 @Component({
     selector: 'app-products',
@@ -33,27 +32,30 @@ export class ProductsComponent implements OnInit {
     //cosascarrito: Observable<Producto[]>;
 
     constructor(
+
         private productoService: ProductsService, private usersService: UsersService, private checkUserService: CheckUserService) {
         this.products = this.productoService.getProductos();
         this.users = this.usersService.getUsers();
-    this.ellogeado = this.checkUserService.getU().then(algo=>{
+  //  this.ellogeado = this.checkUserService.getU().then(algo=>{
 //        console.log(algo);
         //this.algo2=algo;
-    });
-        this.getUser()
+    //});
+
+        this.getUser().then()
 
         this.getCurrentUser()
     }
 
     getCurrentUser(){
-        this.checkUserService.getCurrentUser().subscribe(user=>{
-            console.log(user);
-        })
+       // this.checkUserService.getCurrentUser().subscribe(user=>{
+           // console.log(user);
+        //})
 
     }
 
-    getUser() {
-        this.usersService.getUserByID('1B010snvDnobXXvbETxb').pipe(
+    async getUser() {
+        const userId = await this.checkUserService.getUserId();
+        this.usersService.getUserByID(userId).pipe(
             mergeMap((res1) => this.usersService.getProductsByCart(res1['cart'])),
         ).subscribe((res3) => {
             console.log(res3);
@@ -121,7 +123,6 @@ export class ProductsComponent implements OnInit {
 
 
     ngOnInit(): void {
-        console.log(this.productosCarrito);
         //this.usersService.getUsers().subscribe()
         //this.usersService.getUCart().subscribe()
         //this.productoService.getProductos().subscribe()
