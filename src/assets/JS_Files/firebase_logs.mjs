@@ -62,7 +62,6 @@ async function newUser(newUser) {
             setLogged(true, doc.id);
         }
     });
-    //await setLogged(true, docSnap.id);
 }
 
 async function getUserCart() {
