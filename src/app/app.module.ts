@@ -34,7 +34,6 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
 import { SuccessfulPurchaseComponent } from './successful-purchase/successful-purchase.component';
-import {FileUploaderComponent} from "./file-uploader/file-uploader.component";
 
 
 @NgModule({
@@ -96,8 +95,7 @@ import {FileUploaderComponent} from "./file-uploader/file-uploader.component";
         TicketEndComponent,
         ProductsComponent,
         CreditCardShippingComponent,
-        SuccessfulPurchaseComponent,
-        FileUploaderComponent,
+        SuccessfulPurchaseComponent
     ],
   bootstrap: [
     AppComponent
