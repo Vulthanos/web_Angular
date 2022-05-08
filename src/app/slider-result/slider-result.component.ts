@@ -12,7 +12,6 @@ import { CheckUserService } from "../services/check-user.service";
 })
 export class SliderResultComponent implements OnInit {
 
-    public productos?: Producto[] = [];
     products: Observable<Producto[]>;
 
   constructor(private _LoadScripts:LoadScriptsService, private productService: ProductsService, private checkUserService: CheckUserService) {

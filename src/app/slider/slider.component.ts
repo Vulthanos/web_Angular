@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LoadScriptsService } from '../services/load-scripts.service';
+import {Observable} from "rxjs";
+import {Producto} from "../interfaces/producto.interface";
+import {ProductsService} from "../services/products.service";
 
 @Component({
   selector: 'app-slider',
@@ -8,9 +11,12 @@ import { LoadScriptsService } from '../services/load-scripts.service';
 })
 export class SliderComponent implements OnInit {
 
-  constructor( private _LoadScripts:LoadScriptsService) {
+    products: Observable<Producto[]>;
+
+  constructor( private _LoadScripts:LoadScriptsService, private productService: ProductsService) {
       _LoadScripts.LoadHead(["glider"]);
       _LoadScripts.Load(["slider"]);
+      this.products = this.productService.getProductos();
   }
 
   ngOnInit(): void {
