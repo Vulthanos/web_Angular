@@ -14,12 +14,10 @@ export class FileUploaderComponent implements OnInit {
     downloadableURL = '';
     task: AngularFireUploadTask;
 
-    progressValue: Observable<number>;      // Add this <<<<<<<<<<<<<<<<<<
+    progressValue: Observable<number>;
 
     ngOnInit(): void {
     }
-
-// File uploaded when triggered
 
     async onFileChanged(event) {
         const file = event.target.files[0];
@@ -28,7 +26,7 @@ export class FileUploaderComponent implements OnInit {
             this.task =  this.fireStorage.upload(filePath, file);
 
 
-            this.progressValue = this.task.percentageChanges();       // <<<<< Percentage of uploading is given
+            this.progressValue = this.task.percentageChanges();
 
 
             (await this.task).ref.getDownloadURL().then(url => {this.downloadableURL = url; });

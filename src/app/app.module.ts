@@ -34,9 +34,7 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ShowGiveawayComponent } from './show-giveaway/show-giveaway.component';
 import { TicketEndComponent } from './ticket-end/ticket-end.component';
 import { SuccessfulPurchaseComponent } from './successful-purchase/successful-purchase.component';
-import { UploadFormComponent } from './upload-form/upload-form.component';
-import { UploadListComponent } from './upload-list/upload-list.component';
-import { UploadDetailsComponent } from './upload-details/upload-details.component';
+import {FileUploaderComponent} from "./file-uploader/file-uploader.component";
 
 @NgModule({
     imports: [
@@ -68,40 +66,38 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
         FormsModule,
         ReactiveFormsModule
     ],
-  declarations: [
-    AppComponent,
-    TopBarComponent,
-    ProductListComponent,
-    ProductAlertsComponent,
-    ProductDetailsComponent,
-    CartComponent,
-    ShippingComponent,
-    FooterComponent,
-    LoginComponent,
-    SinginComponent,
-    SliderComponent,
-    SearchResultComponent,
-    SliderResultComponent,
-    ProductsComponent,
-    CreditCardShippingComponent,
-    GenerateTicketComponent,
-    GenerateTicket2Component,
-    GiveawayComponent,
-    GiveawayEndComponent,
-    HelpComponent,
-    InformationComponent,
-    NewsletterComponent,
-    NewsletterEndComponent,
-    ProfilePageComponent,
-    ShowGiveawayComponent,
-    TicketEndComponent,
-    UploadFormComponent,
-    UploadListComponent,
-    UploadDetailsComponent,
-      ProductsComponent,
-      CreditCardShippingComponent,
-      SuccessfulPurchaseComponent,
-  ],
+    declarations: [
+        AppComponent,
+        TopBarComponent,
+        ProductListComponent,
+        ProductAlertsComponent,
+        ProductDetailsComponent,
+        CartComponent,
+        ShippingComponent,
+        FooterComponent,
+        LoginComponent,
+        SinginComponent,
+        SliderComponent,
+        SearchResultComponent,
+        SliderResultComponent,
+        ProductsComponent,
+        CreditCardShippingComponent,
+        GenerateTicketComponent,
+        GenerateTicket2Component,
+        GiveawayComponent,
+        GiveawayEndComponent,
+        HelpComponent,
+        InformationComponent,
+        NewsletterComponent,
+        NewsletterEndComponent,
+        ProfilePageComponent,
+        ShowGiveawayComponent,
+        TicketEndComponent,
+        ProductsComponent,
+        CreditCardShippingComponent,
+        SuccessfulPurchaseComponent,
+        FileUploaderComponent,
+    ],
   bootstrap: [
     AppComponent
   ],
