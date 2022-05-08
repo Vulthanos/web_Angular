@@ -12,5 +12,6 @@
     <orderEntry type="library" name="5628445d69" level="application" />
     <orderEntry type="library" name="font-awesome" level="application" />
     <orderEntry type="library" name="slider" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
 </module>
