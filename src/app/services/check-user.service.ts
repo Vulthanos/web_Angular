@@ -34,23 +34,16 @@ export class CheckUserService {
             if(docSnap.data()['logged']){
                 const user = await getDoc(doc(db, "users", docSnap.data()['loggedUser']));
                 const userCart = user.data()['cart'];
-                console.log("Carrito usuario: ", userCart);
                 const productsSnap = await getDocs(collection(db, "products"));
                 productsSnap.forEach(p => {
                     const pData = p.data();
                     if (pData['description'] === pDesc && pData['name'] === pName && pData['price'] === pPrice && pData['img'] === pImg) {
-                        console.log("coincide un pructo con id: ", p.id);
                         userCart.push(p.id);
-                        console.log(userCart);
                         const userEmail = user.data()['email'];
-                        console.log(userEmail);
                         const userName = user.data()['name'];
-                        console.log(userName);
                         const userPassword = user.data()['password'];
-                        console.log(userPassword);
                         const userSurname = user.data()['surname'];
-                        console.log(userSurname);
-                        setDoc(user, {userCart, userEmail, userName, userPassword, userSurname});
+                        setDoc(doc(db, "users", docSnap.data()['loggedUser']), {userCart, userEmail, userName, userPassword, userSurname});
                     }
                 });
             } else{
